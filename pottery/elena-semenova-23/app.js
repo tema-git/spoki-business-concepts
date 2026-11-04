@@ -4,19 +4,19 @@
   const arrow = '<svg class="ui-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg>';
   const catalog = {
     self: [
-      ['Любимая чашка', 'painted-mug.webp', 'Для неспешного утра', 'Свои пропорции, удобная ручка и цвет, к которому хочется возвращаться.', 'Чашка'],
-      ['Небольшая ваза', 'vase-study.svg', 'Для одного цветка', 'Спокойный силуэт или выразительный изгиб — найдите свой характер.', 'Ваза'],
-      ['Свободная форма', 'thematic-clay.webp', 'Для вашей фантазии', 'Начните с линии или ощущения. Идее не обязательно сразу иметь название.', 'Моя форма']
+      ['Любимая чашка', 'mug', 'Для неспешного утра', 'Свои пропорции, удобная ручка и цвет, к которому хочется возвращаться.', 'Чашка'],
+      ['Небольшая ваза', 'vase', 'Для одного цветка', 'Спокойный силуэт или выразительный изгиб — найдите свой характер.', 'Ваза'],
+      ['Свободная форма', 'sculpture', 'Для вашей фантазии', 'Начните с линии или ощущения. Идее не обязательно сразу иметь название.', 'Моя форма']
     ],
     home: [
-      ['Утренний ритуал', 'wheel-hands.webp', 'Для любимого уголка', 'Представьте вещь, с которой приятно начинать день.', 'Чашка'],
-      ['Место для деталей', 'heart-bowl.webp', 'Для маленьких находок', 'Небольшая тарелочка для украшений, ключей или просто красивой композиции.', 'Тарелка'],
-      ['Тихий акцент', 'thematic-clay.webp', 'Для пространства', 'Фактура и форма могут изменить настроение всего уголка.', 'Моя идея']
+      ['Утренний ритуал', 'mug', 'Для любимого уголка', 'Представьте вещь, с которой приятно начинать день.', 'Чашка'],
+      ['Место для деталей', 'bowl', 'Для маленьких находок', 'Небольшая тарелочка для украшений, ключей или просто красивой композиции.', 'Тарелка'],
+      ['Тихий акцент', 'sculpture', 'Для пространства', 'Фактура и форма могут изменить настроение всего уголка.', 'Моя идея']
     ],
     gift: [
-      ['С личной историей', 'painted-mug.webp', 'Для близкого человека', 'Вспомните любимый цвет, привычку или особенный момент.', 'Подарок'],
-      ['Две разные вещи', 'date-mugs.webp', 'С общим настроением', 'Похожая палитра и разные силуэты — как две части одной истории.', 'Парная керамика'],
-      ['Что-то неожиданное', 'heart-bowl.webp', 'Без особого повода', 'Небольшая вещь, в которой легко узнать заботу.', 'Подарок']
+      ['С личной историей', 'mug', 'Для близкого человека', 'Вспомните любимый цвет, привычку или особенный момент.', 'Подарок'],
+      ['Две разные вещи', 'pair', 'С общим настроением', 'Похожая палитра и разные силуэты — как две части одной истории.', 'Парная керамика'],
+      ['Что-то неожиданное', 'bowl', 'Без особого повода', 'Небольшая вещь, в которой легко узнать заботу.', 'Подарок']
     ]
   };
   const cards = $('#class-cards');
@@ -24,13 +24,13 @@
     cards.replaceChildren(...catalog[key].map(([name, image, tag, description, idea]) => {
       const article = document.createElement('article'); article.className = 'class-card';
       const figure = document.createElement('div'); figure.className = 'class-image';
-      const img = new Image(); img.src = `assets/${image}`; img.alt = name; img.loading = 'lazy';
+      const art = window.PotteryArt.create(image, name); figure.dataset.cursor = 'clay';
       const badge = document.createElement('span'); badge.className = 'class-tag'; badge.textContent = tag;
       const button = document.createElement('button'); button.className = 'class-arrow'; button.type = 'button';
       button.innerHTML = arrow; button.dataset.book = idea; button.setAttribute('aria-label', `Обсудить идею: ${name}`);
       const title = document.createElement('h3'); title.textContent = name;
       const copy = document.createElement('p'); copy.textContent = description;
-      figure.append(img, badge, button); article.append(figure, title, copy); return article;
+      figure.append(art, badge, button); article.append(figure, title, copy); return article;
     }));
   }
   renderCards('self');
@@ -56,19 +56,6 @@
   document.addEventListener('click', event => { if(!event.target.closest('.header')) closeMenu(); });
   document.addEventListener('keydown', event => { if(event.key==='Escape' && menu.classList.contains('open')) closeMenu(true); });
   matchMedia('(min-width: 1061px)').addEventListener('change', () => closeMenu());
-  const story = [
-    ['wheel-hands.webp','Работа с глиной на гончарном круге','Сначала прикосновение.','Податливая глина, движение рук и первые очертания.'],
-    ['thematic-clay.webp','Формы и фактура керамики','Потом — ваша форма.','Пропорции, поверхность и детали постепенно складываются вместе.'],
-    ['painted-mug.webp','Керамическая чашка','И свой характер.','Оттенок и неровности делают каждую вещь особенной.']
-  ];
-  const storyButtons = [...document.querySelectorAll('[data-hero-story]')];
-  for(const button of storyButtons) button.addEventListener('click', () => {
-    const index = Number(button.dataset.heroStory), [file,alt,title,description] = story[index];
-    const image = $('#hero-story-image'); image.src = `assets/${file}`; image.alt = alt;
-    $('#hero-story-title').textContent = title; $('#hero-story-description').textContent = description;
-    $('#hero-story-count').textContent = `0${index+1} / 03`;
-    for(const other of storyButtons) other.setAttribute('aria-pressed',String(other===button));
-  });
   const dialog = $('#booking-dialog'), form = $('#booking-form'), success = $('#demo-message');
   const trigger = $('#idea-trigger'), list = $('#idea-options'), value = $('#idea-value');
   const options = ['Моя идея','Чашка','Ваза','Тарелка','Моя форма','Подарок','Парная керамика'];

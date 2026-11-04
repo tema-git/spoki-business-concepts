@@ -35,6 +35,12 @@
     if (!menu.hidden) positionMenu();
   }
   function scheduleScroll() { if (!frame) frame = requestAnimationFrame(updateScroll); }
+  const header = document.querySelector('.header');
+  function syncHeaderHeight() {
+    document.documentElement.style.setProperty('--header', `${Math.ceil(header.getBoundingClientRect().height)}px`);
+    scheduleScroll();
+  }
+  if ('ResizeObserver' in window) new ResizeObserver(syncHeaderHeight).observe(header);
   function flushPointer() {
     pointerFrame = 0;
     if (!pendingScene || reducedMotion.matches || !finePointer.matches) return;
@@ -62,8 +68,8 @@
   magnetic.addEventListener('pointerleave', resetMagnet); magnetic.addEventListener('focus', resetMagnet);
   reducedMotion.addEventListener('change', () => { scenes.forEach(scene => {scene.style.setProperty('--px','0');scene.style.setProperty('--py','0');});resetMagnet();scheduleScroll(); });
   finePointer.addEventListener('change', () => { resetMagnet();scenes.forEach(scene => {scene.style.setProperty('--px','0');scene.style.setProperty('--py','0');}); });
-  window.addEventListener('scroll', scheduleScroll, {passive:true}); window.addEventListener('resize', scheduleScroll, {passive:true});
-  window.addEventListener('load', scheduleScroll); window.addEventListener('pageshow', scheduleScroll); document.fonts.ready.then(scheduleScroll);
+  window.addEventListener('scroll', scheduleScroll, {passive:true}); window.addEventListener('resize', syncHeaderHeight, {passive:true});
+  window.addEventListener('load', syncHeaderHeight); window.addEventListener('pageshow', syncHeaderHeight); document.fonts.ready.then(syncHeaderHeight);
 
   const form = $('booking-form'), nameField = $('name'), phoneField = $('phone'), serviceField = $('service');
   const success = $('booking-success'), selectedPlan = $('selected-plan'), feedback = $('form-feedback');
@@ -242,5 +248,5 @@
   window.addEventListener('pagehide',()=>{
     cancelAnimationFrame(frame);cancelAnimationFrame(pointerFrame);frame=0;pointerFrame=0;pendingScene=null;closeMenu();form.reset();setService('');clearAttachedPlan();resetMagnet();
   });
-  setService('');scheduleScroll();
+  setService('');syncHeaderHeight();
 })();

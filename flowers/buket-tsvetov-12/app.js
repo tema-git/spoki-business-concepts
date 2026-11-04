@@ -244,9 +244,7 @@
     return state;
   }
   const layer = (selector, move, rotate) => ({ el: document.querySelector(selector), move, rotate });
-  pointerScene(document.querySelector('.hero'), [
-    layer('.hero-art img', 18, 1.0), layer('.art-note>span:last-child', -10, 7), layer('.hero-bloom', -20, 10)
-  ]);
+  pointerScene(document.querySelector('.hero'));
   pointerScene(document.querySelector('.feeling-strip'));
   pointerScene(document.querySelector('.moods'));
   document.querySelectorAll('.mood-card').forEach(card => pointerScene(card, [
@@ -376,7 +374,7 @@
     motionMedia.add({ desktop: '(min-width: 861px)', small: '(max-width: 860px)', reduce: '(prefers-reduced-motion: reduce)' }, context => {
       if (context.conditions.reduce) return;
       const desktop = context.conditions.desktop;
-      gsap.to('.hero-image-window', { y: desktop ? 70 : 35, rotation: desktop ? -4 : -2, ease: 'none', scrollTrigger: { trigger: '.hero-art', start: 'clamp(top 20%)', end: 'bottom top', scrub: .6 } });
+
       document.querySelectorAll('.mood-art').forEach((art, index) => {
         gsap.fromTo(art, { y: desktop ? 95 + index * 25 : 45, rotation: [-7, 6, -5][index], scale: .9 }, { y: 0, rotation: 0, scale: 1, ease: 'none', scrollTrigger: { trigger: art.closest('.mood-card'), start: 'top 95%', end: 'top 35%', scrub: .55 } });
       });

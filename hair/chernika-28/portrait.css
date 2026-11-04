@@ -1,0 +1,11 @@
+/* Portrait-only styling. Existing lab layout and controls remain owned by the page. */
+.hair-portrait{overflow:visible}
+.hair-portrait .hp-back,.hair-portrait .hp-left,.hair-portrait .hp-right{transition:d .48s cubic-bezier(.22,1,.36,1)}
+.hair-portrait [data-hp-tone]{transition:stop-color .45s ease}
+.hair-portrait .hp-head,.hair-portrait .hp-back{transform:rotate(-4deg);transform-origin:252px 250px}
+.hair-portrait .hp-left-motion,.hair-portrait .hp-right-motion{transform-box:fill-box;transform-origin:50% 10%;transition:translate .35s ease-out}
+.hair-portrait .hp-left-motion{translate:calc(var(--mx,0)*-1.2px) calc(var(--my,0)*.6px)}
+.hair-portrait .hp-right-motion{translate:calc(var(--mx,0)*1.2px) calc(var(--my,0)*.6px)}
+.hair-portrait .hp-face-light{translate:calc(var(--mx,0)*7px) calc(var(--my,0)*4px);transition:translate .35s ease-out}
+.hair-portrait .hp-earring{transform-box:fill-box;transform-origin:50% 0;rotate:calc(var(--mx,0)*2deg);transition:rotate .4s ease-out}
+@media(prefers-reduced-motion:reduce){.hair-portrait *{transition:none!important}.hair-portrait .hp-left-motion,.hair-portrait .hp-right-motion,.hair-portrait .hp-face-light{translate:none!important}.hair-portrait .hp-earring{rotate:none!important}}

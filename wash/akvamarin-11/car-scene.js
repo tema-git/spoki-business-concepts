@@ -1,138 +1,88 @@
 import * as THREE from './vendor/three.module.js';
+import { makeCar } from './car-geometry.js?v=c5efbc2231';
 
 const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const fine = matchMedia('(hover: hover) and (pointer: fine)');
 
 function fallbackMarkup(tone) {
-  return `<svg class="car-code-fallback" viewBox="0 0 1000 480" fill="none" aria-hidden="true"><defs><linearGradient id="car-metal-${tone}" x2=".3" y2="1"><stop stop-color="#e5edf1"/><stop offset=".38" stop-color="#728695"/><stop offset=".64" stop-color="#263b4b"/><stop offset="1" stop-color="#aebec8"/></linearGradient></defs><ellipse cx="520" cy="375" rx="390" ry="29" fill="#071b2b" opacity=".16"/><path d="M90 286 133 247 303 216 426 129Q455 109 508 111L653 117 769 202 885 236Q925 251 929 299L913 333 834 349 199 350 96 330Z" fill="url(#car-metal-${tone})" stroke="#dce7ee" stroke-width="3"/><path d="M329 213 445 134 507 130 648 138 731 203Z" fill="#102534" stroke="#a0b2bf" stroke-width="4"/><path d="m527 132-6 75M143 252l178-30M151 279l137-15M719 232l149 20" stroke="#eafaff" stroke-width="7" stroke-linecap="round"/><path d="m110 295 173-10-8 35-151 1Z" fill="#0a1722"/><path d="m315 239 336-14 84 20-2 66-390 6Z" stroke="#273a48" stroke-width="2"/><g fill="#131e28" stroke="#97a8b3" stroke-width="7"><ellipse cx="301" cy="330" rx="67" ry="73"/><ellipse cx="780" cy="319" rx="64" ry="70"/></g><g fill="#2a3c4a" stroke="#c9d4dc" stroke-width="13"><ellipse cx="301" cy="330" rx="40" ry="45"/><ellipse cx="780" cy="319" rx="39" ry="44"/></g></svg>`;
-}
-
-function geometryGrid(rows, cols, sample) {
-  const points = [], indices = [];
-  for (let i = 0; i <= rows; i++) for (let j = 0; j <= cols; j++) points.push(...sample(i / rows, j / cols));
-  for (let i = 0; i < rows; i++) for (let j = 0; j < cols; j++) {
-    const a = i * (cols + 1) + j, b = a + cols + 1;
-    indices.push(a, b, a + 1, b, b + 1, a + 1);
-  }
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.Float32BufferAttribute(points, 3));
-  geo.setIndex(indices); geo.computeVertexNormals();
-  return geo;
-}
-
-function makeCar(wash) {
-  const car = new THREE.Group();
-  const paint = new THREE.MeshPhysicalMaterial({color:wash?0xd5e2e8:0x607783,metalness:.72,roughness:.25,clearcoat:1,clearcoatRoughness:.18,side:THREE.DoubleSide});
-  const chrome = new THREE.MeshStandardMaterial({color:0xb8c6d0,metalness:.96,roughness:.21});
-  const black = new THREE.MeshStandardMaterial({color:0x081119,metalness:.3,roughness:.32});
-  const rubber = new THREE.MeshStandardMaterial({color:0x111519,roughness:.86});
-  const glass = new THREE.MeshPhysicalMaterial({color:0x0b1a24,metalness:.3,roughness:.13,clearcoat:1,side:THREE.DoubleSide});
-  const lamp = new THREE.MeshStandardMaterial({color:0xf1fbff,emissive:0xd1efff,emissiveIntensity:1.6});
-  const red = new THREE.MeshStandardMaterial({color:0xab1f28,emissive:0xec2039,emissiveIntensity:1.0});
-  const accent = new THREE.MeshStandardMaterial({color:wash?0x2659cb:0xb86e43,metalness:.45,roughness:.34});
-  const mesh=(geo,mat,parent=car)=>{const m=new THREE.Mesh(geo,mat);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;};
-  function box(w,h,d,x,y,z,mat,parent=car){const m=mesh(new THREE.BoxGeometry(w,h,d),mat,parent);m.position.set(x,y,z);return m;}
-  function line(points,radius,mat,parent=car,closed=false){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)),closed,'catmullrom',.35);return mesh(new THREE.TubeGeometry(curve,Math.max(20,points.length*5),radius,6,closed),mat,parent);}
-  const profile=new THREE.CatmullRomCurve3([
-    new THREE.Vector3(-2.29,.73,.72),new THREE.Vector3(-2.12,.83,.87),new THREE.Vector3(-1.45,.91,.96),
-    new THREE.Vector3(-.75,.94,.945),new THREE.Vector3(-.05,.91,.91),new THREE.Vector3(.72,.93,.97),
-    new THREE.Vector3(1.36,.99,1.025),new THREE.Vector3(1.95,.92,.99),new THREE.Vector3(2.24,.80,.83)
-  ],false,'catmullrom',.4);
-  const sections=Array.from({length:301},(_,i)=>profile.getPoint(i/300));
-  function section(x){let n=0;while(n<299&&sections[n+1].x<x)n++;const a=sections[n],b=sections[n+1],t=clamp((x-a.x)/(b.x-a.x));return {height:a.y+(b.y-a.y)*t,width:a.z+(b.z-a.z)*t};}
-  function crown(x,v){const s=section(x),a=Math.abs(v);const fender=.19*Math.exp(-Math.pow((x+1.42)/.63,2))+.15*Math.exp(-Math.pow((x-1.35)/.61,2));return s.height-.055*Math.pow(a,6)+fender*Math.exp(-Math.pow((a-.79)/.30,2));}
-  function surface(x,z){const s=section(x);return crown(x,z/s.width);}
-  function archBottom(x){let y=.31;for(const axle of [-1.38,1.36]){const d=x-axle;if(Math.abs(d)<.485)y=Math.max(y,.45+Math.sqrt(.485*.485-d*d));}return y;}
-  mesh(geometryGrid(150,48,(u,v)=>{const p=profile.getPoint(u),z=v*2-1;return[p.x,crown(p.x,z),p.z*z];}),paint);
-  for(const side of [-1,1]){
-    mesh(geometryGrid(150,12,(u,v)=>{const s=profile.getPoint(u),top=crown(s.x,1),low=Math.min(top-.008,archBottom(s.x));return[s.x,top*(1-v)+low*v,side*(s.z+.021*Math.sin(v*Math.PI)-.055*v*v)];}),paint);
-    for(const axle of [-1.38,1.36]){
-      const p=[];for(let i=0;i<=38;i++){const a=i/38*Math.PI,x=axle-.485*Math.cos(a);p.push([x,.45+.485*Math.sin(a),side*(section(x).width-.007)]);}line(p,.012,paint);
-    }
-    line([[-.91,.36,side*.905],[-.5,.31,side*.88],[.65,.31,side*.95],[.91,.37,side*.99]],.022,black);
-    line([[-.70,.94,side*.945],[-.67,.67,side*.955],[-.58,.40,side*.925],[.68,.40,side*.96],[.94,.61,side*1.005],[.93,.96,side*.995]],.0045,black);
-    box(.17,.022,.016,.63,.875,side*.99,chrome);
-    line([[-.48,1.04,side*.79],[-.51,1.05,side*.98],[-.43,1.055,side*1.08]],.018,black);
-    const mirror=mesh(new THREE.SphereGeometry(1,24,12),paint);mirror.scale.set(.145,.060,.10);mirror.position.set(-.44,1.065,side*1.08);
-    const mirrorGlass=mesh(new THREE.SphereGeometry(1,20,10),glass);mirrorGlass.scale.set(.012,.045,.08);mirrorGlass.position.set(-.30,1.065,side*1.08);
-  }
-  // Low oval nose and broad, uninterrupted rear shoulders define the silhouette.
-  for(const front of [true,false]){
-    mesh(geometryGrid(36,12,(u,v)=>{const z=(u*2-1),x=front?-2.29:2.24,s=section(x);const y=crown(x,z)*(1-v)+(.30+.035*z*z)*v;const bulge=Math.sin(v*Math.PI)*.055;return[x+(front?-bulge:bulge)+Math.abs(z)**4*(front?.09:-.07),y,z*s.width*(1-.065*v)];}),paint);
-  }
-  // Front air intakes sit in the bumper, not in a tall grille.
-  for(const [center,width] of [[0,.62],[-.62,.31],[.62,.31]]){
-    mesh(geometryGrid(12,6,(u,v)=>{const z=center+(u-.5)*width;return[-2.356+Math.abs(z)**4*.09,.39+v*.14+.016*Math.cos(u*Math.PI*2),z];}),black);
-    for(let row=0;row<3;row++)line([[-2.361+Math.abs(center-width*.44)**4*.09,.42+row*.038,center-width*.44],[-2.361+Math.abs(center)**4*.09,.42+row*.038,center],[-2.361+Math.abs(center+width*.44)**4*.09,.42+row*.038,center+width*.44]],.005,chrome);
-  }
-  line([[-2.26,.31,-.75],[-2.35,.295,-.35],[-2.36,.295,.35],[-2.26,.31,.75]],.020,black);
-  for(const side of [-1,1]){
-    line([[-2.29,.66,side*.48],[-2.27,.66,side*.70]],.010,lamp);
-    // Oval four-point headlamps follow the raised front wings.
-    const cx=-1.89,cz=side*.72;
-    const lensPoint=(r,a,lift=0)=>{const x=cx+Math.cos(a)*.226*r,z=cz+Math.sin(a)*.134*r;return[x,surface(x,z)+.035+.018*(1-r*r)+lift,z];};
-    mesh(geometryGrid(12,48,(u,v)=>lensPoint(u,-v*Math.PI*2)),black);
-    const ring=[];for(let i=0;i<48;i++)ring.push(lensPoint(.91,i/48*Math.PI*2,.005));line(ring,.0045,lamp,car,true);
-    for(const dx of [-.065,.065])for(const dz of [-.045,.045]){const x=cx+dx,z=cz+dz,led=mesh(new THREE.SphereGeometry(.019,12,8),lamp);led.scale.set(1,.25,.65);led.position.set(x,surface(x,z)+.058,z);}
-    const hood=[];for(let i=0;i<18;i++){const x=-2.05+i/17*1.31,z=side*(.33+.21*i/17);hood.push([x,surface(x,z)+.006,z]);}line(hood,.0035,black);
-  }
-  // A single fastback arc, with a separate windshield, painted roof and rear glass.
-  const cabin=new THREE.CatmullRomCurve3([
-    new THREE.Vector3(-.76,.955,.77),new THREE.Vector3(-.54,1.13,.745),new THREE.Vector3(-.20,1.405,.665),
-    new THREE.Vector3(.22,1.485,.65),new THREE.Vector3(.61,1.435,.68),new THREE.Vector3(1.02,1.25,.755),new THREE.Vector3(1.64,1.00,.81)
-  ],false,'catmullrom',.35);
-  function cabinSurface(u,v){const p=cabin.getPoint(u),z=v*2-1;return[p.x,p.y-.055*Math.pow(Math.abs(z),3),p.z*z];}
-  mesh(geometryGrid(64,24,cabinSurface),glass);
-  // The painted top is sampled from the same surface, avoiding overlapping roof panels.
-  mesh(geometryGrid(26,22,(u,v)=>{const p=cabinSurface(.31+u*.30,v);p[1]+=.006;return p;}),paint);
-  for(const side of [-1,1]){
-    mesh(geometryGrid(64,8,(u,v)=>{const p=cabin.getPoint(u);return[p.x,(p.y-.055)*(1-v)+(.965+.016*u)*v,side*(p.z*(1-v)+(.79+.025*u)*v)];}),glass);
-    const seal=[];for(let i=0;i<=64;i++){const p=cabin.getPoint(i/64);seal.push([p.x,p.y-.054,side*p.z]);}line(seal,.018,paint);
-    line([[-.76,.965,side*.79],[.20,.97,side*.80],[1.64,.982,side*.815]],.010,black);
-    line([[.49,.98,side*.805],[.45,1.41,side*.68]],.024,black);
-    // Wide C-pillar transitions into the rear haunch.
-    mesh(geometryGrid(16,8,(u,v)=>{const p=cabin.getPoint(.62+u*.38);return[p.x,(p.y-.053)*(1-v)+(.97+.012*u)*v,side*(p.z*(1-v)+.818*v+.006)];}),paint);
-  }
-  for(const u of [.31,.61]){const arc=[];for(let i=0;i<=24;i++){const p=cabinSurface(u,i/24);p[1]+=.009;arc.push(p);}line(arc,.016,paint);}
-  // Rear window ribs, continuous light ribbon, exhaust tips and a subtle rear lip.
-  for(let i=0;i<11;i++){const z=-.42+i*.084;const x=1.72;line([[x,surface(x,z)+.009,z],[x+.20,surface(x+.20,z)+.009,z]],.009,black);}
-  line([[2.22,.765,-.78],[2.29,.77,-.40],[2.30,.77,.40],[2.22,.765,.78]],.020,black);
-  line([[2.23,.775,-.77],[2.30,.78,-.40],[2.31,.78,.40],[2.23,.775,.77]],.009,red);
-  line([[2.08,.89,-.83],[2.17,.91,0],[2.08,.89,.83]],.016,paint);
-  box(.055,.11,1.31,2.24,.38,0,black);
-  for(const side of [-1,1]){const tip=mesh(new THREE.CylinderGeometry(.063,.063,.13,24),chrome);tip.rotation.z=Math.PI/2;tip.position.set(2.27,.33,side*.59);const inside=mesh(new THREE.CircleGeometry(.048,24),black);inside.rotation.y=Math.PI/2;inside.position.set(2.338,.33,side*.59);}
-  // Five sculpted twin spokes, deep barrels and fixed brake calipers.
-  const wheels=[],tm=new THREE.Object3D();
-  for(const x of [-1.38,1.36])for(const side of [-1,1]){
-    const w=new THREE.Group();w.position.set(x,.45,side*(x<0?.936:1.002));if(side<0)w.rotation.y=Math.PI;car.add(w);wheels.push(w);
-    mesh(new THREE.TorusGeometry(.342,.098,16,64),rubber,w);
-    const barrel=mesh(new THREE.CylinderGeometry(.320,.320,.17,48),black,w);barrel.rotation.x=Math.PI/2;
-    const ring=mesh(new THREE.TorusGeometry(.316,.016,10,64),chrome,w);ring.position.z=.100;
-    const disk=mesh(new THREE.CylinderGeometry(.255,.255,.016,48),chrome,w);disk.rotation.x=Math.PI/2;disk.position.z=.065;
-    const holes=new THREE.InstancedMesh(new THREE.CircleGeometry(.008,6),black,32);for(let i=0;i<32;i++){const a=i/32*Math.PI*2;tm.position.set(Math.cos(a)*.22,Math.sin(a)*.22,.075);tm.rotation.set(0,0,0);tm.scale.set(1,1,1);tm.updateMatrix();holes.setMatrixAt(i,tm.matrix);}w.add(holes);
-    const spokes=new THREE.InstancedMesh(new THREE.BoxGeometry(.026,.235,.034),chrome,10);for(let i=0;i<10;i++){const a=Math.floor(i/2)/5*Math.PI*2+(i%2? .095:-.095);tm.position.set(Math.sin(a)*.186,Math.cos(a)*.186,.114);tm.rotation.set(0,0,-a);tm.updateMatrix();spokes.setMatrixAt(i,tm.matrix);}w.add(spokes);
-    const hub=mesh(new THREE.CylinderGeometry(.071,.071,.042,24),chrome,w);hub.rotation.x=Math.PI/2;hub.position.z=.112;
-    const cap=mesh(new THREE.CylinderGeometry(.040,.040,.008,20),black,w);cap.rotation.x=Math.PI/2;cap.position.z=.138;
-    const bolts=new THREE.InstancedMesh(new THREE.SphereGeometry(.009,8,6),chrome,5);for(let i=0;i<5;i++){const a=i/5*Math.PI*2;tm.position.set(Math.cos(a)*.054,Math.sin(a)*.054,.141);tm.rotation.set(0,0,0);tm.updateMatrix();bolts.setMatrixAt(i,tm.matrix);}w.add(bolts);
-    // Caliper is parented to the body so it never rotates with the rim.
-    box(.075,.18,.045,x+.20,.48,side*(x<0?1.014:1.08),accent);
-  }
-  const batches=new Map();
-  for(const part of [...car.children]){
-    if(!part.isMesh||part.isInstancedMesh)continue;
-    part.updateMatrix();const transformed=part.geometry.clone().applyMatrix4(part.matrix);
-    const g=transformed.index?transformed.toNonIndexed():transformed;
-    if(g!==transformed)transformed.dispose();
-    if(!batches.has(part.material))batches.set(part.material,[]);
-    batches.get(part.material).push(g);car.remove(part);part.geometry.dispose();
-  }
-  for(const [material,parts] of batches){
-    const length=parts.reduce((n,g)=>n+g.attributes.position.count,0),positions=new Float32Array(length*3),normals=new Float32Array(length*3);
-    let offset=0;for(const g of parts){positions.set(g.attributes.position.array,offset);normals.set(g.attributes.normal.array,offset);offset+=g.attributes.position.array.length;g.dispose();}
-    const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(positions,3));g.setAttribute('normal',new THREE.BufferAttribute(normals,3));g.computeBoundingSphere();mesh(g,material);
-  }
-  return {car,wheels,paint};
+  return `<svg class="car-code-fallback" style="width:100%;height:100%;display:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="sedan-metal" x1="504" y1="151" x2="516" y2="421" gradientUnits="userSpaceOnUse"><stop stop-color="#f5f9fb"/><stop offset=".29" stop-color="#d9e2e8"/><stop offset=".5" stop-color="#acbcc7"/><stop offset=".61" stop-color="#e5edf1"/><stop offset=".79" stop-color="#8094a3"/><stop offset="1" stop-color="#405867"/></linearGradient>
+    <linearGradient id="sedan-side" x1="616" y1="274" x2="628" y2="409" gradientUnits="userSpaceOnUse"><stop stop-color="#eef4f7"/><stop offset=".25" stop-color="#9eb1bf"/><stop offset=".53" stop-color="#728b9d"/><stop offset=".8" stop-color="#b8c8d2"/><stop offset="1" stop-color="#566d7c"/></linearGradient>
+    <linearGradient id="sedan-hood" x1="247" y1="243" x2="235" y2="331" gradientUnits="userSpaceOnUse"><stop stop-color="#fbfdff"/><stop offset=".53" stop-color="#d5e1e9"/><stop offset="1" stop-color="#8399a8"/></linearGradient>
+    <linearGradient id="sedan-glass" x1="527" y1="169" x2="566" y2="270" gradientUnits="userSpaceOnUse"><stop stop-color="#6c8291"/><stop offset=".24" stop-color="#324b5d"/><stop offset=".65" stop-color="#142b3c"/><stop offset="1" stop-color="#425d70"/></linearGradient>
+    <linearGradient id="sedan-rim" x1="-34" y1="-44" x2="36" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#fbfdff"/><stop offset=".38" stop-color="#c3d0d9"/><stop offset=".64" stop-color="#708594"/><stop offset="1" stop-color="#dce7ed"/></linearGradient>
+    <radialGradient id="sedan-tire"><stop offset=".53" stop-color="#18242c"/><stop offset=".76" stop-color="#101920"/><stop offset=".92" stop-color="#27353e"/><stop offset="1" stop-color="#0b1319"/></radialGradient>
+    <radialGradient id="sedan-shadow"><stop stop-color="#0b1c2c" stop-opacity=".3"/><stop offset="1" stop-color="#0b1c2c" stop-opacity="0"/></radialGradient>
+    <g id="sedan-wheel">
+      <ellipse rx="54" ry="61" fill="url(#sedan-tire)"/>
+      <ellipse rx="48" ry="55" stroke="#43515c" stroke-width="1.2"/>
+      <ellipse rx="40" ry="47" fill="#0d1d29" stroke="url(#sedan-rim)" stroke-width="4"/>
+      <ellipse rx="31" ry="37" fill="#566875"/>
+      <ellipse rx="27" ry="33" fill="#6a7b86" stroke="#8e9ea9" stroke-width="1"/>
+      <path d="M20-25 30-21 32 9 23 13Z" fill="#ad5842"/>
+      <g fill="url(#sedan-rim)" stroke="#7c919f" stroke-width=".5">
+        <path d="M-5-8-13-43-5-46 4-9Z M3-8 0-46 8-45 11-8Z"/>
+        <path d="M8-7 29-31 34-24 13 2Z M11 0 36-23 39-14 14 8Z"/>
+        <path d="M12 7 32 27 27 35 5 12Z M7 12 26 35 18 42-1 13Z"/>
+        <path d="M-1 13-7 46-15 43-9 10Z M-9 10-17 41-25 35-15 5Z"/>
+        <path d="M-13 2-39-8-37-18-10-8Z M-10-7-35-23-29-31-4-12Z"/>
+      </g>
+      <ellipse rx="12" ry="14" fill="#aabdc9" stroke="#d9e5ec" stroke-width="1.2"/>
+      <ellipse rx="6" ry="7" fill="#344b5b"/>
+      <g fill="#2d4353"><circle cx="0" cy="-10" r="1.4"/><circle cx="8" cy="-3" r="1.4"/><circle cx="5" cy="8" r="1.4"/><circle cx="-5" cy="8" r="1.4"/><circle cx="-8" cy="-3" r="1.4"/></g>
+    </g>
+  </defs>
+  <ellipse cx="511" cy="421" rx="438" ry="49" fill="url(#sedan-shadow)"/>
+  <ellipse cx="158" cy="349" rx="35" ry="53" fill="#10202a"/>
+  <ellipse cx="861" cy="323" rx="32" ry="49" fill="#10202a"/>
+  <use href="#sedan-wheel" transform="translate(783 354) scale(.89 .91)"/>
+  <use href="#sedan-wheel" transform="translate(305 375)"/>
+  <!-- One continuous long-wheelbase body; the two near-side arch openings are part of its outline. -->
+  <path d="M98 321Q112 293 147 276Q210 247 338 236L417 176Q445 156 485 155L646 161Q687 164 716 186L810 248Q847 258 889 271Q924 281 929 308L925 350Q920 369 836 387C838 343 824 295 783 294C743 294 720 334 727 392L365 414C365 363 349 312 305 312C261 312 241 357 249 413L135 407Q101 399 98 374Z" fill="url(#sedan-metal)" stroke="#8195a3" stroke-width="1.3"/>
+  <path d="M363 303Q551 280 813 271L909 291Q923 306 925 328L922 349Q908 367 839 383C839 335 822 294 783 294C743 294 722 334 729 390L365 411C365 366 356 337 343 324Z" fill="url(#sedan-side)"/>
+  <!-- A gently rising bonnet, with separate rounded front wings. -->
+  <path d="M142 278Q217 252 337 239L431 256Q378 278 355 316Q266 341 111 328Q115 300 142 278Z" fill="url(#sedan-hood)"/>
+  <path d="M166 282Q229 264 331 253L380 264M182 319Q273 322 332 300" stroke="#6f8799" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M149 282Q215 253 338 238L417 178" stroke="#ffffff" stroke-opacity=".7" stroke-width="2.2"/>
+  <path d="M350 315Q499 291 723 286Q817 283 894 293" stroke="#f4fbff" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M369 400Q570 387 721 379" stroke="#304b60" stroke-width="4"/>
+  <path d="M371 397Q575 384 720 376" stroke="#d5e2e9" stroke-width="1.5"/>
+  <!-- Windshield and two separate side doors form a four-door fastback cabin. -->
+  <path d="M350 237 427 180Q449 164 481 164L522 172 464 254Z" fill="url(#sedan-glass)" stroke="#4c6475" stroke-width="2"/>
+  <path d="M477 254 536 177 643 181Q670 184 693 201L766 258Z" fill="url(#sedan-glass)" stroke="#4b6273" stroke-width="2"/>
+  <path d="M529 173 474 256M596 179 589 256M696 205 713 257" stroke="#172b3a" stroke-width="8"/>
+  <path d="M474 256 533 175 643 179Q671 182 697 201L773 259M476 259 773 262" stroke="#e1eaf0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M489 155Q576 150 647 161Q684 165 714 185L804 246 776 257 700 199Q674 181 645 178L528 172Z" fill="#d8e3ea"/>
+  <path d="M488 157Q570 152 646 163Q681 167 712 187" stroke="#f8fcff" stroke-width="2"/>
+  <path d="M700 199 776 255 796 249 720 191Z" fill="#91a6b6"/>
+  <path d="M435 180 476 170 402 238 365 240Z" fill="#d8ecf9" opacity=".11"/>
+  <path d="M549 184 575 184 516 251 489 251Z" fill="#e5f4ff" opacity=".08"/>
+  <!-- Two complete door seams and handles on the visible side. -->
+  <path d="M470 264 442 298 425 390Q499 393 580 382L590 265M593 265 579 383Q658 381 716 369L743 306 748 269" stroke="#465f72" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M443 299 428 386Q490 389 578 379M595 267 581 380" stroke="#e9f2f7" stroke-opacity=".35" stroke-width="1"/>
+  <path d="M535 280 562 278M679 274 704 273" stroke="#405b70" stroke-width="5" stroke-linecap="round"/>
+  <path d="M535 278 562 276M679 272 704 271" stroke="#eef7fc" stroke-width="2" stroke-linecap="round"/>
+  <path d="M461 261 445 270" stroke="#1e3547" stroke-width="6" stroke-linecap="round"/>
+  <path d="M433 256Q450 249 465 258L469 265Q451 272 432 266Z" fill="#c0d2de" stroke="#617b8e" stroke-width="1.4"/>
+  <path d="M435 265Q451 269 468 263" stroke="#173448" stroke-width="3"/>
+  <!-- Thin four-point headlamp signatures stay flush with the front wings. -->
+  <path d="M130 293Q141 281 165 277L200 274Q198 291 178 300L143 305Q130 305 130 293Z" fill="#1c3547" stroke="#d8e8f1" stroke-width="2"/>
+  <path d="M301 292Q306 272 333 265Q352 261 368 267Q361 287 344 299L318 307Q304 307 301 292Z" fill="#193144" stroke="#dcebf3" stroke-width="2"/>
+  <g stroke="#edfaff" stroke-width="3.3" stroke-linecap="round"><path d="m145 291 9-3m19-5 9-2m-38 16 9-3m17-4 9-2M317 283l7-5m18-6 7-1m-34 24 7-4m16-6 7-4"/></g>
+  <!-- Sculpted low bumper, three wide intakes and restrained rear optics. -->
+  <path d="M109 345Q155 352 202 351L208 380Q158 384 115 372Z" fill="#152b3b" stroke="#536d80" stroke-width="1"/>
+  <path d="M219 351 246 346 237 384 220 384Z" fill="#142b3b"/>
+  <path d="M113 352Q157 360 198 357M115 361Q158 369 201 367" stroke="#7390a4" stroke-width="1.4"/>
+  <path d="M105 391Q160 407 244 402" stroke="#213e53" stroke-width="6" stroke-linecap="round"/>
+  <path d="M113 388Q161 401 242 397" stroke="#d0e0ea" stroke-width="1.4"/>
+  <path d="M888 285Q910 290 923 301L923 310 889 301Z" fill="#7a1e2c"/>
+  <path d="M889 288Q909 293 922 302" stroke="#ed5960" stroke-width="3"/>
+  <path d="M847 365 913 352" stroke="#243e51" stroke-width="5" stroke-linecap="round"/>
+  <path d="M253 409C246 360 264 315 305 314C347 314 364 363 362 412M730 387C725 342 744 297 783 296C821 296 837 340 834 382" stroke="#e0ebf1" stroke-width="2"/>
+  <path d="M250 407C243 357 263 312 305 311C348 311 367 360 365 411M727 389C722 339 744 294 783 293C822 293 840 339 837 382" stroke="#4e687c" stroke-width="1.2"/>
+</svg>`.replaceAll('sedan-', `sedan-${tone}-`);
 }
 
 function mountCar(host) {
@@ -150,7 +100,7 @@ function mountCar(host) {
   function rebuildEnvironment(){
     const environment=new THREE.Scene();environment.background=new THREE.Color(wash?0x768b9c:0x59626c);
     const panels=[];
-    for(const [x,y,z,w,h,intensity] of [[0,6,0,12,5,3],[-5,3,4,5,7,3.5],[3,3,-4,4,6,2.3],[5,1,5,3,5,1.5]]){
+    for(const [x,y,z,w,h,intensity] of [[0,6,-1,10,2,3],[-3,3,5,7,2,3],[3,3,-4,4,6,2.3],[5,1,5,3,3,1.5]]){
       const panel=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:new THREE.Color().setScalar(intensity),side:THREE.DoubleSide}));panel.position.set(x,y,z);panel.lookAt(0,.7,0);environment.add(panel);panels.push(panel);
     }
     const generator=new THREE.PMREMGenerator(renderer);
@@ -161,7 +111,7 @@ function mountCar(host) {
   scene.add(new THREE.HemisphereLight(0xdfefff,0x263749,1.0));
   const key=new THREE.DirectionalLight(0xfff2df,2.6);key.position.set(-3,6,5);key.castShadow=true;key.shadow.mapSize.set(1024,1024);key.shadow.camera.left=-4;key.shadow.camera.right=4;key.shadow.camera.top=4;key.shadow.camera.bottom=-4;key.shadow.normalBias=.03;key.shadow.bias=-.0003;scene.add(key);
   const rim=new THREE.DirectionalLight(wash?0x8dcfff:0x8fbdd3,1.9);rim.position.set(3,3,-5);scene.add(rim);
-  const warm=new THREE.PointLight(wash?0xccefff:0xffb379,20,12,2);warm.position.set(-1,2.5,3);scene.add(warm);
+  const warm=new THREE.PointLight(wash?0xccefff:0xffe7cd,20,12,2);warm.position.set(-1,2.5,3);scene.add(warm);
   const ground=new THREE.Mesh(new THREE.PlaneGeometry(18,14),new THREE.ShadowMaterial({opacity:wash?.19:.34}));ground.rotation.x=-Math.PI/2;ground.position.y=.01;ground.receiveShadow=true;scene.add(ground);
   const camera=new THREE.PerspectiveCamera(32,1,.1,60);const hero=host.closest('.hero')||host.parentElement;
   let w=1,h=1,hostLeft=0,viewportWidth=1,sectionTop=0,sectionHeight=800,sectionLeft=0,sectionWidth=1,visible=true,enabled=true,contextLost=false,disposed=false;

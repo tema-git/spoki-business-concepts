@@ -140,48 +140,6 @@
   const lab = document.querySelector('.lab-preview');
   const state = { length: 'medium', texture: 'wave', tone: 'dark' };
   const labels = { length: { short: 'Короткая длина', medium: 'Средняя длина', long: 'Длинные волосы' }, texture: { sleek: 'Гладкость', wave: 'Волна', volume: 'Объём' }, tone: { cool: 'Холодный', warm: 'Тёплый', dark: 'Тёмный' } };
-  const palettes = { dark: ['#29272c', '#746d70', '#302c33'], warm: ['#713b25', '#cb8355', '#8e4427'], cool: ['#7e7872', '#ded4bf', '#9c9183'] };
-  function hairEdge(x0, y0, x1, y1, amplitude, cycles, reverse = false, bow = 0) {
-    const k = Math.PI * 2 * cycles, steps = 16;
-    const point = t => ({ x: x0 + (x1 - x0) * t + amplitude * Math.sin(k * t) * Math.sin(Math.PI * t) + bow * Math.sin(Math.PI * t), y: y0 + (y1 - y0) * t });
-    const slope = t => ({ x: x1 - x0 + amplitude * (k * Math.cos(k * t) * Math.sin(Math.PI * t) + Math.PI * Math.sin(k * t) * Math.cos(Math.PI * t)) + bow * Math.PI * Math.cos(Math.PI * t), y: y1 - y0 });
-    const n = value => Math.round(value * 100) / 100;
-    let d = '';
-    for (let i = 0; i < steps; i++) {
-      const a = reverse ? 1 - i / steps : i / steps, b = reverse ? 1 - (i + 1) / steps : (i + 1) / steps;
-      const pa = point(a), pb = point(b), sa = slope(a), sb = slope(b), dt = (b - a) / 3;
-      d += `C${n(pa.x + sa.x * dt)} ${n(pa.y + sa.y * dt)} ${n(pb.x - sb.x * dt)} ${n(pb.y - sb.y * dt)} ${n(pb.x)} ${n(pb.y)}`;
-    }
-    return d;
-  }
-  function hairGeometry(length, texture) {
-    const end = { short: 318, medium: 393, long: 473 }[length];
-    const amplitude = { sleek: 0, wave: 12, volume: 23 }[texture];
-    const cycles = { short: 1, medium: 1.35, long: 1.8 }[length];
-    const spread = texture === 'volume' ? 15 : texture === 'wave' ? 5 : 0;
-    const leftEnd = 103 - spread, rightEnd = 299 + spread;
-    const back = `M111 179C${105 - spread} 108 141 ${77 - spread * .2} 201 78C267 77 ${298 + spread} 119 288 184${hairEdge(288,184,rightEnd,end-15,-amplitude*.65,cycles,false,spread)}Q250 ${end+18} 201 ${end-5}Q151 ${end+18} ${leftEnd} ${end-15}${hairEdge(111,179,leftEnd,end-15,amplitude*.65,cycles,true,-spread)}Z`;
-    const frontLeft = `M112 176C111 104 158 77 207 78Q240 77 259 101C219 106 198 128 163 144Q146 164 145 206${hairEdge(145,206,137,end-7,amplitude*.72,cycles,false,-5)}Q120 ${end+6} ${leftEnd} ${end-3}${hairEdge(112,176,leftEnd,end-3,amplitude,cycles,true,-spread*.5)}Z`;
-    const frontRight = `M252 98C291 124 295 154 286 198${hairEdge(286,198,rightEnd,end-8,-amplitude,cycles,false,spread*.5)}Q283 ${end+5} 267 ${end+2}${hairEdge(259,230,267,end+2,-amplitude*.72,cycles,true,5)}C270 173 263 132 232 113Z`;
-    return { paths: [back, frontLeft, frontRight], end, amplitude, cycles, spread };
-  }
-  function drawStrands(geometry, texture) {
-    let lines = '';
-    const {end, amplitude, cycles, spread} = geometry;
-    for (let i = 0; i < 18; i++) {
-      const x = 112 + i * 1.6, y = 183 + i * .8;
-      const r = 262 + i * 1.6, ry = 185 + i * 1.1;
-      const weight = i % 4 === 0 ? 1.5 : .7;
-      lines += `<path stroke-width="${weight}" d="M${x} ${y}${hairEdge(x,y,x-spread*.4-1,end-12,amplitude*.85,cycles,false,-spread*.22)}"/>`;
-      lines += `<path stroke-width="${weight}" d="M${r} ${ry}${hairEdge(r,ry,r+spread*.4+2,end-12,-amplitude*.85,cycles,false,spread*.22)}"/>`;
-    }
-    for (let i = 0; i < 12; i++) lines += `<path d="M${119 + i * 1.7} ${170 - i * 2}C${120 + i * 2} ${117 - i} ${169 + i * 2} ${92 + i} ${237 - i * 1.3} ${99 + i * 1.7}"/>`;
-    const group = document.querySelector('.hair-strands');
-    group.innerHTML = lines;
-    group.setAttribute('stroke', { dark: '#c6aa9d', warm: '#f1c093', cool: '#fff0d6' }[state.tone]);
-    group.setAttribute('stroke-opacity', texture === 'volume' ? '.42' : texture === 'wave' ? '.34' : '.25');
-    group.style.opacity = '.85';
-  }
   let savedLook = '';
   const selectedLook = document.getElementById('selected-look');
   const bookingInterest = document.getElementById('booking-interest');
@@ -195,12 +153,7 @@
     savedLook = '';
     clearAttachedLook(true);
     lab.dataset.length = state.length; lab.dataset.texture = state.texture; lab.dataset.tone = state.tone;
-    const geometry = hairGeometry(state.length, state.texture);
-    const paths = geometry.paths;
-    ['.hair-back', '.hair-front-left', '.hair-front-right'].forEach((selector, i) => { const el = document.querySelector(selector); el.setAttribute('d', paths[i]); });
-    const stops = palettes[state.tone];
-    ['.tone-start', '.tone-mid', '.tone-end'].forEach((selector, i) => document.querySelector(selector).setAttribute('stop-color', stops[i]));
-    drawStrands(geometry, state.texture);
+    window.HairPortrait.render(document.querySelector('.hair-model'), state);
     document.getElementById('preview-caption').textContent = [labels.length[state.length], labels.texture[state.texture], labels.tone[state.tone]].join(' / ');
     document.getElementById('look-result').hidden = true;
     document.querySelector('.hair-model').setAttribute('aria-label', 'Эскиз: ' + document.getElementById('preview-caption').textContent);
