@@ -1,0 +1,47 @@
+/* Shared tactile controls. All motion has a reduced-motion alternative. */
+:root{--action-bg:#984c32;--action-ink:#fffaf0;--disc-bg:#e2e8bd;--disc-ink:#39432a;--focus-color:#984c32}
+html[data-concept="2"]{--action-bg:#f0b59e;--action-ink:#4a1729;--disc-bg:#4a1729;--disc-ink:#fff8ed;--focus-color:#9d5269}
+html[data-concept="3"]{--action-bg:#f2b28c;--action-ink:#183f37;--disc-bg:#183f37;--disc-ink:#f5f0e6;--focus-color:#183f37}
+/* Selection colours the glyphs only, keeping photographs and paper uninterrupted. */
+::selection{background:transparent;color:#b95530;text-shadow:none}
+html[data-concept="2"] ::selection{color:#ad5b38;background:transparent}
+html[data-concept="2"] :is(.hero,.date-section,.site-header,.site-footer,.contacts) ::selection{color:#f2b28c}
+html[data-concept="3"] ::selection{color:#a54c2c;background:transparent}
+html[data-concept="3"] :is(.ticker,.marquee,.footer,.contact-section) ::selection{color:#f2b28c}
+html[data-concept="1"] :is(.dates-section,.contacts-section) ::selection{color:#f2d8a7}
+:is(a,button).motion-action{position:relative;isolation:isolate}
+:is(a,button).motion-action .action-disc,.arrow-only.action-disc{display:inline-flex!important;align-items:center;justify-content:center;flex:0 0 auto;width:42px!important;height:42px!important;min-width:42px;padding:0!important;border:0!important;border-radius:50%!important;background:var(--disc-bg)!important;color:var(--disc-ink)!important;line-height:1;vertical-align:middle;overflow:hidden;transition:background .25s,box-shadow .25s,scale .35s cubic-bezier(.2,.8,.2,1)}
+.action-disc .motion-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;transform:rotate(-45deg);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.motion-action:is(:hover,:focus-visible) .motion-arrow,.arrow-only:is(:hover,:focus-visible) .motion-arrow{transform:rotate(0deg)}
+.motion-action:is(:hover,:focus-visible) .action-disc{scale:1.07;box-shadow:0 0 0 5px color-mix(in srgb,var(--disc-bg) 28%,transparent)}
+:is(a,button)[data-primary]{background:var(--action-bg)!important;color:var(--action-ink)!important;border-color:transparent!important;font-weight:600;font-size:17px;min-height:62px;box-shadow:0 5px 0 color-mix(in srgb,var(--action-ink) 10%,transparent);transition:background .25s,box-shadow .3s,transform .3s}
+:is(a,button)[data-primary]:hover{box-shadow:0 9px 24px color-mix(in srgb,var(--action-bg) 23%,transparent)}
+:is(a,button)[data-primary]:active{scale:.98}
+/* Page-specific responsive visibility must win over shared button styling. */
+:where(a,button):where([data-primary]){display:inline-flex}
+:is(a,button)[data-primary]{align-items:center;justify-content:space-between;gap:18px;padding:14px 20px;min-width:0;line-height:1.25;text-decoration:none}
+:is(a,button)[data-primary]:focus-visible{outline:3px solid var(--focus-color);outline-offset:5px}
+.choice-tabs button{min-height:68px!important;gap:26px!important;padding:11px 13px 11px 25px!important}
+.choice-tabs button .action-disc{background:#e2e8bd!important;color:#39432a!important}
+.motion-magnet{translate:var(--magnet-x,0px) var(--magnet-y,0px);will-change:translate}
+.motion-enter{opacity:1;transform:none}
+.motion-enter.motion-pending{opacity:0;transform:translateY(24px)}
+.motion-enter.motion-visible{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .75s cubic-bezier(.17,.67,.21,1)}
+.motion-depth img{transition:scale .8s cubic-bezier(.2,.65,.2,1)}
+@media(hover:hover) and (pointer:fine){.motion-depth:hover img{scale:1.035}}
+html[data-concept="2"] .header-cta,html[data-concept="2"] .button{font-size:17px;min-height:60px}
+html[data-concept="2"] .format-filter button{font-size:17px}
+@media(max-width:600px){:is(a,button)[data-primary]{font-size:16px;min-height:59px}.choice-tabs button{gap:12px!important;padding:10px 12px 10px 16px!important;min-height:62px!important}.motion-action .action-disc{width:38px!important;height:38px!important;min-width:38px}.action-disc .motion-arrow{width:22px;height:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.motion-magnet{translate:none!important;will-change:auto}.motion-enter,.motion-enter.motion-pending,.motion-enter.motion-visible{opacity:1!important;transform:none!important;transition:none!important}.motion-arrow,.action-disc,.motion-depth img{transition:none!important}.motion-depth:hover img{scale:1!important}}
+@media(max-width:600px){:is(a,button)[data-primary]{padding:12px 16px;gap:14px}}
+html[data-concept="2"] .intent-choices [aria-pressed="true"] .action-disc{background:#f0b59e!important;color:#4a1729!important}
+
+/* Native pottery cursors stay precise and disappear on touch screens. */
+@media (hover:hover) and (pointer:fine){
+[data-cursor="clay"],[data-cursor="clay"] canvas{cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M12%2023V7c0-4%205-4%205%200v12-10c0-4%205-4%205%200v10-7c0-4%205-4%205%200v9-4c0-4%205-4%205%200v10c0%208-5%2011-12%2011-5%200-8-3-11-8l-5-8c-2-4%202-6%205-3l3%204Z%22%20fill%3D%22%23c99066%22%20stroke%3D%22%23fff8ed%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M17%2020v6m5-7v7m5-5v5%22%20fill%3D%22none%22%20stroke%3D%22%2375492e%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E") 14 4,grab!important}
+[data-cursor="brush"],[data-cursor="brush"] canvas{cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M11%2025%2030%204c4-4%208%200%204%204L17%2030Z%22%20fill%3D%22%23b87554%22%20stroke%3D%22%23fff8ed%22%20stroke-width%3D%222.5%22%2F%3E%3Cpath%20d%3D%22m10%2025%205-5%207%207-5%205Z%22%20fill%3D%22%23e8d8b9%22%20stroke%3D%22%234a1729%22%20stroke-width%3D%221.2%22%2F%3E%3Cpath%20d%3D%22M17%2029c-2%209-9%206-14%208%205-5%201-10%208-12Z%22%20fill%3D%22%23aa4c6a%22%20stroke%3D%22%23fff8ed%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E") 5 35,crosshair!important}
+[data-cursor="sticker"],[data-cursor="sticker"] .poster-handle{cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M5%205h28v20l-9%2010H5Z%22%20fill%3D%22%23f2b28c%22%20stroke%3D%22%23fff8ed%22%20stroke-width%3D%222.5%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M24%2035V25h9Z%22%20fill%3D%22%23183f37%22%2F%3E%3Cpath%20d%3D%22M10%2017h15m-7-7v15m-8-8%203-3m-3%203%203%203m12-3-3-3m3%203-3%203m-4-10-3%203m3-3%203%203m-3%2012-3-3m3%203%203-3%22%20fill%3D%22none%22%20stroke%3D%22%23183f37%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E") 18 17,grab!important}
+[data-cursor] input,[data-cursor] textarea{cursor:text!important}
+}
+/* Keep both occasion labels and arrow discs inside the narrowest phones. */
+@media(max-width:360px){html[data-concept="1"] .choice-tabs button{font-size:15px;gap:7px!important;padding:10px!important}html[data-concept="1"] .choice-tabs button .action-disc{width:32px!important;height:32px!important;min-width:32px!important}}
