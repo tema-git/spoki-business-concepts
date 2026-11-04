@@ -107,7 +107,7 @@
     document.querySelector('#garden-turns').textContent = '0';
     gardenResult.hidden = true;
     gardenBoard.classList.remove('is-complete');
-    gardenBoard.innerHTML = deck.map((type, index) => `<button class="garden-card" type="button" data-card="${index}" aria-label="Карточка ${index+1}, закрыта" aria-pressed="false"><span class="card-cover" aria-hidden="true">${roseMarkup}<span>Мир цветов</span></span><span class="card-flower" aria-hidden="true">${gardenFlower(type)}<span>${gardenFlowers[type].name}</span></span><span class="card-found" aria-hidden="true">✓</span></button>`).join('');
+    gardenBoard.innerHTML = deck.map((type, index) => `<button class="garden-card" type="button" data-card="${index}" aria-label="Карточка ${index+1}, закрыта" aria-pressed="false"><span class="card-cover" aria-hidden="true">${roseMarkup}<span>Мир цветов</span></span><span class="card-flower" aria-hidden="true">${gardenFlower(type)}<span>${gardenFlowers[type].name}</span></span><span class="card-found" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg></span></button>`).join('');
     gardenStatus.textContent = announce ? 'Новый сад. Карточки перемешаны — найдите все шесть пар.' : 'Откройте любые две карточки. Цветы ждут встречи.';
   }
   gardenBoard.addEventListener('click', event => {
@@ -158,23 +158,17 @@
   // One complete repeated group gives an exact 50% loop; no GSAP owns this transform.
   const feelingStrip = document.querySelector('.feeling-strip');
   const feelingTrack = feelingStrip.querySelector('.feeling-track');
-  const marqueeToggle = feelingStrip.querySelector('.marquee-toggle');
   let marqueePaused = false;
   let marqueeVisible = false;
   function updateMarquee() {
     const staticMode = reducedMotion.matches;
     feelingStrip.classList.toggle('marquee-running', marqueeVisible && !document.hidden && !marqueePaused && !staticMode);
     feelingStrip.classList.toggle('marquee-paused', marqueePaused);
-    marqueeToggle.hidden = staticMode;
-    marqueeToggle.setAttribute('aria-pressed', String(marqueePaused));
-    marqueeToggle.setAttribute('aria-label', marqueePaused ? 'Продолжить бегущую строку' : 'Остановить бегущую строку');
-    marqueeToggle.querySelector('span').textContent = marqueePaused ? 'Пуск' : 'Пауза';
   }
   function measureMarquee() {
     const width = feelingTrack.querySelector('.feeling-group').getBoundingClientRect().width;
     feelingTrack.style.setProperty('--marquee-time', `${Math.max(35, width / 42)}s`);
   }
-  marqueeToggle.addEventListener('click', () => { marqueePaused = !marqueePaused; updateMarquee(); });
   if ('IntersectionObserver' in window) {
     const marqueeObserver = new IntersectionObserver(entries => { marqueeVisible = entries[0].isIntersecting; updateMarquee(); });
     marqueeObserver.observe(feelingStrip);
