@@ -1,0 +1,56 @@
+/* Standalone botanical scene and demonstration catalogue. No bitmap hero. */
+.floral-scene{--petal-light:#ffe8e4;--petal-mid:#efbdc4;--petal-base:#d68eaa;--petal-deep:#9f4b75;--petal-edge:#904663;--wine-light:#e39aa5;--wine-mid:#a95878;--wine-deep:#63324d;position:relative;isolation:isolate;min-width:0;min-height:0!important;height:auto!important;align-self:center;margin:0!important;overflow:visible;}
+.hero:has(.floral-scene){grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);gap:22px;min-height:720px;padding-top:24px;padding-bottom:50px;align-items:center;}
+.hero:has(.floral-scene) .hero-copy{height:100%;padding-top:20px;padding-bottom:18px;}
+.floral-canvas{position:relative;aspect-ratio:620/690;isolation:isolate;touch-action:pan-y;overflow:clip;}
+.floral-bouquet{position:relative;width:100%;height:100%;overflow:visible;z-index:1;}
+.floral-aura{position:absolute;inset:9% -9% 14%;border-radius:50%;background:radial-gradient(ellipse at 50% 45%,#fff3e680 0%,#f2b7c744 42%,transparent 70%);transform:translate(var(--floral-x,0px),var(--floral-y,0px));pointer-events:none;}
+.floral-sway{transform-origin:310px 565px;transform:translate(var(--floral-sway-x,0px),var(--floral-sway-y,0px)) rotate(var(--floral-turn,0deg));}
+.floral-head{transform:rotate(var(--bloom-turn)) scale(var(--floral-open,1));transform-origin:0 0;transition:scale .6s ease;}
+.floral-palette{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 10px;position:relative;z-index:2;margin-top:-7px;padding-block:8px;}
+.floral-palette button{display:inline-flex;align-items:center;gap:8px;padding:11px 10px;background:transparent;border:1px solid transparent;border-radius:0;font-size:16px;line-height:1.4;min-height:48px;color:var(--ink);transition:border-color .2s;}
+.floral-palette button[aria-pressed=true]{border-bottom-color:currentColor;}
+.floral-palette button:hover{border-bottom-color:#84275170;}
+.floral-palette button:focus-visible{outline:2px solid #842751;outline-offset:2px;}
+.floral-swatch{width:16px;height:16px;border-radius:50%;background:var(--swatch);box-shadow:inset 0 0 0 1px #3b173326;}
+.floral-scene [data-floral-status]{position:absolute!important;}
+.floral-availability{background:#fff8ef;position:relative;overflow:clip;}
+.floral-stock-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:25px;}
+.floral-stock-heading h2{font-size:clamp(42px,5.2vw,72px);line-height:1.08;letter-spacing:-.055em;margin-top:15px;}
+.floral-stock-heading>p{font-size:18px;line-height:1.6;max-width:270px;}
+.floral-demo-caption{font-size:14px;color:#79586b;margin-bottom:28px;}
+.floral-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;}
+.floral-product{min-width:0;display:flex;flex-direction:column;position:relative;}
+.floral-product-image{aspect-ratio:1/1.12;overflow:hidden;background:#f0e6d9;position:relative;}
+.floral-product-image::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at var(--catalog-x,50%) var(--catalog-y,40%),#fff7df25,transparent 65%);opacity:0;transition:opacity .4s;}
+.floral-product:is(:hover,:focus-within) .floral-product-image::after{opacity:1;}
+.floral-product-image img{width:100%;height:100%;object-fit:cover;transform:translate(var(--catalog-tx,0px),var(--catalog-ty,0px)) scale(1.025);transition:transform .4s cubic-bezier(.2,.65,.3,1);}
+.floral-product-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:24px;}
+.floral-product-heading h3{font-size:clamp(21px,1.9vw,28px);font-weight:500;letter-spacing:-.035em;line-height:1.25;}
+.floral-price{font-size:18px;line-height:1.3;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.floral-product-description{font-size:16px;line-height:1.6;margin-top:12px;margin-bottom:25px;max-width:33ch;color:#79586b;}
+.floral-stock-cta.button{align-self:flex-start;font-size:16px;margin-top:auto;gap:22px;padding:15px 19px;min-height:53px;border-radius:0;transform:none!important;}
+.floral-stock-note{display:flex;align-items:center;gap:28px;margin-top:54px;border-top:1px solid #3b173326;padding-top:30px;}
+.floral-stock-note>p{max-width:920px;font-size:16px;line-height:1.7;color:#79586b;}
+.floral-stock-sprig{width:110px;height:85px;flex-shrink:0;color:#697d61;}
+.floral-studio-credit{font-size:14px;opacity:.7;}
+.feeling-strip{grid-template-columns:minmax(0,1fr);padding-inline:0;}
+.floral-contact-surface{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;background:#edff95;border:1px solid var(--ink);border-radius:3px;transform:translate(var(--contact-x,0px),var(--contact-y,0px));transition:transform .18s ease,background .2s;}
+.header-contact:has(.floral-contact-surface){padding:0;background:transparent;border:0;}
+.header-contact:hover .floral-contact-surface{background:#d9ed75;}
+.floral-topic{position:relative;}
+.floral-topic select{position:absolute!important;width:1px!important;height:1px!important;opacity:0;pointer-events:none;}
+.floral-select-trigger{display:flex;justify-content:space-between;align-items:center;gap:14px;width:100%;text-align:left;min-height:58px;padding:15px 16px;background:#fff5ed;color:#3b1733;border:1px solid #b987a3;border-radius:4px;font-size:18px;}
+.floral-select-trigger svg{width:20px;height:20px;flex-shrink:0;}
+.floral-select-trigger[aria-expanded=true] svg{rotate:180deg;}
+.floral-select-menu{position:absolute;z-index:12;bottom:calc(100% + 7px);left:0;right:0;max-height:min(220px,35vh);overflow:auto;padding:6px;background:#fff5ed;color:#3b1733;border:1px solid #b987a3;box-shadow:0 12px 30px #20132226;}
+.floral-select-menu[hidden]{display:none;}
+.floral-select-option{display:block;text-align:left;width:100%;background:transparent;font-size:16px;min-height:46px;padding:12px;}
+.floral-select-option[aria-selected=true]{background:#efc8d4;}
+.floral-select-option:hover{background:#f7e1e5;}
+.floral-select-trigger[aria-invalid=true]{outline:2px solid #ffb3be;outline-offset:2px;}
+@media(hover:hover) and (pointer:fine){.floral-canvas{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M5 30Q17 19 26 5' fill='none' stroke='%23516d50' stroke-width='2'/%3E%3Cpath d='M14 22Q5 19 7 12Q16 13 14 22M19 16Q28 19 31 12Q24 9 19 16' fill='%2394a47c' stroke='%23516d50' stroke-width='1'/%3E%3Cpath d='M24 8C15 5 22-2 27 3C35 1 35 10 28 12Z' fill='%23d792aa' stroke='%23844764' stroke-width='1'/%3E%3C/svg%3E") 5 30,auto;}}
+@media(min-width:1051px) and (max-width:1200px){.header nav{gap:16px;}.header{gap:20px;}}
+@media(max-width:1050px){.hero:has(.floral-scene){gap:5px;min-height:620px;}.floral-product-grid{gap:18px;}.floral-product-heading{align-items:flex-start;flex-direction:column;gap:7px;}.floral-contact-surface{padding-inline:17px;}}
+@media(max-width:760px){.hero:has(.floral-scene){display:flex;flex-direction:column;gap:15px;padding-top:24px;padding-bottom:34px;min-height:0;}.hero:has(.floral-scene) .hero-copy{width:100%;padding-top:0;padding-bottom:0;}.hero:has(.floral-scene) .hero-bottom{padding-top:24px;}.floral-scene{width:min(100%,500px);margin-inline:auto!important;}.floral-canvas{aspect-ratio:620/640;margin-top:-9px;}.floral-palette{margin-top:-2px;gap:1px;}.floral-palette button{font-size:16px;padding-inline:9px;}.floral-availability{padding-block:65px;}.floral-stock-heading{display:block;margin-bottom:20px;}.floral-stock-heading>p{margin-top:20px;}.floral-stock-heading h2{font-size:44px;max-width:9ch;}.floral-product-grid{grid-template-columns:1fr;gap:38px;}.floral-product-image{aspect-ratio:1/1.04;}.floral-product-heading{flex-direction:row;align-items:baseline;margin-top:18px;}.floral-product-heading h3{font-size:26px;}.floral-product-description{max-width:none;margin-bottom:18px;font-size:16px;}.floral-stock-cta.button{width:100%;padding-block:17px;}.floral-stock-note{gap:16px;margin-top:35px;padding-top:25px;align-items:flex-start;}.floral-stock-sprig{width:53px;height:65px;}.floral-stock-note>p{font-size:16px;}.floral-contact-surface{padding:10px 14px;min-height:44px;}.floral-studio-credit{width:100%;}.floral-demo-caption{font-size:14px;}}
+@media(prefers-reduced-motion:reduce){.floral-aura,.floral-sway,.floral-head,.floral-assembly,.floral-stock-sprig,.floral-product-image img,.floral-contact-surface{transform:none!important;transition:none!important;}.floral-stock-stem{stroke-dasharray:none!important;stroke-dashoffset:0!important;}}

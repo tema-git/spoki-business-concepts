@@ -1,0 +1,24 @@
+/* Original hair-material artwork. All movement comes from the shared section variables. */
+.hero-art{background:#c4d8e4;isolation:isolate}
+.hero-code-art{position:absolute;inset:0;overflow:hidden;background:radial-gradient(ellipse at calc(54% + var(--mx)*15%) calc(40% + var(--my)*14%),#edf4f7 0%,#c9dce7 42%,#a7c1d1 100%)}
+.hero-material-svg{display:block;width:100%;height:100%;position:absolute;inset:0;overflow:hidden}
+.hero-art .image-caption{color:#223b4b;bottom:26px;left:30px;z-index:4;font-weight:500;max-width:240px}
+.hero-art .image-caption::selection{color:#9b2c16;background:transparent}
+.hero-material-back,.hero-material-front,.hero-metal-pin,.hero-flyaways,.copper-curl-back,.copper-curl-front,.copper-flyaways{transform-box:fill-box;transform-origin:center;transition:translate .55s cubic-bezier(.22,1,.36,1),rotate .55s cubic-bezier(.22,1,.36,1),scale .55s cubic-bezier(.22,1,.36,1)}
+.hero-material-back{translate:calc((1 - var(--progress))*95px + var(--mx)*-24px) calc((1 - var(--progress))*-72px + var(--my)*-18px);rotate:calc((1 - var(--progress))*14deg + var(--mx)*-3deg)}
+.hero-material-front{translate:calc((1 - var(--progress))*-88px + var(--mx)*26px) calc((1 - var(--progress))*55px + var(--my)*20px);rotate:calc((1 - var(--progress))*-12deg + var(--mx)*3deg)}
+.hero-metal-pin{translate:calc((1 - var(--progress))*90px + var(--mx)*-18px) calc((1 - var(--progress))*-85px + var(--my)*-16px);rotate:calc((1 - var(--progress))*25deg + var(--mx)*-7deg)}
+.hero-flyaways{translate:calc(var(--mx)*-36px) calc(var(--my)*-20px);rotate:calc(var(--mx)*-4deg)}
+.hero-floor{opacity:calc(.15 + var(--progress)*.25);transform:scaleX(calc(.8 + var(--progress)*.2));transform-origin:50% 50%}
+.hero-material-artwork{animation:hair-art-arrive 1.15s cubic-bezier(.22,1,.36,1) both;transform-origin:50% 45%}
+@keyframes hair-art-arrive{from{opacity:.3;transform:translateY(55px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
+.copper-curl-art{position:relative;background:radial-gradient(ellipse at calc(35% + var(--mx)*15%) calc(30% + var(--my)*12%),#f0e8de,#cfdae0 67%,#a9c0cd);isolation:isolate}
+.copper-curl-svg{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:hidden}
+.copper-curl-back{translate:calc((1 - var(--progress))*80px + var(--mx)*-18px) calc((1 - var(--progress))*-70px + var(--my)*-12px);rotate:calc((1 - var(--progress))*14deg + var(--mx)*-5deg)}
+.copper-curl-front{translate:calc((1 - var(--progress))*-80px + var(--mx)*22px) calc((1 - var(--progress))*75px + var(--my)*16px);rotate:calc((1 - var(--progress))*-14deg + var(--mx)*5deg)}
+.copper-flyaways{translate:calc(var(--mx)*30px) calc(var(--my)*20px);rotate:calc(var(--mx)*4deg)}
+.copper-etched-line{stroke-dasharray:750;stroke-dashoffset:calc((1 - var(--progress))*750)}
+@media(max-width:740px){.hero-art .image-caption{bottom:25px;left:22px;font-size:14px;max-width:190px}.hero-material-svg{width:110%;left:-5%}.hero-material-back{translate:calc((1 - var(--progress))*55px + var(--mx)*-18px) calc((1 - var(--progress))*-40px + var(--my)*-14px)}.hero-material-front{translate:calc((1 - var(--progress))*-50px + var(--mx)*18px) calc((1 - var(--progress))*35px + var(--my)*14px)}.copper-curl-back{translate:calc((1 - var(--progress))*45px + var(--mx)*-14px) calc((1 - var(--progress))*-40px + var(--my)*-10px)}.copper-curl-front{translate:calc((1 - var(--progress))*-45px + var(--mx)*18px) calc((1 - var(--progress))*40px + var(--my)*12px)}}
+@media(prefers-reduced-motion:reduce){.hero-material-artwork{animation:none!important;transform:none!important}.hero-material-back,.hero-material-front,.hero-metal-pin,.hero-flyaways,.copper-curl-back,.copper-curl-front,.copper-flyaways{translate:none!important;rotate:none!important;scale:none!important;transition:none!important}.hero-floor{transform:none!important;opacity:.4}.copper-etched-line{stroke-dashoffset:0!important}.hero-code-art{background:radial-gradient(ellipse at 54% 40%,#edf4f7,#c9dce7 42%,#a7c1d1)}.copper-curl-art{background:radial-gradient(ellipse at 35% 30%,#f0e8de,#cfdae0 67%,#a9c0cd)}}
+/* A soft light falloff gives the fixed caption a quiet, readable baseline. */
+.hero-code-art:after{content:'';position:absolute;inset:auto 0 0;height:110px;background:linear-gradient(0deg,#c5dae6 0%,#c5dae6eb 17%,#c5dae600 100%);pointer-events:none}

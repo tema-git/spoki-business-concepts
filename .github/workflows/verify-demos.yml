@@ -1,0 +1,29 @@
+name: Verify published GitHub demos
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-github-demos
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Verify published pages and assets
+        run: node .github/scripts/verify-demos.mjs .github/demo-verification-manifest.json published-demo-verification.json
+      - name: Save exact-content verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-demo-verification
+          path: published-demo-verification.json
+          if-no-files-found: error
