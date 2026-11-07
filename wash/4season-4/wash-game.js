@@ -1,4 +1,6 @@
-(() => {
+import {renderCarProjection} from './car-projection.js?v=fba9fdc960';
+
+(async () => {
   'use strict';
   const stage=document.querySelector('#wash-stage'),canvas=document.querySelector('#wash-canvas');
   if(!stage||!canvas)return;
@@ -10,52 +12,21 @@
   const W=1000,H=560,DPR=Math.min(devicePixelRatio||1,2);
   const makeLayer=()=>{const c=document.createElement('canvas');c.width=W*DPR;c.height=H*DPR;const c2=c.getContext('2d');c2.scale(DPR,DPR);return {canvas:c,ctx:c2};};
   const car=makeLayer(),dirt=makeLayer(),foam=makeLayer();
-  const hit=document.createElement('canvas').getContext('2d');
-  const body=new Path2D('M93 348Q93 316 125 306L251 281L351 192Q377 170 423 169L602 171Q632 171 657 190L759 271L865 295Q907 306 918 343L909 398L855 408Q850 337 787 338Q722 340 715 413L305 414Q301 340 239 340Q176 341 173 409L104 399Z');
-  const silhouette=new Path2D(body);
-  silhouette.moveTo(300,403);silhouette.arc(239,403,61,0,Math.PI*2);
-  silhouette.moveTo(848,403);silhouette.arc(787,403,61,0,Math.PI*2);
-  const isCar=(x,y)=>hit.isPointInPath(silhouette,x,y);
+  const snapshot=await renderCarProjection();
+  const body=snapshot.silhouette,silhouette=body;
+  const isCar=snapshot.contains;
   let seed=1701;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
   const cells=[];
   // Sampling uses the exact same silhouette as the paint layers, including wheel arches.
-  for(let y=170;y<467;y+=17)for(let x=95;x<920;x+=17)if(isCar(x,y))cells.push({x,y});
+  for(let y=150;y<480;y+=17)for(let x=80;x<940;x+=17)if(isCar(x,y))cells.push({x,y});
   const covered=new Uint8Array(cells.length),cleaned=new Uint8Array(cells.length);
   let foamCount=0,cleanCount=0,phase='foam',tool='foam',visible=false,active=false,hover=false,frame=0,lastTime=0;
   let aim={x:480,y:286},previous=null,view={scale:1,x:0,y:0,width:1,height:1},particles=[],lastPercent=-1;
   let pointerId=null,keyboard=false,shine=0,measured=null,announced=0;
   const radius=77;
 
-  function drawWheel(c,x){
-    const tire=c.createRadialGradient(x-15,382,8,x,403,63);tire.addColorStop(0,'#263b50');tire.addColorStop(.66,'#101d2a');tire.addColorStop(.85,'#25323e');tire.addColorStop(1,'#07131f');
-    c.fillStyle=tire;c.beginPath();c.arc(x,403,61,0,Math.PI*2);c.fill();
-    c.strokeStyle='#425568';c.lineWidth=1.7;c.beginPath();c.arc(x,403,54,0,Math.PI*2);c.stroke();
-    const rim=c.createLinearGradient(x-40,365,x+35,442);rim.addColorStop(0,'#f1f8ff');rim.addColorStop(.42,'#9db7ca');rim.addColorStop(1,'#506c85');c.fillStyle=rim;c.beginPath();c.arc(x,403,40,0,Math.PI*2);c.fill();
-    c.fillStyle='#142c41';c.beginPath();c.arc(x,403,33,0,Math.PI*2);c.fill();
-    c.save();c.translate(x,403);
-    for(let i=0;i<10;i++){c.rotate(Math.PI/5);c.beginPath();c.moveTo(-4,11);c.lineTo(-6,34);c.lineTo(1,38);c.lineTo(6,13);c.closePath();c.fillStyle=i%2?'#b9cedd':'#e3f0fa';c.fill();}
-    c.fillStyle='#9fbaca';c.beginPath();c.arc(0,0,11,0,Math.PI*2);c.fill();c.strokeStyle='#e5f4ff';c.lineWidth=2;c.stroke();c.restore();
-  }
   function drawCar(){
-    const c=car.ctx;c.clearRect(0,0,W,H);
-    c.save();c.translate(510,453);c.scale(1,.11);const shadow=c.createRadialGradient(0,0,0,0,0,400);shadow.addColorStop(0,'#1039604a');shadow.addColorStop(1,'#10396000');c.fillStyle=shadow;c.beginPath();c.arc(0,0,400,0,Math.PI*2);c.fill();c.restore();
-    drawWheel(c,239);drawWheel(c,787);
-    const paint=c.createLinearGradient(0,166,0,420);paint.addColorStop(0,'#fff');paint.addColorStop(.25,'#d7edfb');paint.addColorStop(.47,'#7aa7cf');paint.addColorStop(.55,'#bedcef');paint.addColorStop(.75,'#6093bf');paint.addColorStop(1,'#294e71');
-    c.fillStyle=paint;c.fill(body);c.strokeStyle='#7b9eb9';c.lineWidth=1.5;c.stroke(body);
-    const glass=c.createLinearGradient(400,190,550,276);glass.addColorStop(0,'#395c7d');glass.addColorStop(.5,'#102c48');glass.addColorStop(1,'#527fa5');
-    const windowPath=new Path2D('M291 277L367 207Q387 187 424 187L596 189Q621 189 641 205L713 270Z');c.fillStyle=glass;c.fill(windowPath);c.strokeStyle='#e2f0f9';c.lineWidth=4;c.stroke(windowPath);
-    c.strokeStyle='#8faec7';c.lineWidth=9;c.beginPath();c.moveTo(490,189);c.lineTo(487,273);c.moveTo(620,196);c.lineTo(647,272);c.stroke();
-    c.save();c.clip(windowPath);c.fillStyle='#ffffff13';c.beginPath();c.moveTo(324,258);c.lineTo(531,185);c.lineTo(585,185);c.lineTo(393,275);c.closePath();c.fill();c.restore();
-    c.strokeStyle='#416d92';c.lineWidth=2;c.beginPath();c.moveTo(354,284);c.quadraticCurveTo(329,343,348,396);c.lineTo(483,398);c.lineTo(486,282);c.moveTo(491,398);c.lineTo(665,397);c.quadraticCurveTo(684,348,675,284);c.stroke();
-    c.strokeStyle='#ddf0ffb0';c.lineWidth=2;c.beginPath();c.moveTo(120,335);c.quadraticCurveTo(500,286,877,323);c.stroke();
-    c.strokeStyle='#234c71';c.lineWidth=4;c.beginPath();c.moveTo(414,294);c.lineTo(447,293);c.moveTo(587,292);c.lineTo(620,292);c.stroke();
-    c.strokeStyle='#e7f6ff';c.lineWidth=1.2;c.beginPath();c.moveTo(414,291);c.lineTo(447,290);c.moveTo(587,289);c.lineTo(620,289);c.stroke();
-    c.fillStyle='#102d46';c.beginPath();c.moveTo(126,366);c.lineTo(182,357);c.lineTo(167,383);c.lineTo(112,383);c.closePath();c.fill();
-    c.fillStyle='#e6fbff';c.beginPath();c.moveTo(110,326);c.lineTo(204,313);c.lineTo(190,332);c.lineTo(104,345);c.closePath();c.fill();c.strokeStyle='#91e7ff';c.lineWidth=3;c.beginPath();c.moveTo(112,329);c.lineTo(196,317);c.stroke();
-    c.fillStyle='#e04950';c.beginPath();c.moveTo(872,312);c.lineTo(904,324);c.lineTo(909,346);c.lineTo(872,335);c.closePath();c.fill();
-    c.fillStyle='#37688f';c.beginPath();c.ellipse(332,277,27,12,-.15,0,Math.PI*2);c.fill();c.strokeStyle='#d7efff';c.lineWidth=2;c.stroke();
-    c.strokeStyle='#d5eaf7';c.lineWidth=3;c.beginPath();c.moveTo(321,411);c.lineTo(699,411);c.stroke();
-    c.fillStyle='#132d43';c.fillRect(118,389,45,5);c.fillRect(864,387,38,5);
+    car.ctx.clearRect(0,0,W,H);car.ctx.drawImage(snapshot.canvas,0,0,W,H);
   }
   function resetLayers(){
     dirt.ctx.clearRect(0,0,W,H);foam.ctx.clearRect(0,0,W,H);seed=1701;
@@ -123,7 +94,7 @@
     frame=0;if(document.hidden||!visible)return;
     const dt=lastTime?Math.min((time-lastTime)/1000,.035):.016;lastTime=time;
     ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,view.width,view.height);ctx.translate(view.x,view.y);ctx.scale(view.scale,view.scale);
-    // Wet floor and reflection remain geometric; no imported pictures or textures.
+    // Wet floor and reflection remain geometric; the same live 3D model supplies the car layer.
     const floor=ctx.createLinearGradient(0,405,0,545);floor.addColorStop(0,'#b7d6ef00');floor.addColorStop(.35,'#aacce72e');floor.addColorStop(1,'#cde7f600');ctx.fillStyle=floor;ctx.fillRect(0,405,W,145);
     ctx.strokeStyle='#a4cbe63b';ctx.lineWidth=1;for(let i=0;i<4;i++){ctx.beginPath();ctx.ellipse(515,468+i*13,340+i*27,12+i*5,0,0,Math.PI*2);ctx.stroke();}
     ctx.drawImage(car.canvas,0,0,W,H);ctx.drawImage(dirt.canvas,0,0,W,H);ctx.drawImage(foam.canvas,0,0,W,H);
@@ -191,4 +162,4 @@
   window.addEventListener('pagehide',pause);window.addEventListener('pageshow',()=>{resize();request();});
   reduce.addEventListener('change',()=>{particles=[];if(reduce.matches)shine=1;request();});
   drawCar();resetLayers();updateProgress();stage.classList.add('is-ready');resize();
-})();
+})().catch(error=>{console.warn('Wash game unavailable.',error.message);const status=document.querySelector('#wash-status');if(status)status.textContent='Не удалось загрузить автомобиль. Обновите страницу, чтобы повторить.';});
