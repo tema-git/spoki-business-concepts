@@ -1,0 +1,21 @@
+/* Deterministic-copy arrows only; scene SVGs retain their own styles. */
+svg.batch-arrow{display:inline-block;width:22px;height:22px;min-width:22px;flex:0 0 22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle;rotate:-45deg;transition:rotate .2s ease}
+:is(a,button):is(:hover,:focus-visible) svg.batch-arrow{rotate:0deg}
+@media(prefers-reduced-motion:reduce){svg.batch-arrow{transition:none}}
+.header-inner{height:auto;min-height:var(--header);padding-block:10px}
+.site-header .brand,.footer-brand{min-width:0;flex-shrink:1;line-height:1.12;overflow-wrap:anywhere}
+.brand>span{min-width:0}
+.brand>svg,.header-contact,.nav{flex-shrink:0}
+.footer-top{flex-wrap:wrap}
+.footer-brand{max-width:100%}
+.footer-bottom>*{min-width:0;overflow-wrap:anywhere}
+.bag-logo{width:100%;max-width:100%;font-size:24px;line-height:1.1;overflow-wrap:anywhere}
+@media(max-width:800px){.site-header .nav{font-size:16px}}
+@media(max-width:640px){
+ :root{--header:132px}
+ .header-inner{display:grid;grid-template-columns:1fr 44px;gap:8px 11px;min-height:0}
+ .header-inner>.brand{grid-column:1/-1;font-size:22px}
+ .header-contact{justify-self:end;margin:0}
+ .site-header .menu-toggle{width:44px;height:44px;padding:9px}
+ .site-header .nav{top:100%;max-height:calc(100dvh - var(--header));overflow:auto}
+}
