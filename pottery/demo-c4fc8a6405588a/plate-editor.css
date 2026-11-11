@@ -1,0 +1,50 @@
+@font-face{font-family:"Roboto Slab";src:url("assets/fonts/robotoslab-RobotoSlab[wght].ttf") format("truetype");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"PT Sans";src:url("assets/fonts/ptsans-PT_Sans-Web-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"PT Sans";src:url("assets/fonts/ptsans-PT_Sans-Web-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+body,button,input,select,textarea{font-family:"PT Sans",sans-serif}
+h1,h2,h3,h1 em,h2 em,h3 em,.brand>.brand-slot,.footer-brand,.faq summary,.contact-panel h3,#demo-message h3{font-family:"Roboto Slab",serif;font-style:normal;font-weight:500;letter-spacing:-.035em}
+h1 em,h2 em,h3 em{font-weight:600}
+.hero h1{font-size:clamp(38px,5.1vw,68px);line-height:1.12}
+h2{font-size:clamp(32px,4.2vw,56px);line-height:1.15}
+h3,.class-card h3{font-size:clamp(24px,2.4vw,30px);line-height:1.25}
+.brand>.brand-slot{font-size:clamp(20px,2.1vw,28px);overflow-wrap:anywhere}
+.footer-brand{overflow-wrap:anywhere}
+.button:hover{transform:none}
+html[data-concept="1"] .choice-tabs button{font-size:16px}
+.plate-editor{background:#eee3cf}
+.plate-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}
+.plate-copy>*+*{margin-top:24px}
+.plate-copy p{font-size:18px;max-width:460px}
+.plate-copy,.plate-station{min-width:0}
+.plate-station{padding:26px;background:#f8f0e1;border:1px solid #d6c6ab;border-radius:44px 44px 18px 18px}
+.painted-plate{display:block;width:min(100%,420px);height:auto;margin:0 auto 16px;filter:drop-shadow(calc(var(--pointer-x,0)*3px) 7px 8px #6a4d3020)}
+.plate-pigments,.idea-choices{padding:0;border:0;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:8px}
+.plate-pigments legend,.idea-choices legend{font-size:18px;margin-bottom:8px}
+.plate-pigments label,.idea-choices label{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid #bbae98;border-radius:22px;font-size:16px;margin:0;cursor:pointer;background:#fffaf0;color:#453a30}
+.plate-pigments label:has(:checked),.idea-choices label:has(:checked){border-color:#626c4b;background:#e6e7d8}
+.plate-pigments input,.idea-choices input{accent-color:#626c4b;width:18px;height:18px;min-height:0;padding:0;margin:0;flex-shrink:0}
+.plate-tools{display:flex;flex-wrap:wrap;gap:8px}
+.plate-tools button{min-height:46px;padding:10px 14px;border:1px solid #bbae98;border-radius:24px;background:#fffaf0;color:#453a30;font-size:16px}
+.plate-tools button:hover:not(:disabled){background:#e6e7d8}
+.plate-tools button:disabled{opacity:.5;cursor:default}
+#plate-status{font-size:16px;line-height:1.5;min-height:48px;margin-top:18px}
+#plate-progress{width:100%;height:9px;display:block;margin:8px 0 18px;accent-color:#626c4b}
+#plate-result{border-top:1px solid #bbae98;padding-top:24px}
+#plate-result p{margin:14px 0 20px}
+#plate-result .button{max-width:100%;gap:15px}
+#plate-result h3{font-size:26px}
+.header{height:auto;min-height:var(--header-height)}
+@media(max-width:700px){
+.plate-layout{grid-template-columns:1fr;gap:28px}
+.plate-station{padding:18px}
+.hero h1{font-size:clamp(34px,8.6vw,54px)}
+.brand>.brand-slot{font-size:18px;max-height:none;line-height:1.15}
+.header .brand{min-width:0}
+.contact-panel h3{font-size:30px}
+#booking-dialog h2{font-size:34px}
+#demo-message h3{font-size:29px}
+.plate-copy h2{font-size:clamp(30px,7.7vw,48px)}
+}
+@media(prefers-reduced-motion:reduce){.painted-plate{filter:none}}
+
+.contact-panel ::selection{background:transparent;color:#a43e1d;text-shadow:none}

@@ -1,0 +1,31 @@
+/* Original ceramic compositions: all materials, contours and light are SVG/CSS. */
+.pottery-story{--pottery-enter:1;--pottery-x:0;--pottery-y:0;min-width:0}
+.pottery-story .pottery-hero-art{aspect-ratio:1.13;overflow:hidden;background:#e9dfce;border:0;border-radius:46% 46% 16px 16px;isolation:isolate}
+.pottery-story .pottery-hero-svg{display:block;width:100%;height:100%;overflow:visible}
+.pottery-story .pottery-hero-art::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at calc(42% + var(--pottery-x)*30%) calc(35% + var(--pottery-y)*24%),#fff9df38,transparent 60%);opacity:1}
+.pottery-story .ph-object{opacity:0;transform:translateY(14px) scale(.96);transform-origin:350px 465px;transition:opacity .55s ease,transform .8s cubic-bezier(.18,.7,.2,1)}
+.pottery-story[data-stage="0"] .ph-raw,.pottery-story[data-stage="1"] .ph-shaped,.pottery-story[data-stage="2"] .ph-glazed{opacity:1;transform:translate(calc(var(--pottery-x)*4px),calc(var(--pottery-y)*2px)) scale(1)}
+.pottery-story .ph-wheel{transform-origin:350px 478px;translate:0 calc((1 - var(--pottery-enter))*45px);opacity:calc(.65 + var(--pottery-enter)*.35)}
+.pottery-story .ph-sponge{translate:calc((1 - var(--pottery-enter))*115px + var(--pottery-x)*-8px) calc((1 - var(--pottery-enter))*35px + var(--pottery-y)*-5px);rotate:calc((1 - var(--pottery-enter))*11deg);transform-origin:570px 510px}
+.pottery-story .ph-rib{translate:calc((1 - var(--pottery-enter))*-100px + var(--pottery-x)*-6px) calc((1 - var(--pottery-enter))*40px + var(--pottery-y)*-4px);rotate:calc((1 - var(--pottery-enter))*-18deg);transform-origin:104px 478px}
+.pottery-story .ph-window{translate:calc(var(--pottery-x)*-14px) calc(var(--pottery-y)*-8px);transition:translate .6s ease}
+.pottery-story .ph-wheel-lines{transform-origin:350px 467px;animation:pottery-wheel-breathe 6s ease-in-out infinite paused}
+.pottery-story.pottery-in-view .ph-wheel-lines{animation-play-state:running}
+.pottery-story .ph-air-mark{translate:calc(var(--pottery-x)*-12px) calc(var(--pottery-y)*-8px);transition:translate .6s ease}
+.pottery-story .hero-story-info{min-height:132px}
+.pottery-story .hero-story-info p{max-width:37ch}
+.pottery-story .hero-story-tabs button{min-height:48px;transition:background-color .2s,color .2s;position:relative}
+.pottery-story .hero-story-tabs button[aria-pressed=true]{background:#dcdcc9;color:#394532}
+.pottery-story .hero-story-tabs button:hover{background:#e6e3d5}
+.pottery-story .hero-story-tabs button[aria-pressed=true]:hover{background:#d3d5bf}
+.ceramic-art{display:block;width:100%;height:100%;overflow:visible}
+.class-image:has(.ceramic-art){background:#e9dfce;border-radius:14px}
+.class-card:nth-child(2) .class-image:has(.ceramic-art){border-radius:45% 45% 14px 14px}
+.ceramic-art .ceramic-object{transform-origin:250px 330px;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ceramic-art .ceramic-light{transition:opacity .6s;opacity:.18}
+.class-image:has(.ceramic-art) .class-tag{background:#fcf6e9e8;color:#5a4937;left:18px;top:18px;font-size:14px;max-width:calc(100% - 36px);line-height:1.4}
+.class-image:has(.ceramic-art) .class-arrow{right:18px;bottom:18px;transform:none!important}
+@keyframes pottery-wheel-breathe{0%,100%{opacity:.65;transform:scaleX(.995)}50%{opacity:1;transform:scaleX(1.01)}}
+@media(hover:hover) and (pointer:fine){.class-image:hover .ceramic-object{transform:translateY(-5px) rotate(-1.5deg)}.class-image:hover .ceramic-light{opacity:.4}}
+@media(max-width:700px){.pottery-story .pottery-hero-art{aspect-ratio:1.14;border-radius:42% 42% 12px 12px}.pottery-story .hero-story-info{min-height:136px}.pottery-story .hero-story-tabs{padding-top:8px}.pottery-story .hero-story-tabs button{font-size:16px;min-height:48px}.class-image:has(.ceramic-art){aspect-ratio:1.15}}
+@media(prefers-reduced-motion:reduce){.pottery-story .ph-object,.pottery-story .ph-window,.pottery-story .ph-air-mark,.pottery-story .hero-story-tabs button,.ceramic-art .ceramic-object,.ceramic-art .ceramic-light{transition:none!important}.pottery-story .ph-wheel-lines{animation:none!important}.pottery-story .ph-wheel,.pottery-story .ph-rib,.pottery-story .ph-sponge,.pottery-story .ph-window,.pottery-story .ph-air-mark{translate:none!important;rotate:none!important}.pottery-story .ph-object{transform:none!important}.class-image:hover .ceramic-object{transform:none!important}}

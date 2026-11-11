@@ -1,0 +1,1 @@
+window.NAIL_STUDIO = Object.freeze({name:'Mozhzheri',address:'\u0423\u0444\u0430, \u0443\u043b\u0438\u0446\u0430 \u041b\u0435\u043d\u0438\u043d\u0430, 43',phone:'+79273046060',phoneDisplay:'+79273046060',email:'nail_mozhzheri@mail.ru',city:'\u0423\u0444\u0430',mapUrl:'https://2gis.ru/ufa/firm/70000001027115719',source:'https://2gis.ru/ufa/firm/70000001027115719',demo:true});

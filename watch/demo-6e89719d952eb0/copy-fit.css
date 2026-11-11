@@ -1,0 +1,18 @@
+/* Deterministic-copy arrows only; scene SVGs retain their own styles. */
+svg.batch-arrow{display:inline-block;width:22px;height:22px;min-width:22px;flex:0 0 22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle;rotate:-45deg;transition:rotate .2s ease}
+:is(a,button):is(:hover,:focus-visible) svg.batch-arrow{rotate:0deg}
+@media(prefers-reduced-motion:reduce){svg.batch-arrow{transition:none}}
+/* Allow the name and address to share the available space. */
+.header-inner{height:auto;min-height:var(--header-height);padding-block:10px}
+.site-header .brand,.site-footer .brand{min-width:0;flex-shrink:1;white-space:normal;overflow-wrap:anywhere;font-size:16px}
+.brand>span:last-child{min-width:0}
+.site-header nav{flex-shrink:0}
+.site-footer>.wrap{flex-wrap:wrap}
+.site-footer .brand{max-width:100%}
+@media(max-width:760px){
+ :root{--header-height:146px}
+ .header-inner{display:grid;grid-template-columns:1fr 44px;gap:8px 12px;min-height:0}
+ .header-inner>.brand{grid-column:1/-1;margin:0;line-height:1.25}
+ .header-contact{justify-self:end;min-height:44px}
+ .site-header .menu-toggle{width:44px;height:44px;padding-inline:9px}
+}

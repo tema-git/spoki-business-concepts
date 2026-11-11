@@ -1,0 +1,16 @@
+/* Deterministic-copy arrows only; scene SVGs retain their own styles. */
+svg.batch-arrow{display:inline-block;width:22px;height:22px;min-width:22px;flex:0 0 22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle;rotate:-45deg;transition:rotate .2s ease}
+:is(a,button):is(:hover,:focus-visible) svg.batch-arrow{rotate:0deg}
+@media(prefers-reduced-motion:reduce){svg.batch-arrow{transition:none}}
+.header{height:auto;min-height:var(--header-h);gap:20px;padding-block:10px}
+.header .brand{min-width:0;flex:0 1 auto;overflow-wrap:anywhere;display:block}
+.header .desktop-nav,.header-contact{flex-shrink:0}
+.footer .footer-logo{white-space:normal;font-size:clamp(48px,10vw,160px);line-height:1.08;overflow-wrap:anywhere}
+.footer-logo>span{max-width:100%}
+.footer-bottom>*{min-width:0;overflow-wrap:anywhere}
+@media(max-width:760px){
+ :root{--header-h:124px}
+ .header{flex-wrap:wrap;gap:6px}
+ .header .brand{flex-basis:100%;font-size:22px;line-height:1.15}
+ .header-contact{margin-left:auto;min-height:44px}
+}
