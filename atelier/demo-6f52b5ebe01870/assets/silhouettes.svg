@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="dress" viewBox="0 0 400 520">
+    <g fill="none" stroke="currentColor" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+      <!-- A fitted, gathered-sleeve midi dress, shown as a front fashion flat. -->
+      <path fill="var(--fabric-color,#3156de)" d="M171 59C177 78 187 91 200 95C213 91 223 78 229 59L251 66C266 71 277 87 282 108L299 151L270 165L248 128L239 205L242 225C251 281 271 351 299 452C277 463 243 470 200 471C157 470 123 463 101 452C129 351 149 281 158 225L161 205L152 128L130 165L101 151L118 108C123 87 134 71 149 66Z"/>
+
+      <!-- Sleeve caps, cuffs, and the fine gathers at each shoulder. -->
+      <path d="M149 66C139 86 140 108 152 128M251 66C261 86 260 108 248 128"/>
+      <path d="M104 144L133 158M267 158L296 144" stroke-width="1.35"/>
+      <path d="M127 104L119 130M133 85L127 107M142 75L138 92M273 104L281 130M267 85L273 107M258 75L262 92" stroke-width="1.1" opacity=".55"/>
+      <path d="M117 147L122 140M127 152L133 140M283 147L278 140M273 152L267 140" stroke-width="1.1" opacity=".65"/>
+
+      <!-- A bound neckline and shaped bodice with precise waist darts. -->
+      <path d="M167 61C175 84 186 98 200 102C214 98 225 84 233 61" stroke-width="1.2"/>
+      <path d="M152 128L176 147M248 128L224 147" stroke-width="1.35"/>
+      <path d="M175 151L181 205L188 205ZM225 151L219 205L212 205Z" stroke-width="1.1" opacity=".7"/>
+      <path d="M161 205C184 211 216 211 239 205M158 220C182 226 218 226 242 220"/>
+      <path d="M162 209C185 215 215 215 238 209M160 216C183 222 217 222 240 216" stroke-width=".8" opacity=".55"/>
+
+      <!-- Long, slightly irregular folds keep the skirt soft and dimensional. -->
+      <path d="M174 224C164 283 148 364 139 458M188 226C183 299 178 380 181 466M212 226C217 299 222 380 219 466M226 224C236 283 252 364 261 458" stroke-width="1.3" opacity=".75"/>
+      <path d="M160 244C156 305 130 391 118 446M240 244C244 305 270 391 282 446" stroke-width="1" opacity=".4"/>
+      <path d="M177 227C170 306 157 393 155 461M223 227C230 306 243 393 245 461" stroke-width=".8" opacity=".35"/>
+      <path d="M104 444C132 455 162 462 200 463C238 462 268 455 296 444" stroke-width="1.15"/>
+
+      <!-- Narrow fabric shadows are translucent so every swatch stays coherent. -->
+      <path d="M174 224C164 283 148 364 139 458L147 460C152 368 168 284 180 225ZM226 224C236 283 252 364 261 458L253 460C248 368 232 284 220 225Z" fill="currentColor" stroke="none" opacity=".075"/>
+      <path d="M149 68C143 88 144 111 151 124L144 113C139 94 140 79 145 68ZM251 68C257 88 256 111 249 124L256 113C261 94 260 79 255 68Z" fill="currentColor" stroke="none" opacity=".08"/>
+    </g>
+  </symbol>
+
+  <symbol id="jacket" viewBox="0 0 400 520">
+    <g fill="none" stroke="currentColor" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+      <!-- A waisted, single-breasted jacket with a softly structured shoulder. -->
+      <path fill="var(--fabric-color,#3156de)" d="M169 65C179 72 190 76 200 76C210 76 221 72 231 65L257 79L282 88C298 94 304 107 308 130L342 349L309 360L278 246L277 393C258 411 233 420 214 421L200 404L186 421C167 420 142 411 123 393L122 246L91 360L58 349L92 130C96 107 102 94 118 88L143 79Z"/>
+
+      <!-- The facing forms a clean opening behind the two notched lapels. -->
+      <path d="M169 65L200 104L231 65L221 130L200 244L179 130Z" fill="var(--lining-color,#f6f1e8)"/>
+      <path d="M169 65L200 104L185 133L157 101Z" fill="var(--fabric-color,#3156de)"/>
+      <path d="M231 65L200 104L215 133L243 101Z" fill="var(--fabric-color,#3156de)"/>
+      <path d="M157 101L185 133L200 244L145 181L151 151L132 139Z" fill="var(--fabric-color,#3156de)"/>
+      <path d="M243 101L215 133L200 244L255 181L249 151L268 139Z" fill="var(--fabric-color,#3156de)"/>
+      <path d="M170 72L194 104L184 125M230 72L206 104L216 125M154 109L139 138L158 148L152 179L193 227M246 109L261 138L242 148L248 179L207 227" stroke-width=".95" opacity=".6"/>
+
+      <!-- Set-in sleeves, elbow shaping, and turned cuffs. -->
+      <path d="M118 88C124 111 126 137 121 164C116 190 117 217 122 246M282 88C276 111 274 137 279 164C284 190 283 217 278 246"/>
+      <path d="M113 164C104 218 92 279 79 346M287 164C296 218 308 279 321 346" stroke-width="1.15" opacity=".55"/>
+      <path d="M84 231L101 238M316 231L299 238" stroke-width="1.1" opacity=".55"/>
+      <path d="M60 338L94 350M306 350L340 338" stroke-width="1.25"/>
+      <path d="M83 327L89 329M81 335L87 337M317 327L311 329M319 335L313 337" stroke-width="1.6"/>
+
+      <!-- Contoured front darts and a welt breast pocket. -->
+      <path d="M146 191C154 225 157 247 155 279M254 191C246 225 243 247 245 279" stroke-width="1.2" opacity=".75"/>
+      <path d="M159 308C158 343 157 380 153 406M241 308C242 343 243 380 247 406" stroke-width="1.2" opacity=".65"/>
+      <path d="M231 205L261 201L262 209L232 213Z" fill="var(--fabric-color,#3156de)" stroke-width="1.3"/>
+      <path d="M234 209L258 206" stroke-width=".8" opacity=".5"/>
+
+      <!-- Angled flap pockets, with the pocket mouth visible below each flap. -->
+      <path d="M137 285L179 289L178 303L136 299Z" fill="var(--fabric-color,#3156de)" stroke-width="1.55"/>
+      <path d="M221 289L263 285L264 299L222 303Z" fill="var(--fabric-color,#3156de)" stroke-width="1.55"/>
+      <path d="M140 303L174 306M226 306L260 303" stroke-width="1" opacity=".55"/>
+      <path d="M140 289L175 292M225 292L260 289" stroke-width=".8" opacity=".55"/>
+
+      <!-- Two horn buttons and discreet stitched buttonholes. -->
+      <path d="M200 244L200 404M195 256L186 256M195 294L186 294" stroke-width="1.3"/>
+      <circle cx="206" cy="256" r="4.2" fill="var(--fabric-color,#3156de)" stroke-width="1.4"/>
+      <circle cx="206" cy="294" r="4.2" fill="var(--fabric-color,#3156de)" stroke-width="1.4"/>
+      <path d="M205 255L207 257M207 255L205 257M205 293L207 295M207 293L205 295" stroke-width=".75"/>
+
+      <!-- Rounded front quarters, hem allowance, and quiet seam shadows. -->
+      <path d="M200 338C197 374 193 397 186 413C165 411 143 402 128 390M200 338C203 374 207 397 214 413C235 411 257 402 272 390" stroke-width="1.05" opacity=".65"/>
+      <path d="M185 133L200 244L193 227L179 149ZM215 133L200 244L207 227L221 149Z" fill="currentColor" stroke="none" opacity=".08"/>
+      <path d="M124 251L131 278L130 390L123 393ZM276 251L269 278L270 390L277 393Z" fill="currentColor" stroke="none" opacity=".055"/>
+    </g>
+  </symbol>
+  <symbol id="skirt" viewBox="0 0 400 520">
+    <g fill="none" stroke="currentColor" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+      <!-- A high-waisted wrap midi skirt with a shaped waistband and soft drape. -->
+      <path fill="var(--fabric-color,#3156de)" d="M140 89C174 96 226 96 260 89L266 119C275 180 291 286 320 429C287 449 246 460 200 460C154 460 113 449 80 429C109 286 125 180 134 119Z"/>
+
+      <!-- The underskirt remains visible beneath the curved wrap opening. -->
+      <path d="M177 126C166 203 150 322 139 446M202 129C200 221 199 347 202 453" stroke-width="1.2" opacity=".65"/>
+      <path d="M83 421C119 442 156 451 200 452C244 451 281 442 317 421" stroke-width="1.15"/>
+
+      <!-- An asymmetrical front panel falls from the right hip to the left hem. -->
+      <path fill="var(--fabric-color,#3156de)" d="M140 120C172 127 220 127 260 118C269 166 281 240 297 327L320 429C275 452 214 461 152 452L119 444C151 396 176 346 198 294C223 236 245 176 249 125"/>
+      <path d="M246 146C237 192 218 245 197 292C173 348 150 393 127 435" stroke-width="1" opacity=".65"/>
+      <path d="M256 149C259 198 271 277 284 345M247 217C249 287 256 366 272 440" stroke-width="1.15" opacity=".5"/>
+      <path d="M239 259C234 316 230 380 237 448" stroke-width=".95" opacity=".4"/>
+      <path d="M124 438C183 453 260 451 317 421" stroke-width="1.1"/>
+
+      <!-- A double-stitched waistband and fine front darts. -->
+      <path fill="var(--fabric-color,#3156de)" d="M140 89C174 96 226 96 260 89L266 119C226 129 174 129 134 119Z"/>
+      <path d="M141 95C177 102 223 102 259 95M136 113C174 122 226 122 264 113" stroke-width=".85" opacity=".65"/>
+      <path d="M166 127L170 175L177 129M220 129L221 165L228 128" stroke-width="1.1" opacity=".6"/>
+      <path d="M143 150C137 171 133 196 131 214" stroke-width="1.2" opacity=".65"/>
+
+      <!-- Two small horn buttons secure the wrap at the hip. -->
+      <circle cx="248" cy="107" r="4.4" fill="var(--fabric-color,#3156de)" stroke-width="1.4"/>
+      <circle cx="244" cy="140" r="3.5" fill="var(--fabric-color,#3156de)" stroke-width="1.3"/>
+      <path d="M247 106L249 108M249 106L247 108M243 139L245 141M245 139L243 141M232 107L239 107" stroke-width=".85"/>
+
+      <!-- Subtle overlap and side-seam shadows retain the selected fabric hue. -->
+      <path d="M249 147C237 202 219 252 198 300C175 353 150 400 119 444L129 446C158 401 181 352 204 300C225 252 242 202 252 149Z" fill="currentColor" stroke="none" opacity=".075"/>
+      <path d="M264 133C276 219 293 325 312 426L320 429C291 286 275 180 266 119Z" fill="currentColor" stroke="none" opacity=".055"/>
+    </g>
+  </symbol>
+</svg>

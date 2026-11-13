@@ -1,0 +1,52 @@
+.batch-arrow {
+  inline-size: 22px;
+  block-size: 22px;
+  flex: 0 0 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(-45deg);
+  transition: transform 180ms ease;
+}
+
+:is(a, button):is(:hover, :focus-visible) .batch-arrow {
+  transform: rotate(0deg);
+}
+
+.spoki-social-contact {
+  margin: 16px;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .header.wrap > .wordmark:has(.brand-stroke) {
+    flex: 1 1 0;
+    min-inline-size: 0;
+  }
+
+  .header.wrap > .wordmark .brand-name:has(.brand-stroke) {
+    overflow-wrap: anywhere;
+    font-size: clamp(25px, 6.7vw, 36px);
+  }
+
+  .header.wrap:has(.brand-stroke) > :is(.header-contact, .menu-toggle) {
+    flex-shrink: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batch-arrow { transition: none; }
+}
+
+/* Keep long verified names readable without covering navigation or contacts. */
+.header > .brand { white-space: normal; overflow-wrap: anywhere; font-size: 28px; line-height: 1.12; }
+.footer-top .brand { white-space: normal; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .header { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .header > .brand { max-width: 100%; font-size: 28px; }
+  .header > .header-contact { justify-self: end; }
+  main [id] { scroll-margin-top: 170px; }
+}
