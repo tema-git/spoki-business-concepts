@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 164" fill="none">
+  <defs>
+    <g id="print"><path d="M6.8 1.2C3.9.9 1.7 4.1 2.1 8.2c.3 3.4 2.1 5.4 2.9 9l4.6-.5c.6-2.5.7-4 1.4-6.5.9-3.2.2-8.4-4.2-9Z"/><path d="m5.4 19.6 4-.5.4 3.3c.1 1.1-.8 2-2.1 2-1.2.1-2-.6-2.1-1.6Z"/></g>
+    <radialGradient id="step-fade">
+      <stop stop-color="black" stop-opacity=".94"/>
+      <stop offset=".52" stop-color="black" stop-opacity=".83"/>
+      <stop offset="1" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <ellipse id="step-field" cx="6.6" cy="12.5" rx="17" ry="26" fill="url(#step-fade)"/>
+  </defs>
+  <symbol id="caminata" viewBox="31 25 178 116">
+    <mask id="caminata-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(50 118) rotate(55) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(80 101) rotate(54) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(114 78) rotate(56) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(150 57) rotate(55) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(184 38) rotate(55) scale(.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#caminata-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M35 125C73 110 115 77 196 29"/>
+      <path d="M45 137C91 114 137 78 208 43" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(50 118) rotate(55) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(80 101) rotate(54) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(114 78) rotate(56) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(150 57) rotate(55) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(184 38) rotate(55) scale(.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="ocho" viewBox="18 17 192 109">
+    <mask id="ocho-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(32 117) rotate(67) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(62 94) rotate(50) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(116.22 57.41) rotate(62) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(147 67) rotate(195) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(108 95) rotate(246) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(102 70) rotate(44) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(168 40) rotate(80) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(173 72) rotate(245) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(187 29) rotate(61) scale(.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#ocho-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M22 120C48 118 62 85 107 62C145 41 162 56 143 76C127 95 94 107 89 96C78 78 132 35 171 38C207 40 193 65 170 74C148 83 136 73 151 56C166 37 183 29 206 21"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(32 117) rotate(67) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(62 94) rotate(50) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(116.22 57.41) rotate(62) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(147 67) rotate(195) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(108 95) rotate(246) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(102 70) rotate(44) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(168 40) rotate(80) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(173 72) rotate(245) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(187 29) rotate(61) scale(.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="giro" viewBox="41 22 164 121">
+    <mask id="giro-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(54 103) rotate(-27) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(63 52) rotate(43) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(112 28) rotate(85) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(169 38) rotate(124) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(198 83) rotate(168) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(170 123) rotate(233) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(110 136) rotate(275) scale(.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#giro-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M62 115C26 83 53 38 105 29C166 17 205 50 198 91C191 134 135 148 91 133"/>
+      <path d="M106 99C91 86 96 66 116 59C136 54 157 65 156 82C156 96 142 104 131 102" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(54 103) rotate(-27) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(63 52) rotate(43) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(112 28) rotate(85) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(169 38) rotate(124) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(198 83) rotate(168) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(170 123) rotate(233) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(110 136) rotate(275) scale(.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="milonga" viewBox="27 25 186 117">
+    <mask id="milonga-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(43 117) rotate(58) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(61 110) rotate(70) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(81 93) rotate(53) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(106 77) rotate(59) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(136 62) rotate(59) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(165 49) rotate(60) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(191 34) rotate(50) scale(.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#milonga-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M31 127L58 106 62 111 82 92 86 98 107 76 112 81 136 61 142 66 165 47 170 52 193 32"/>
+      <path d="M43 138L70 118 95 103 120 87 146 74 176 58 209 42" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(43 117) rotate(58) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(61 110) rotate(70) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(81 93) rotate(53) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(106 77) rotate(59) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(136 62) rotate(59) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(165 49) rotate(60) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(191 34) rotate(50) scale(.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="canyengue" viewBox="30 27 172 113">
+    <mask id="canyengue-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(44 123) rotate(75) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(60 112) rotate(25) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(78 99) rotate(70) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(100 89) rotate(45) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(120 76) rotate(59) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(147 65) rotate(45) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(173 48) rotate(63) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(190 36) rotate(62) scale(-.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#canyengue-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M34 123Q51 130 60 110T83 98T108 83T135 67T160 52T191 36"/>
+      <path d="M41 135Q60 140 68 121T93 109T118 93T143 79T171 64T201 47" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(44 123) rotate(75) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(60 112) rotate(25) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(78 99) rotate(70) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(100 89) rotate(45) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(120 76) rotate(59) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(147 65) rotate(45) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(173 48) rotate(63) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(190 36) rotate(62) scale(-.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="chacarera" viewBox="32 39 170 81">
+    <mask id="chacarera-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(42 110) rotate(51) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(77 81) rotate(52) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(103 58) rotate(53) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(143 59) rotate(126) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(178 88) rotate(132) scale(.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#chacarera-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M36 115L82 76 60 92 109 53Q118 45 130 51L193 99"/>
+      <path d="M198 43L153 80 176 63 129 102Q119 113 106 104L44 60" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(42 110) rotate(51) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(77 81) rotate(52) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(103 58) rotate(53) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(143 59) rotate(126) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(178 88) rotate(132) scale(.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="zamba" viewBox="36 30 168 100">
+    <mask id="zamba-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(46 79) rotate(21) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(73 51) rotate(59) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(114 36) rotate(85) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(154 43) rotate(119) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(173 67) rotate(172) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(151 98) rotate(245) scale(-.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#zamba-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M40 94C50 45 114 23 156 44C187 59 180 87 153 96C133 104 118 102 109 95"/>
+      <path d="M200 70C189 117 123 140 80 117C50 101 59 75 85 65C103 59 122 62 131 70" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(46 79) rotate(21) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(73 51) rotate(59) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(114 36) rotate(85) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(154 43) rotate(119) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(173 67) rotate(172) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(151 98) rotate(245) scale(-.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="cuarteto" viewBox="31 38 181 92">
+    <mask id="cuarteto-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(39 101) rotate(21) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(60 96) rotate(103) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(80 84) rotate(23) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(100 84) rotate(105) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(120 74) rotate(22) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(144 73) rotate(108) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(161 60) rotate(24) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(188 61) rotate(108) scale(-.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#cuarteto-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M35 112L43 88 74 101 82 78 114 90 122 66 152 78 162 53 194 66 203 42"/>
+      <path d="M41 126L57 104 88 114 96 92 127 104 137 80 170 92 179 68 208 80" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(39 101) rotate(21) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(60 96) rotate(103) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(80 84) rotate(23) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(100 84) rotate(105) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(120 74) rotate(22) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(144 73) rotate(108) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(161 60) rotate(24) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(188 61) rotate(108) scale(-.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="eje" viewBox="63 54 95 87">
+    <mask id="eje-fade" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="164">
+      <rect width="240" height="164" fill="white"/>
+      <use href="#step-field" transform="translate(70 121) rotate(13) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(81 85) rotate(29) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(104 62) rotate(64) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(140 65) rotate(129) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(152 93) rotate(195) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#step-field" transform="translate(121 106) rotate(285) scale(-.67 .67) translate(-6 -12)"/>
+    </mask>
+    <g mask="url(#eje-fade)" fill="none" stroke="currentColor" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round" opacity=".66">
+      <path d="M67 133C72 95 82 70 107 61C130 53 154 67 154 88C155 108 131 116 119 105C109 95 119 83 131 85"/>
+      <path d="M76 137C81 113 86 102 98 92" opacity=".58" stroke-dasharray="3 4"/>
+    </g>
+    <g fill="currentColor">
+      <use href="#print" transform="translate(70 121) rotate(13) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(81 85) rotate(29) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(104 62) rotate(64) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(140 65) rotate(129) scale(-.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(152 93) rotate(195) scale(.67 .67) translate(-6 -12)"/>
+      <use href="#print" transform="translate(121 106) rotate(285) scale(-.67 .67) translate(-6 -12)"/>
+    </g>
+  </symbol>
+  <symbol id="pliegue" viewBox="0 0 240 164"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 125 64 46c17-10 33-8 49 2l20 13 66-30-29 78c-20 2-39 7-59 20-12-19-31-23-52-17l-44 13Z"/><path d="m111 129 22-68m7 20 42-21M32 135l30-10c17-4 31 1 46 15 25-14 43-20 70-22l29-74"/></g></symbol>
+  <symbol id="luz" viewBox="0 0 240 164"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 128 39-77 133-24-30 85L20 128Z"/><path d="m59 51 8-23 131-18-6 17m-115 7 11 11m15-15 12 11m15-16 11 11m15-15 11 12M46 141l128-15 28-77"/></g></symbol>
+</svg>

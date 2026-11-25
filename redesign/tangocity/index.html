@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2a1920">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="Групповые уроки аргентинского танго в Москве. Выберите свой уровень, узнайте время и стоимость занятия и свяжитесь с преподавателем TangoCity.">
+  <meta property="og:title" content="TangoCity — аргентинское танго в Москве">
+  <meta property="og:description" content="Расписание групп, стоимость и запись к преподавателю.">
+  <title>TangoCity — расписание и запись на танго в Москве</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/mark.svg?v=3">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./style.css?v=5">
+  <link rel="stylesheet" href="./sections.css?v=5"><link rel="stylesheet" href="./dance.css?v=6">
+  <script src="./site.js?v=3" defer></script>
+  <script src="./schedule.js?v=2" defer></script>
+  <script src="./school-calendar.js?v=3" defer></script>
+  <script src="./app.js?v=3" defer></script>
+  <script src="./dance.js?v=6" defer></script>
+  <script src="./rhythm.js?v=5" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#schedule">К расписанию</a>
+  <header class="site-header"><div class="wrap header-inner"><a class="brand" href="./" aria-label="TangoCity, главная"><img src="./assets/tangocity-logo.svg" width="189" height="40" alt=""></a><nav class="main-nav" aria-label="Основная навигация"><a href="#schedule">Расписание</a><a href="./shkola/">Школа</a><a href="./nabor-novichkov/">Набор</a><a href="./afisha/">Афиша</a><a href="./tango/">О танго</a></nav><div class="header-actions"><details class="site-menu"><summary aria-label="Меню разделов"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-menu"/></svg><span>Меню</span></summary><nav class="site-menu-panel" aria-label="Все разделы"><div class="wrap menu-grid"><div class="nav-group"><p>Обучение</p><a href="./shkola/">Школа</a><a href="./nabor-novichkov/">Набор в группы</a><a href="#schedule">Расписание</a><a href="./shkola/uroki/">Уроки</a><a href="./shkola/prepodavateli/">Преподаватели</a><a href="./shkola/stoimost/">Цены</a><a href="./shkola/podarochnye-sertifikaty/">Сертификаты</a></div>
+<div class="nav-group"><p>События</p><a href="./afisha/">Афиша</a><a href="./shkola/events/">Практики и милонги</a><a href="./afisha/koncerty-tango/">Концерты и спектакли</a><a href="./novosti/">Новости</a></div>
+<div class="nav-group"><p>Культура танго</p><a href="./tango/">О танго</a><a href="./tango/argentinskoe-tango/">История</a><a href="./tango/filmy/">Фильмы</a><a href="./tango/knigi/">Книги</a><a href="./blog/">Видео</a></div><div class="nav-group"><p>Связь</p><a href="./kontakty/">Контакты и адрес</a><a href="#first-lesson">Первый урок</a><a href="#rhythm">След в след</a><a href="./karta-sayta/">Все страницы</a></div></div></nav></details><a href="#contacts" class="header-contact"><span>Контакты <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></span></a></div></div><nav class="mobile-primary" aria-label="Быстрые переходы"><a href="#schedule">Расписание</a><a href="./shkola/">Школа</a><a href="./nabor-novichkov/">Набор</a><a href="./afisha/">Афиша</a></nav></header>
+  <main>
+    <section class="hero dark scene" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker hero-kicker"><span class="kicker-rule"></span>Школа танго · Москва</p>
+          <h1 id="hero-title">Аргентинское<br><em>танго</em></h1>
+          <p class="hero-description" id="hero-next">Группы для первого урока и для тех, кто уже танцует.</p>
+          <a class="button hero-button" href="#schedule">Выбрать занятие <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a>
+        </div>
+        <div class="hero-art"><img src="./assets/abrazo.svg?v=4" width="528" height="345" alt="" fetchpriority="high"></div>
+      </div>
+    </section>
+
+    <section class="schedule wrap scene" id="schedule" aria-labelledby="schedule-title">
+      <div class="section-heading">
+        <h2 id="schedule-title">Расписание</h2>
+        <p class="date-range"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-calendar"/></svg><span id="date-range-text">23 ноября — 6 декабря 2026</span></p>
+      </div>
+      <div class="schedule-controls" id="schedule-controls" hidden>
+        <div class="level-filters" role="group" aria-label="Выбрать уровень">
+          <button type="button" data-level="zero" aria-pressed="true">С нуля</button>
+          <button type="button" data-level="beginner" aria-pressed="false">Начинающие</button>
+          <button type="button" data-level="intermediate" aria-pressed="false">Продолжающие</button>
+          <button type="button" data-level="advanced" aria-pressed="false">Продвинутые</button>
+        </div>
+        <div class="group-scope" id="group-scope" hidden><span></span><button type="button" id="clear-group">Все группы уровня</button></div>
+        <p id="level-description" class="level-description"></p>
+      </div>
+      <p id="results-status" class="sr-only" role="status"></p>
+      <div id="class-list" class="class-list"></div>
+      <div id="schedule-fallback" class="no-script">
+        <p>Для первого занятия подойдут группы «С нуля». Группа № 3 занимается по вторникам и четвергам с 19:00 до 20:15. Разовый урок стоит 800 ₽. Запись у Алана Цаголова по телефону <a href="tel:+79161143082">+7 916 114-30-82</a>.</p>
+        <p>Для тех, кто танцует от двух месяцев, есть воскресная группа «Начинающие». Даты и остальные уровни — в расписании школы.</p>
+      </div>
+      <div class="schedule-bottom">
+        <button type="button" id="show-more" class="button secondary" hidden><span>Ещё занятия</span><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></button>
+        <a class="text-link" href="https://tangocity.ru/shkola/raspisanie/">Расписание школы <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="home-journal scene" aria-labelledby="school-journal"><div class="wrap">
+      <h2 id="school-journal">В <em>TangoCity</em></h2>
+      <div class="journal-links">
+        <a class="journal-link" href="./shkola/"><strong>Школа</strong><svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg><p>Кто преподаёт в TangoCity и как устроены занятия.</p></a>
+        <a class="journal-link" href="./nabor-novichkov/"><strong>Набор в группы</strong><svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg><p>Три группы для первых шагов и занятия для тех, кто уже танцует.</p></a>
+        <a class="journal-link" href="./afisha/"><strong>Афиша</strong><svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg><p>Практики, школьные милонги и танго на московской сцене.</p></a>
+      </div>
+    </div></section>
+    <section class="first-lesson scene" id="first-lesson" aria-labelledby="first-title">
+      <div class="wrap first-inner">
+        <div class="first-intro">
+          <p class="kicker"><span class="kicker-rule"></span>Перед занятием</p>
+          <h2 id="first-title">Первый <em>урок</em></h2>
+          <figure class="lesson-walk">
+            <svg class="first-trail" viewBox="3 12 293 99" aria-hidden="true" fill="none">
+              <defs>
+                <radialGradient id="walk-fade">
+                  <stop stop-color="black" stop-opacity=".94"/>
+                  <stop offset=".52" stop-color="black" stop-opacity=".83"/>
+                  <stop offset="1" stop-color="black" stop-opacity="0"/>
+                </radialGradient>
+                <ellipse id="walk-step-field" cx="6.6" cy="12.5" rx="17" ry="26" fill="url(#walk-fade)"/>
+                <mask id="walk-route-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="120">
+                  <rect width="300" height="120" fill="white"/>
+                  <g class="walk-fields"></g>
+                </mask>
+              </defs>
+              <g mask="url(#walk-route-mask)" opacity=".66" stroke-linecap="round" stroke-linejoin="round">
+                <path class="walk-guide" d="M18 94C43 95 65 80 89 60C117 36 143 17 161 27C185 41 164 62 135 76C103 93 71 96 75 80C78 60 117 35 149 45C174 52 190 76 215 68C240 61 259 38 280 27"/>
+                <path class="walk-line" pathLength="1" d="M18 94C43 95 65 80 89 60C117 36 143 17 161 27C185 41 164 62 135 76C103 93 71 96 75 80C78 60 117 35 149 45C174 52 190 76 215 68C240 61 259 38 280 27"/>
+              </g>
+              <g class="walk-history"></g>
+              <g class="walk-feet"></g>
+            </svg>
+            <figcaption>Очо <span>·</span> поворот на опорной ноге</figcaption>
+          </figure>
+        </div>
+        <div class="faq">
+          <details open><summary>Можно прийти без пары?<svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></summary><p>Да. Когда в группе становится больше ведущих или следующих, школа может приостановить запись без пары. Перед первым визитом уточните у преподавателя, есть ли место.</p></details>
+          <details><summary>Что взять с собой?<svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></summary><p>Наденьте удобную одежду и возьмите сменную обувь с тонкой подошвой. Подойдёт устойчивый каблук комфортной высоты. Платформа и длинный нос будут мешать шагам.</p></details>
+          <details><summary>Как работают абонементы?<svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></summary><p>Для регулярных групп 4 урока стоят 3 000 ₽ на 30 дней при посещении раз в неделю. Для часовых занятий 8 уроков стоят 5 000 ₽, для занятий по 75 минут — 5 500 ₽. Для групп с нуля № 1 и № 2 подходит один абонемент.</p><a class="text-link" href="https://tangocity.ru/shkola/stoimost">Тарифы и сроки действия <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a></details>
+          <details><summary>Есть индивидуальные занятия?<svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></summary><p>Да. Час с одним преподавателем стоит 5 000 ₽, с двумя — 8 000 ₽ за одного человека или пару. Время согласуйте с преподавателем, для брони школа указывает предоплату 100%.</p><a class="text-link" href="#contacts">Связаться со школой <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="rhythm dark scene" id="rhythm" aria-labelledby="rhythm-title">
+  <div class="wrap rhythm-inner">
+    <div class="rhythm-copy">
+      <p class="kicker"><span class="kicker-rule"></span>Игра на память</p>
+      <h2 id="rhythm-title">След <em>в след</em></h2>
+      <p class="game-intro">Запомните, в каком порядке загораются следы, и повторите рисунок. Начните с трёх шагов и дойдите до пяти.</p>
+    </div>
+    <div class="step-game" hidden>
+      <div class="game-toolbar"><button class="button hero-button" type="button" id="step-action">Начать игру</button><span id="step-round" class="game-round">Раунд 1 из 3</span></div>
+      <div class="step-board" role="group" aria-label="Следы на паркете">
+          <button class="step-pad man" type="button" aria-label="След 1, вверху слева" aria-keyshortcuts="1" aria-disabled="true" tabindex="-1">
+            <span class="step-number" aria-hidden="true">1</span><svg viewBox="-26 -33 52 66" aria-hidden="true"><g transform="rotate(18) scale(-1 1)"><use href="./assets/dance-shoes.svg#man" x="-13" y="-30" width="26" height="60"/></g></svg>
+          </button>
+          <button class="step-pad woman" type="button" aria-label="След 2, вверху справа" aria-keyshortcuts="2" aria-disabled="true" tabindex="-1">
+            <span class="step-number" aria-hidden="true">2</span><svg viewBox="-26 -33 52 66" aria-hidden="true"><g transform="rotate(196) scale(-1 1)"><use href="./assets/dance-shoes.svg#woman" x="-13" y="-30" width="26" height="60"/></g></svg>
+          </button>
+          <button class="step-pad woman" type="button" aria-label="След 3, внизу слева" aria-keyshortcuts="3" aria-disabled="true" tabindex="-1">
+            <span class="step-number" aria-hidden="true">3</span><svg viewBox="-26 -33 52 66" aria-hidden="true"><g transform="rotate(188) scale(1 1)"><use href="./assets/dance-shoes.svg#woman" x="-13" y="-30" width="26" height="60"/></g></svg>
+          </button>
+          <button class="step-pad man" type="button" aria-label="След 4, внизу справа" aria-keyshortcuts="4" aria-disabled="true" tabindex="-1">
+            <span class="step-number" aria-hidden="true">4</span><svg viewBox="-26 -33 52 66" aria-hidden="true"><g transform="rotate(-6) scale(1 1)"><use href="./assets/dance-shoes.svg#man" x="-13" y="-30" width="26" height="60"/></g></svg>
+          </button>
+      </div>
+      <div class="game-feedback"><p id="step-status" role="status" aria-live="polite" aria-atomic="true">Первый рисунок — три шага.</p><div class="step-progress" aria-hidden="true"></div></div>
+    </div>
+    <noscript><p>Для игры включите JavaScript.</p></noscript>
+  </div>
+</section>
+
+    <section id="contacts" class="contacts wrap scene" aria-labelledby="contact-title">
+      <div class="section-heading"><h2 id="contact-title">Контакты</h2></div>
+      <div class="contact-cols">
+        <div class="contact-place"><p class="kicker"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-pin"/></svg>Адрес</p><h3>Клуб «Жар-птица»</h3><p>Москва, Смоленская-Сенная площадь,<br>дом 27, строение 7.</p><a class="text-link" href="https://yandex.ru/maps/-/CCU0AWUdLD">Открыть на карте <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a></div>
+        <div class="contact-person"><h3>Инесса Дехтярева</h3><p>Группы по воскресеньям и понедельникам</p><a class="phone-link" href="tel:+79262164927"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-phone"/></svg>+7 926 216-49-27</a></div>
+        <div class="contact-person"><h3>Алан Цаголов</h3><p>Группы по вторникам и четвергам</p><a class="phone-link" href="tel:+79161143082"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-phone"/></svg>+7 916 114-30-82</a></div>
+      </div>
+    <iframe class="school-map" title="TangoCity на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.581383%2C55.744744&amp;z=17&amp;mode=search&amp;oid=152134991388&amp;ol=biz" width="900" height="340" loading="lazy" allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-map"><div class="footer-identity"><a class="brand" href="./" aria-label="TangoCity, главная"><img src="./assets/tangocity-logo.svg" width="189" height="40" alt=""></a><p>Школа аргентинского танго<br>в Москве</p><a href="./kontakty/">Контакты и адрес</a></div><div class="nav-group"><p>Обучение</p><a href="./shkola/">Школа</a><a href="./nabor-novichkov/">Набор в группы</a><a href="#schedule">Расписание</a><a href="./shkola/uroki/">Уроки</a><a href="./shkola/prepodavateli/">Преподаватели</a><a href="./shkola/stoimost/">Цены</a><a href="./shkola/podarochnye-sertifikaty/">Сертификаты</a></div>
+<div class="nav-group"><p>События</p><a href="./afisha/">Афиша</a><a href="./shkola/events/">Практики и милонги</a><a href="./afisha/koncerty-tango/">Концерты и спектакли</a><a href="./novosti/">Новости</a></div>
+<div class="nav-group"><p>Культура танго</p><a href="./tango/">О танго</a><a href="./tango/argentinskoe-tango/">История</a><a href="./tango/filmy/">Фильмы</a><a href="./tango/knigi/">Книги</a><a href="./blog/">Видео</a></div></div><div class="wrap footer-inner"><a class="footer-signature" href="./">Tango<i>City</i></a><a href="./karta-sayta/">Все страницы</a><span>Сайт создан Spoki Studio</span></div></footer>
+
+  <dialog id="booking" aria-labelledby="booking-title">
+    <div class="booking-inner">
+      <div class="dialog-top"><p class="kicker"><span class="kicker-rule"></span>Запись на занятие</p><button type="button" class="close-button" id="close-booking" aria-label="Закрыть запись"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-close"/></svg></button></div>
+      <h2 id="booking-title" tabindex="-1"></h2>
+      <p id="booking-when" class="booking-when"></p>
+      <p id="booking-venue" class="venue-change" hidden></p>
+      <a class="text-link booking-directions" href="./kontakty/#map">Как добраться до школы <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a>
+      <p id="booking-price" class="booking-price"></p>
+      <p class="booking-instruction" id="booking-instruction"></p>
+      <a class="button primary booking-call" id="booking-call" href="tel:+79262164927"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-phone"/></svg><span class="call-caption">Позвонить <span class="call-number"></span></span><svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></a>
+      <details class="message-box" id="message-box"><summary>Подготовить сообщение для MAX<svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-down"/></svg></summary>
+        <p>Форма готовит текст на вашем устройстве. Для записи отправьте его преподавателю в MAX по номеру выше и дождитесь подтверждения.</p>
+        <form id="message-form">
+          <fieldset><legend>Как вы придёте?</legend><div class="radio-group"><label><input type="radio" name="party" value="solo" required>Без пары</label><label><input type="radio" name="party" value="pair" required>В паре</label></div></fieldset>
+          <button type="submit" class="button secondary">Составить текст <svg class="arrow" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-arrow"/></svg></button>
+        </form>
+        <div id="message-result" hidden><label for="prepared-message">Текст для преподавателя</label><textarea id="prepared-message" rows="4" readonly></textarea><div class="message-actions"><button type="button" id="copy-message" class="button secondary"><svg class="icon" aria-hidden="true"><use href="./assets/ui.svg?v=3#i-copy"/></svg>Скопировать</button><button type="button" id="edit-message" class="text-link">Изменить</button></div><p id="copy-status" role="status"></p></div>
+      </details>
+    </div>
+  </dialog>
+</body>
+</html>
