@@ -1,0 +1,699 @@
+{
+  "checked": "2026-11-26",
+  "groups": [
+    {
+      "id": "catalogue",
+      "title": "Каталог и прайсы",
+      "items": [
+        {
+          "id": "catalog",
+          "title": "Каталог Aqua-Shop",
+          "source": "https://www.aqua-shop.ru/catalog.php",
+          "summary": "В общем каталоге сети собраны обитатели, аквариумы и оборудование. За оформление онлайн-покупок отвечает Aqua-Shop.",
+          "detail": "Прайсы супермаркета относятся к розничной покупке на месте. Телефон отдела интернет-заказов +7 499 745-00-44.",
+          "links": [
+            {
+              "title": "Обитатели в Aqua-Shop",
+              "url": "https://www.aqua-shop.ru/live/"
+            },
+            {
+              "title": "Прайсы супермаркета",
+              "url": "https://www.aqualogo.ru/super_price"
+            }
+          ],
+          "dest": "info/catalog.html"
+        },
+        {
+          "id": "prices",
+          "title": "Прайс-листы",
+          "source": "https://www.aqualogo.ru/super_price",
+          "summary": "Рыбы пресной и морской воды вынесены в разные списки. Для растений, беспозвоночных, кормов и оборудования есть отдельные разделы.",
+          "detail": "Компания указывает трёхчасовой цикл обновления прайсов и рекомендует уточнять наличие товара в выбранном магазине по телефону.",
+          "links": [
+            {
+              "title": "Пресноводная рыба",
+              "url": "https://www.aqualogo.ru/price_super_fresh_fish"
+            },
+            {
+              "title": "Морская рыба",
+              "url": "https://www.aqualogo.ru/price_super_sea_fish"
+            }
+          ],
+          "dest": "price.html"
+        },
+        {
+          "id": "arrivals",
+          "title": "Поставки",
+          "source": "https://www.aqualogo.ru/postavki_zhivogo_tovara",
+          "summary": "У «Университета» две ленты — для пресноводных обитателей и для моря. В темах форума указано, какие животные поступили и когда.",
+          "detail": "Перед поездкой назовите продавцу вид и размер. Дату поставки можно найти на форуме, цену на экземпляр — в розничном прайсе.",
+          "links": [
+            {
+              "title": "Пресноводные поставки",
+              "url": "https://freshforum.aqualogo.ru/forum/30-novie-postuplenija-rib-i-rastenii-v-akva-logo/"
+            },
+            {
+              "title": "Морские поставки",
+              "url": "https://seaforum.aqualogo.ru/forum/52-akva-logo-i-more/"
+            },
+            {
+              "title": "Архив поставок",
+              "url": "https://www.aqualogo.ru/super_news_archive"
+            }
+          ],
+          "dest": "arrivals.html"
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "О супермаркете",
+      "items": [
+        {
+          "id": "about",
+          "title": "О супермаркете",
+          "source": "https://www.aqualogo.ru/market_portfolio",
+          "summary": "Первый супермаркет «Аква Лого» открылся в 1999 году. Сегодня на Молодёжной можно выбрать обитателей пресных и морских аквариумов и поговорить со специалистом на месте.",
+          "detail": "Здесь также продают аквариумы, корма, оборудование и материалы для оформления. В официальной карточке магазина опубликованы фотографии и сведения о коллективе.",
+          "links": [
+            {
+              "title": "Страница магазина",
+              "url": "https://www.aqualogo.ru/akva-logo-universitet-novyj-adres-supermarketa-akva-logo-na-leniskom-prospekte"
+            },
+            {
+              "title": "Схема проезда",
+              "url": "https://www.aqualogo.ru/supermarkety_aqualogo#uz"
+            }
+          ],
+          "dest": "about.html"
+        },
+        {
+          "id": "news",
+          "title": "Новости",
+          "source": "https://www.aqualogo.ru/super_news",
+          "summary": "В ленте магазина выходят объявления об изменениях в работе и новых услугах. Первого октября 2026 года компания объявила об открытии сервисного центра Atman, Eheim и Prime.",
+          "detail": "Даты относятся к событиям в публикациях. Актуальный режим «Университета» указан в контактах.",
+          "links": [
+            {
+              "title": "Открытие сервисного центра",
+              "url": "https://www.aqualogo.ru/servisny_center_eheim_atman_prime"
+            },
+            {
+              "title": "Контакты супермаркета",
+              "url": "https://www.aqualogo.ru/supermarkety_aqualogo"
+            }
+          ],
+          "dest": "info/news.html"
+        },
+        {
+          "id": "new-products",
+          "title": "Новинки",
+          "source": "https://www.aqualogo.ru/Novinki_v_akvariumnyh_supermarketah_Akva_Logo",
+          "summary": "Магазин публикует обзоры новых товаров. Среди них фильтры Tetra INX и аксессуары Barbus.",
+          "detail": "В обзорах указаны модели и технические характеристики. Выбранный товар можно открыть в официальном каталоге.",
+          "links": [
+            {
+              "title": "Фильтр внутренний TETRA INX 100 425 л/ч на объем 40-100 литров",
+              "url": "https://www.aqua-shop.ru/fresh/filtratsiya/vnutrennie_filtry/prod_tet-337336"
+            },
+            {
+              "title": "Пипетка-сифон для аквариума Barbus 46 см",
+              "url": "https://www.aqua-shop.ru/fresh/inventar/sifony/prod_accessory_211"
+            }
+          ],
+          "dest": "info/new-products.html"
+        },
+        {
+          "id": "gallery",
+          "title": "Фоторепортажи",
+          "source": "https://www.aqualogo.ru/galery_supermarket",
+          "summary": "В галерее собраны фотографии обитателей, выставок и событий компании. Для определения рыбы есть отдельный фотоальбом с русскими и латинскими названиями.",
+          "detail": "В архиве есть репортаж о 25-летии первого супермаркета и фотографии с выставки «ПаркЗоо» 2025 года.",
+          "links": [
+            {
+              "title": "Фотогалерея обитателей",
+              "url": "https://www.aqualogo.ru/photo/?name=supermarket"
+            },
+            {
+              "title": "25 лет первому супермаркету",
+              "url": "https://www.aqualogo.ru/photo/?name=pervomu_supermarketu_25_let"
+            },
+            {
+              "title": "ПаркЗоо 2025",
+              "url": "https://www.aqualogo.ru/photo/?name=parkzoo_2025"
+            }
+          ],
+          "dest": "info/gallery.html"
+        },
+        {
+          "id": "reviews",
+          "title": "Отзывы",
+          "source": "https://www.aqualogo.ru/otzyvy_pokupatelej_supermarketa_Akva_Logo",
+          "summary": "Покупатели рассказывают о выборе рыб, консультациях и посещении магазинов. Для отделения на Молодёжной на странице компании размещена отдельная карточка Яндекса.",
+          "detail": "Откройте отзывы «Университета» или перейдите к форме отзыва на сайте компании.",
+          "links": [
+            {
+              "title": "Отзывы о «Университете»",
+              "url": "https://yandex.ru/maps/org/akva_logo/86770098976/reviews/"
+            },
+            {
+              "title": "Оставьте отзыв!",
+              "url": "https://www.aqualogo.ru/otzyvy_pokupatelej_supermarketa_Akva_Logo#otzyv"
+            }
+          ],
+          "dest": "info/reviews.html"
+        },
+        {
+          "id": "excursions",
+          "title": "Экскурсии",
+          "source": "https://www.aqualogo.ru/Jekskursii_v_Akva_Logo",
+          "summary": "Опубликованная детская программа проходит в отделах декоративных птиц и террариумных животных «Аква Лого — Сокол».",
+          "detail": "Специалисты проводят экскурсию для старших дошкольников и учеников начальных классов. Организатор принимает предварительные заявки на отдельной странице.",
+          "links": [
+            {
+              "title": "Предварительная заявка на экскурсию",
+              "url": "https://www.aqualogo.ru/Jekskursii_v_Akva_Logo_reg"
+            }
+          ],
+          "dest": "info/excursions.html"
+        },
+        {
+          "id": "videos",
+          "title": "Видеосюжеты",
+          "source": "https://www.aqualogo.ru/video_supermarket",
+          "summary": "Видеотека супермаркета знакомит с аквариумным оборудованием. Ролики компании открываются на RuTube.",
+          "detail": "В официальной подборке можно выбрать сюжет о светильниках или удобрениях и перейти к его просмотру.",
+          "links": [
+            {
+              "title": "Светильник Tetra LightWave Complete Set 520",
+              "url": "https://rutube.ru/video/540aa83d2adf7bab9add10de58197206"
+            },
+            {
+              "title": "Линейка удобрений WaterSci",
+              "url": "https://rutube.ru/video/29f82dfd7efe4f3ea12aeb8f988a591c"
+            }
+          ],
+          "dest": "info/videos.html"
+        },
+        {
+          "id": "jobs",
+          "title": "Вакансии",
+          "source": "https://www.aqualogo.ru/Vakansii_supermarketa",
+          "summary": "Открытые позиции и контакты для соискателей собраны на странице вакансий. Анкету принимает компания.",
+          "detail": "По вопросам «Университета» можно обратиться к Валентине Дмитриевне по адресу svd@aqualogo.ru.",
+          "links": [
+            {
+              "title": "Написать по вакансии",
+              "url": "mailto:svd@aqualogo.ru"
+            }
+          ],
+          "dest": "info/jobs.html"
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Услуги",
+      "items": [
+        {
+          "id": "repair",
+          "title": "Сервисный центр",
+          "source": "https://www.aqualogo.ru/servisny_center_eheim_atman_prime",
+          "summary": "Центр принимает оборудование Atman, Eheim и Prime на диагностику, гарантийный и послегарантийный ремонт.",
+          "detail": "Согласуйте приём заранее с диспетчером по номеру +7 929 902-53-01 или по почте aqscentre@yandex.ru. Указанные часы работы центра — с 11:00 до 19:00.",
+          "links": [
+            {
+              "title": "Позвонить диспетчеру",
+              "url": "tel:+79299025301"
+            },
+            {
+              "title": "Условия гарантийной поддержки",
+              "url": "https://www.aqualogo.ru/servisny_center_eheim_atman_prime#garant"
+            }
+          ],
+          "dest": "info/repair.html"
+        },
+        {
+          "id": "delivery",
+          "title": "Доставка",
+          "source": "https://www.aqualogo.ru/dostavka_supermarket",
+          "summary": "Для покупок в супермаркете можно заказать доставку аквариумов, тумб, террариумов, грунта, соли и камней.",
+          "detail": "Сборку тумбы можно заказать вместе с доставкой. Компания указывает дни с понедельника по четверг. Условия подъёма зависят от размеров товара и лифта.",
+          "links": [
+            {
+              "title": "Согласовать доставку с магазином",
+              "url": "tel:+74997450055"
+            }
+          ],
+          "dest": "info/delivery.html"
+        },
+        {
+          "id": "salon-service",
+          "title": "Обслуживание аквариумов",
+          "source": "https://salon.aqualogo.ru/akvariumyi/obsluzhivanie/",
+          "summary": "Сектор сервиса салона обслуживает пресноводные и морские аквариумы в Москве и ближнем Подмосковье.",
+          "detail": "Вопросы о выезде специалиста принимает служба сервиса по номеру +7 499 745-00-33. В официальном разделе описаны разовые выезды и плановое обслуживание.",
+          "links": [
+            {
+              "title": "Сектор сервиса салона",
+              "url": "https://salon.aqualogo.ru/akvariumyi/obsluzhivanie/"
+            }
+          ],
+          "dest": "info/salon-service.html"
+        }
+      ]
+    },
+    {
+      "id": "savings",
+      "title": "Скидки",
+      "items": [
+        {
+          "id": "offers",
+          "title": "Акции",
+          "source": "https://www.aqualogo.ru/super_special",
+          "summary": "Супермаркет публикует предложения по отдельным моделям и видам. В подборке есть рифовые хризиптеры и аквариумы Atman с изогнутым стеклом.",
+          "detail": "На странице предложения описаны товар и условия. Проверьте нужный вид и размер по прайсу магазина.",
+          "links": [
+            {
+              "title": "Предложение на хризиптер",
+              "url": "https://www.aqualogo.ru/specialnye-ceny-na-morskih-rifovyh-ryb-hrizipter-v-supermarketah-akva-logo"
+            },
+            {
+              "title": "Аквариумы Atman",
+              "url": "https://www.aqualogo.ru/otlichnye-cene-na-10-na-akvariumy-atman_s_gnutym_steklom"
+            }
+          ],
+          "dest": "info/offers.html"
+        },
+        {
+          "id": "sale",
+          "title": "Распродажа",
+          "source": "https://www.aqualogo.ru/supermarketi_Aqua_Logo_sale",
+          "summary": "В распродаже супермаркета перечислены оборудование, комплектующие и аксессуары. Для каждой позиции указаны артикул и розничная цена.",
+          "detail": "По артикулу удобно уточнить у консультанта, есть ли нужная модель на Молодёжной. Список на официальном сайте ведёт к карточкам отдельных товаров.",
+          "links": [
+            {
+              "title": "Импеллер Sicce для помпы NANO VOYAGER 1",
+              "url": "https://www.aqua-shop.ru/fresh/filtratsiya/zapchasti_i_aksessuary_dlya_filtratsii/prod_SC-60097"
+            },
+            {
+              "title": "Импеллер SICCE для помпы NANO Voyager 2",
+              "url": "https://www.aqua-shop.ru/fresh/filtratsiya/zapchasti_i_aksessuary_dlya_filtratsii/prod_SC-60103"
+            }
+          ],
+          "dest": "info/sale.html"
+        },
+        {
+          "id": "discount",
+          "title": "Дисконтная программа",
+          "source": "https://www.aqualogo.ru/discount_supermarket",
+          "summary": "Сумма покупок определяет размер накопительной скидки. В официальной таблице перечислены четыре ступени — от 3 до 10 %.",
+          "detail": "На кассе можно предъявить карту или назвать номер телефона, на который зарегистрирована программа. Условия выдачи карты и пороги накоплений публикует компания.",
+          "links": [],
+          "dest": "info/discount.html"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "title": "Информация покупателям",
+      "items": [
+        {
+          "id": "buyers",
+          "title": "Информация покупателям",
+          "source": "https://www.aqualogo.ru/Informacija_dlja_pokupatelej_akvariumnyh_supermarketov_AkvaLogo",
+          "summary": "Для дороги домой в жару или мороз компания советует взять термосумку. Для переселения рыбы в аквариум у неё есть отдельная памятка.",
+          "detail": "На диагностику оборудование принимают чистым, сухим и в полной комплектации. Для аквариумных фильтров компания допускает комплект без наполнителя.",
+          "links": [
+            {
+              "title": "Адаптация рыб после покупки",
+              "url": "https://www.aqualogo.ru/adaptaciya-ryby-k-vode-domashnego-akvariuma"
+            },
+            {
+              "title": "Адреса сервисных центров",
+              "url": "https://www.aqualogo.ru/adresa-i-telefony-servisnyh-centrov-tetra-atman-eheim-i-aquael-v-moskve"
+            }
+          ],
+          "dest": "info/buyers.html"
+        },
+        {
+          "id": "articles",
+          "title": "Полезные статьи",
+          "source": "https://www.aqualogo.ru/articles_supermarket",
+          "summary": "В подборке для начинающих разбирают выбор первого аквариума, его запуск, подготовку воды и плотность заселения.",
+          "detail": "Откройте материал по своему этапу — от выбора ёмкости до ухода за действующим аквариумом.",
+          "links": [
+            {
+              "title": "Как выбрать свой первый аквариум",
+              "url": "https://www.aqualogo.ru/kak_vybrat_svoy_pervy_akvarium"
+            },
+            {
+              "title": "Запуск и созревание аквариума",
+              "url": "https://www.aqualogo.ru/zapusk_i_sozrevanie_akvariuma"
+            },
+            {
+              "title": "Плотность населения в аквариуме",
+              "url": "https://www.aqualogo.ru/plotnost_naseleniya_akvariuma"
+            }
+          ],
+          "dest": "info/articles.html"
+        },
+        {
+          "id": "gift-cards",
+          "title": "Подарочные карты",
+          "source": "https://www.aqualogo.ru/podarochnye-sertifikaty-akva-logo",
+          "summary": "В супермаркете выпускают подарочные сертификаты на 1 000, 3 000 и 5 000 ₽.",
+          "detail": "Компания указывает, что срок действия сертификата не ограничен. По вопросам покупки можно позвонить в магазин.",
+          "links": [
+            {
+              "title": "Позвонить в магазин",
+              "url": "tel:+74997450055"
+            }
+          ],
+          "dest": "info/gift-cards.html"
+        },
+        {
+          "id": "service-centres",
+          "title": "Сервисные центры марок",
+          "source": "https://www.aqualogo.ru/adresa-i-telefony-servisnyh-centrov-tetra-atman-eheim-i-aquael-v-moskve",
+          "summary": "В справочнике собраны пункты приёма оборудования Tetra, Aquael, Atman и Eheim. Выберите производителя своего прибора.",
+          "detail": "Для Tetra и Aquael в Москве указан пункт на проспекте Мира, 182. Перед передачей прибора сверьте часы и контакты нужной службы.",
+          "links": [
+            {
+              "title": "Справочник по производителям",
+              "url": "https://www.aqualogo.ru/adresa-i-telefony-servisnyh-centrov-tetra-atman-eheim-i-aquael-v-moskve"
+            }
+          ],
+          "dest": "info/service-centres.html"
+        }
+      ]
+    },
+    {
+      "id": "visit",
+      "title": "Контакты и проезд",
+      "items": [
+        {
+          "id": "store-contacts",
+          "title": "Контакты магазина",
+          "source": "https://www.aqualogo.ru/supermarkety_aqualogo",
+          "summary": "«Аква Лого — Университет» находится на Молодёжной улице, 4. Супермаркет открыт ежедневно с 10:00 до 21:00.",
+          "detail": "Консультанты отдела живого товара отвечают по номеру +7 499 745-00-55. Адрес почты — supermarket@aqualogo.ru.",
+          "links": [
+            {
+              "title": "Карточка магазина в Яндексе",
+              "url": "https://yandex.ru/maps/org/akva_logo/86770098976/"
+            },
+            {
+              "title": "Маршрут к магазину",
+              "url": "https://yandex.ru/maps/?rtext=~55.693224%2C37.549417&rtt=pedestrian"
+            }
+          ],
+          "dest": "contacts.html"
+        },
+        {
+          "id": "visit",
+          "title": "Как добраться",
+          "source": "https://www.aqualogo.ru/Shema_proezda_v_Akva_Logo_na_Ugo_zapadnoi",
+          "summary": "Вход с улицы Фотиевой, с внешней стороны дома у подъезда 5. Магазин находится на цокольном этаже.",
+          "detail": "От метро «Университет» по схеме магазина около 15 минут пешком.",
+          "links": [
+            {
+              "title": "Построить маршрут",
+              "url": "https://yandex.ru/maps/?rtext=~55.693224%2C37.549417&rtt=pedestrian"
+            }
+          ],
+          "dest": "contacts.html#visit"
+        },
+        {
+          "id": "network-contacts",
+          "title": "Контакты сети",
+          "source": "https://www.aqualogo.ru/contacts",
+          "summary": "У трёх направлений разные телефоны. Вопросы о рыбах на Молодёжной принимает супермаркет, заказы на изготовление аквариумов — салон, а интернет-заказы — Aqua-Shop.",
+          "detail": "Салон на Молодёжной работает с понедельника по субботу с 11:00 до 20:00, в воскресенье с 11:00 до 19:00. Номер салона +7 499 745-00-11, номер Aqua-Shop +7 499 745-00-44.",
+          "links": [
+            {
+              "title": "Салон «Аква Лого»",
+              "url": "https://salon.aqualogo.ru/"
+            },
+            {
+              "title": "Интернет-магазин Aqua-Shop",
+              "url": "https://www.aqua-shop.ru/"
+            }
+          ],
+          "dest": "contacts.html#network"
+        }
+      ]
+    }
+  ],
+  "priceCategories": [
+    {
+      "title": "Аквариумы и тумбы",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=aquariums"
+    },
+    {
+      "title": "Кормление",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=feed"
+    },
+    {
+      "title": "Освещение",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=light"
+    },
+    {
+      "title": "Терморегуляция",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=thermoregulation"
+    },
+    {
+      "title": "Аэрация, озонирование, CO2",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=aeration"
+    },
+    {
+      "title": "Фильтрация и стерилизация",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=filtration"
+    },
+    {
+      "title": "Морская аквариумистика",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=sea"
+    },
+    {
+      "title": "Инвентарь для обслуживания",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=equipment"
+    },
+    {
+      "title": "Аквариумная химия",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=aquachemistry"
+    },
+    {
+      "title": "Декорации",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=decor"
+    },
+    {
+      "title": "Литература и видео",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=litetura"
+    },
+    {
+      "title": "Пруды и фонтаны",
+      "url": "https://www.aqualogo.ru/price_super_tovar/?razdel=pond"
+    },
+    {
+      "title": "Пресноводная рыба",
+      "url": "https://www.aqualogo.ru/price_super_fresh_fish"
+    },
+    {
+      "title": "Пресноводные беспозвоночные",
+      "url": "https://www.aqualogo.ru/price_super_fresh_inv"
+    },
+    {
+      "title": "Пресноводные растения",
+      "url": "https://www.aqualogo.ru/price_super_fresh_plants"
+    },
+    {
+      "title": "Морская рыба",
+      "url": "https://www.aqualogo.ru/price_super_sea_fish"
+    },
+    {
+      "title": "Морские беспозвоночные",
+      "url": "https://www.aqualogo.ru/price_super_sea_inv"
+    },
+    {
+      "title": "Товары для птиц",
+      "url": "https://www.aqualogo.ru/price_super_birds_tovars"
+    },
+    {
+      "title": "Замороженные корма для рыб",
+      "url": "https://www.aqualogo.ru/price_super_fodder"
+    },
+    {
+      "title": "Террариумы, террариумное оборудование и аксессуары",
+      "url": "https://www.aqualogo.ru/price_super_terra_tovars"
+    },
+    {
+      "title": "Живые корма для террариумных животных",
+      "url": "https://www.aqualogo.ru/price_super_terra_live_fodder"
+    },
+    {
+      "title": "Террариумные животные",
+      "url": "https://www.aqualogo.ru/price_super_terra_animals"
+    }
+  ],
+  "network": [
+    {
+      "id": "home",
+      "title": "Сайт компании",
+      "url": "https://www.aqualogo.ru/",
+      "summary": "Общая страница сети объединяет супермаркет, салон, онлайн-магазин, полезные материалы и учебный центр."
+    },
+    {
+      "id": "super",
+      "title": "Супермаркет",
+      "url": "https://www.aqualogo.ru/super",
+      "summary": "Розничный магазин на Молодёжной для выбора обитателей и товаров на месте."
+    },
+    {
+      "id": "salon",
+      "title": "Аквариумный салон",
+      "url": "https://salon.aqualogo.ru/",
+      "summary": "Изготовление, оформление и обслуживание аквариумов. Заказы принимает салон."
+    },
+    {
+      "id": "shop",
+      "title": "Интернет-магазин Aqua-Shop",
+      "url": "https://www.aqua-shop.ru/",
+      "summary": "Заказ через интернет и доставка. Вопросы о таком заказе принимает Aqua-Shop."
+    },
+    {
+      "id": "learn",
+      "title": "Учебный центр",
+      "url": "https://www.aqualogo.ru/learn",
+      "summary": "Программы обучения аквариумистов, сведения о преподавателях и расписание."
+    },
+    {
+      "id": "info",
+      "title": "Аква Лого Инфо",
+      "url": "https://www.aqualogo.ru/info_portal",
+      "summary": "Тематические статьи об обитателях, оборудовании и устройстве аквариума."
+    },
+    {
+      "id": "forum-fresh",
+      "title": "Пресноводный форум",
+      "url": "https://freshforum.aqualogo.ru/",
+      "summary": "Обсуждения аквариумистов и датированные темы о пресноводных поступлениях."
+    },
+    {
+      "id": "forum-sea",
+      "title": "Морской форум",
+      "url": "https://seaforum.aqualogo.ru/",
+      "summary": "Темы о морских аквариумах и поступлениях рыб и беспозвоночных."
+    },
+    {
+      "id": "company",
+      "title": "О компании",
+      "url": "https://www.aqualogo.ru/about",
+      "summary": "История аквариумной компании «Аква Лого», которая работает с 1995 года."
+    },
+    {
+      "id": "company-news",
+      "title": "Новости компании",
+      "url": "https://www.aqualogo.ru/news/",
+      "summary": "Новости подразделений сети и объявления о событиях."
+    },
+    {
+      "id": "company-discount",
+      "title": "Дисконтная программа сети",
+      "url": "https://www.aqualogo.ru/discount_program",
+      "summary": "Официальные условия накопительной программы магазинов сети."
+    },
+    {
+      "id": "company-articles",
+      "title": "Статьи Аква Лого",
+      "url": "https://www.aqualogo.ru/all_info_articles",
+      "summary": "Полный архив редакционных материалов компании."
+    },
+    {
+      "id": "company-gallery",
+      "title": "Фоторепортажи компании",
+      "url": "https://www.aqualogo.ru/photo/",
+      "summary": "Фотоальбомы мероприятий и подразделений компании."
+    },
+    {
+      "id": "company-jobs",
+      "title": "Вакансии компании",
+      "url": "https://www.aqualogo.ru/vacancy",
+      "summary": "Страница сети для соискателей, контакты и анкета."
+    },
+    {
+      "id": "network-contacts",
+      "title": "Все контакты",
+      "url": "https://www.aqualogo.ru/contacts",
+      "summary": "Контакты отдельных подразделений, включая салон и сервисную службу."
+    }
+  ],
+  "networkServices": [
+    {
+      "title": "Обслуживание аквариумов",
+      "url": "https://salon.aqualogo.ru/akvariumyi/obsluzhivanie/"
+    },
+    {
+      "title": "Аквариумы на заказ",
+      "url": "https://salon.aqualogo.ru/akvariumyi/na-zakaz/"
+    },
+    {
+      "title": "Оформление аквариумов",
+      "url": "https://salon.aqualogo.ru/akvariumyi/oformlenie-akvariumov/"
+    },
+    {
+      "title": "Мебель на заказ",
+      "url": "https://salon.aqualogo.ru/akvariumyi/mebel-na-zakaz.html"
+    },
+    {
+      "title": "Переезд с аквариумом",
+      "url": "https://salon.aqualogo.ru/akvariumyi/perevezti-akvarium.html"
+    },
+    {
+      "title": "Чистка аквариума",
+      "url": "https://salon.aqualogo.ru/akvariumyi/chistka-akvariumov/"
+    }
+  ],
+  "social": [
+    {
+      "title": "Аква Лого в ВКонтакте",
+      "url": "https://vk.com/aqualogo"
+    },
+    {
+      "title": "Аква Лого в Телеграмм",
+      "url": "https://t.me/aqualogo_ru"
+    },
+    {
+      "title": "Аква Лого на Яндекс Дзен",
+      "url": "https://dzen.ru/aqualogo"
+    },
+    {
+      "title": "Аква Лого на RuTube",
+      "url": "https://rutube.ru/channel/42240761/"
+    },
+    {
+      "title": "Аква Лого в Одноклассниках",
+      "url": "https://ok.ru/group/54730728865818"
+    },
+    {
+      "title": "Аква Лого в MAX",
+      "url": "https://max.ru/aqualogo"
+    }
+  ],
+  "map": {
+    "oid": "86770098976",
+    "name": "Аква Лого",
+    "address": "Москва, Молодёжная ул., 4",
+    "lat": 55.693224,
+    "lon": 37.549417,
+    "phone": "+7 499 745-00-55",
+    "email": "supermarket@aqualogo.ru",
+    "hours": "Ежедневно с 10:00 до 21:00",
+    "entrance": "Вход с улицы Фотиевой, с внешней стороны дома у подъезда 5. Магазин находится на цокольном этаже.",
+    "metro": "От метро «Университет» по схеме магазина около 15 минут пешком.",
+    "official": "https://www.aqualogo.ru/supermarkety_aqualogo",
+    "officialDirections": "https://www.aqualogo.ru/Shema_proezda_v_Akva_Logo_na_Ugo_zapadnoi",
+    "org": "https://yandex.ru/maps/org/akva_logo/86770098976/",
+    "embed": "https://yandex.ru/map-widget/v1/?ol=biz&oid=86770098976&z=17",
+    "route": "https://yandex.ru/maps/?rtext=~55.693224%2C37.549417&rtt=pedestrian"
+  }
+}
