@@ -1,0 +1,351 @@
+{
+  "logo": {
+    "file": "fastcopy-logo.svg",
+    "source": "https://fastcopy.ru/img/Logo2.svg",
+    "width": 245.8,
+    "height": 61.2
+  },
+  "photos": [
+    {
+      "file": "riso-palette.webp",
+      "source": "https://fastcopy.ru/img/img-content/cvetnaya-bumaga/white.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "width": 1440,
+      "height": 1223,
+      "alt": "Пробный оттиск восьми красок ризографа на белой бумаге.",
+      "subjects": [
+        "risography",
+        "paper-samples"
+      ],
+      "kind": "scan"
+    },
+    {
+      "file": "round-stickers.webp",
+      "source": "https://fastcopy.ru/img/cards/card-naklejki.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "На листе с круглыми розовыми наклейками приподнят край одной наклейки.",
+      "subjects": [
+        "round-stickers",
+        "digital",
+        "plotter-cutting",
+        "cut-stickers"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "offset-leaflets.webp",
+      "source": "https://fastcopy.ru/img/cards/card-ofsetnaya-pechat.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Полноцветные рекламные листовки с разными макетами.",
+      "subjects": [
+        "offset",
+        "flyers"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "riso-booklets.webp",
+      "source": "https://fastcopy.ru/img/cards/card-rizograf2.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Брошюры с обложками из жёлтой, голубой, зелёной и розовой бумаги.",
+      "subjects": [
+        "brochures"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "riso-leaflets.webp",
+      "source": "https://fastcopy.ru/img/cards/card-rizograf.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Образцы объявлений и листовок с чёрной печатью на цветной бумаге.",
+      "subjects": [
+        "leaflets",
+        "notices"
+      ],
+      "kind": "sample"
+    },
+    {
+      "file": "glued-spine.webp",
+      "source": "https://fastcopy.ru/img/cards/card-kbs.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Разворот каталога на клеевом переплёте, крупный план корешка и блока страниц.",
+      "subjects": [
+        "catalogues",
+        "glued-binding",
+        "catalogs"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "stapled-brochures.webp",
+      "source": "https://fastcopy.ru/img/cards/card-ofsetnaya-pechat3.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Брошюры сложены стопкой, видны сгибы обложек и скрепление блока.",
+      "subjects": [
+        "stapling",
+        "offset-brochures"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "business-cards.webp",
+      "source": "https://fastcopy.ru/img/cards/card-ofsetnaya-pechat2.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Веером разложены полноцветные карточки на плотной бумаге.",
+      "subjects": [
+        "business-cards",
+        "cardstock",
+        "postcards"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "printed-forms.webp",
+      "source": "https://fastcopy.ru/img/cards/card-blank-100-gramm.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Фирменные бланки и формы учёта с печатью у верхнего края.",
+      "subjects": [
+        "forms"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "hardcover-journals.webp",
+      "source": "https://fastcopy.ru/img/cards/card-izgotovlenie-zhurnalov-v-tverdom-pereplete.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Стопка журналов учёта с тёмными корешками.",
+      "subjects": [
+        "journals"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "pocket-calendars.webp",
+      "source": "https://fastcopy.ru/img/img-content/karmannye-kalendariki/karman_kalendari.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/",
+      "width": 647,
+      "height": 346,
+      "alt": "Стопка карманных календарей и оборот с календарной сеткой.",
+      "subjects": [
+        "pocket-calendars"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "vinyl-magnets.webp",
+      "source": "https://fastcopy.ru/img/cards/card-izgotovlenie-reklamnyh-magnitov.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Печатный магнит с закруглёнными углами на фоне готового тиража.",
+      "subjects": [
+        "magnets"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "pin-badge.webp",
+      "source": "https://fastcopy.ru/img/cards/card-izgotovlenie-znachkov.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Лицевая сторона значка с цветным оттиском и металлическая изнанка с булавкой.",
+      "subjects": [
+        "badges"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "mirror-keyring.webp",
+      "source": "https://fastcopy.ru/img/img-content/izgotovlenie-znachkov/znachki-05.png",
+      "page": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "width": 300,
+      "height": 261,
+      "alt": "Брелок с печатной вставкой, кольцом и зеркальцем на обороте.",
+      "subjects": [
+        "keyrings"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "pocket-mirror.webp",
+      "source": "https://fastcopy.ru/img/img-content/izgotovlenie-znachkov/znachki-01.png",
+      "page": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "width": 300,
+      "height": 162,
+      "alt": "Круглое карманное зеркальце со стороны печати и зеркальной поверхности.",
+      "subjects": [
+        "mirrors"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "bottle-opener.webp",
+      "source": "https://fastcopy.ru/img/img-content/izgotovlenie-znachkov/znachki-02.png",
+      "page": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "width": 300,
+      "height": 176,
+      "alt": "Открывалка-магнит с печатной вставкой и металлической изнанкой.",
+      "subjects": [
+        "openers"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "spring-binding.webp",
+      "source": "https://fastcopy.ru/img/cards/card-pereplet.jpg",
+      "page": "https://fastcopy.ru/uslugi/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Два переплёта крупным планом: пластиковая и металлическая пружины.",
+      "subjects": [
+        "spring-binding"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "laminating.webp",
+      "source": "https://fastcopy.ru/img/cards/card-laminirovanie-dokumentov.jpg",
+      "page": "https://fastcopy.ru/uslugi/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Листы с цветными оттисками проходят через ламинирующее оборудование.",
+      "subjects": [
+        "lamination"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "hardcover-detail.webp",
+      "source": "https://fastcopy.ru/img/img-content/tverdyj-pereplet-diplomnyh-rabot/metallbind02.jpg",
+      "page": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+      "width": 1440,
+      "height": 960,
+      "alt": "Синий и бордовый твёрдые переплёты Metallbind со стороны корешков.",
+      "subjects": [
+        "binding",
+        "hardcover"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "office.webp",
+      "source": "https://fastcopy.ru/img/img-content/adres-tipografii/ofis.jpg",
+      "page": "https://fastcopy.ru/adres-tipografii/",
+      "width": 1024,
+      "height": 678,
+      "alt": "Здание типографии на Тайнинской улице, снятое со стороны тротуара.",
+      "subjects": [
+        "contacts",
+        "office",
+        "order",
+        "delivery"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "riso-red.webp",
+      "source": "https://fastcopy.ru/img/img-content/svetocopy_eco/svetocopy_rizo_red.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "width": 1080,
+      "height": 1440,
+      "alt": "Оттиски красной краской на листе кремовой бумаги SvetoCopy ECO.",
+      "subjects": [
+        "eco-paper"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "riso-blue.webp",
+      "source": "https://fastcopy.ru/img/img-content/svetocopy_eco/svetocopy_rizo_blue.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "width": 1080,
+      "height": 1440,
+      "alt": "Образец бланка, отпечатанного синей краской на бумаге SvetoCopy ECO.",
+      "subjects": [
+        "eco-paper",
+        "forms"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "riso-black.webp",
+      "source": "https://fastcopy.ru/img/img-content/svetocopy_eco/svetocopy_rizo_black.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "width": 1080,
+      "height": 1440,
+      "alt": "Лист с рядами оттисков чёрной краской на бумаге SvetoCopy ECO.",
+      "subjects": [
+        "eco-paper",
+        "notices"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "orange-paper.webp",
+      "source": "https://fastcopy.ru/img/img-content/cvetnaya-bumaga/10.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "width": 1440,
+      "height": 876,
+      "alt": "Образец печати разными красками на оранжевой бумаге № 10.",
+      "subjects": [
+        "paper-samples"
+      ],
+      "kind": "scan"
+    },
+    {
+      "file": "pink-paper.webp",
+      "source": "https://fastcopy.ru/img/img-content/cvetnaya-bumaga/np.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "width": 1440,
+      "height": 885,
+      "alt": "Образец печати разными красками на неоновой розовой бумаге.",
+      "subjects": [
+        "paper-samples"
+      ],
+      "kind": "scan"
+    },
+    {
+      "file": "journal-spread.webp",
+      "source": "https://fastcopy.ru/img/img-content/zhurnaly-tverdyj-pereplet/izgotovlenie-zhurnala-v-tverdom-pereplete-3.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+      "width": 1440,
+      "height": 1440,
+      "alt": "Открытый журнал учёта с разграфлёнными страницами и закладкой.",
+      "subjects": [
+        "journals"
+      ],
+      "kind": "photo"
+    },
+    {
+      "file": "offset-stickers.webp",
+      "source": "https://fastcopy.ru/img/cards/card-ofsetnye-naklejki.jpg",
+      "page": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "width": 1050,
+      "height": 600,
+      "alt": "Цветная прямоугольная наклейка отделена уголком от подложки.",
+      "subjects": [
+        "stickers"
+      ],
+      "kind": "photo"
+    }
+  ]
+}

@@ -1,0 +1,2288 @@
+{
+  "entries": [
+    {
+      "slug": "risography",
+      "title": "Ризография",
+      "group": "technology",
+      "summary": "Трафаретная печать для листовок, инструкций и бланков. Один и тот же оригинал можно тиражировать чёрной или цветной краской.",
+      "details": [
+        {
+          "title": "Для какого тиража",
+          "text": "Типография рекомендует ризографию примерно от 100 одинаковых экземпляров. Для партии меньше 50 экземпляров предлагает чёрно-белое копирование."
+        },
+        {
+          "title": "Как ложится цвет",
+          "text": "Каждая краска проходит через отдельный трафарет. Ровный текст и линейная графика воспроизводятся лучше крупных плотных заливок. Цвет и фактура бумаги участвуют в результате."
+        },
+        {
+          "title": "Что приготовить",
+          "text": "Выберите размер, количество, бумагу и печать с каждой стороны. Если изделие состоит из нескольких разных страниц, выберите брошюру или переплёт на пружину."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "related": [
+        "leaflets",
+        "riso-process",
+        "paper-samples",
+        "brochures"
+      ],
+      "aliases": [
+        {
+          "label": "срочное тиражирование на ризографе",
+          "source": "https://fastcopy.ru/poligrafiya/rizografiya/"
+        }
+      ]
+    },
+    {
+      "slug": "digital",
+      "title": "Цифровая печать",
+      "group": "technology",
+      "summary": "Цветная и чёрно-белая печать с файла. Подходит для небольших партий визиток, наклеек, листовок и карточек.",
+      "details": [
+        {
+          "title": "Размер и стороны",
+          "text": "В расчёте типографии есть форматы от А7 до SRA3 (320 × 450 мм), евроформат, три размера круга и индивидуальные размеры. Можно сочетать цветную лицевую сторону и чёрно-белый оборот."
+        },
+        {
+          "title": "Выбор материала",
+          "text": "Есть немелованная, матовая и глянцевая мелованная бумага, самоклейка, калька и дизайнерские материалы. Укажите, нужна ли печать до края или биговка для сгиба."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "related": [
+        "business-cards",
+        "round-stickers",
+        "cut-stickers"
+      ],
+      "aliases": [
+        {
+          "label": "Стоимость цифровой печати",
+          "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/"
+        },
+        {
+          "label": "цифровая",
+          "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/"
+        }
+      ]
+    },
+    {
+      "slug": "offset",
+      "title": "Офсетная печать",
+      "group": "technology",
+      "summary": "Полноцветные тиражи листовок, бланков, каталогов и открыток. Бумагу выбирают под содержимое и последующую обработку.",
+      "details": [
+        {
+          "title": "Для письма и иллюстраций",
+          "text": "На немелованной бумаге удобно заполнять бланки и ставить печать. Мелованные листы используют для флаеров и каталогов, а картон 300 г/м² — для открыток и карточек."
+        },
+        {
+          "title": "Как посчитать",
+          "text": "Для оценки нужны размер после резки, тираж, плотность бумаги, цветность и обработка. Для брошюр укажите число полос и способ скрепления."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "related": [
+        "forms",
+        "flyers",
+        "catalogues",
+        "offset-card-gloss"
+      ],
+      "aliases": [
+        {
+          "label": "офсетная печать",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/"
+        }
+      ]
+    },
+    {
+      "slug": "leaflets",
+      "title": "Листовки на ризографе",
+      "group": "product",
+      "summary": "Один макет на весь тираж. А5 удобно раздавать, А4 подойдёт, если на листе должны поместиться схема или подробная инструкция.",
+      "details": [
+        {
+          "title": "Параметры листовки",
+          "text": "Выберите печать с одной или обеих сторон. Цветной лист даёт фону оттенок даже при печати одной чёрной краской."
+        },
+        {
+          "title": "Стоимость",
+          "text": "Калькулятор считает листовки одного размера и переносит параметры в письмо менеджеру. Разные оригиналы или сложную сборку опишите отдельно."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "related": [
+        "risography",
+        "paper-samples",
+        "artwork"
+      ],
+      "calculator": {
+        "format": "A5"
+      },
+      "aliases": [
+        {
+          "label": "Листовки",
+          "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/"
+        },
+        {
+          "label": "Стоимость печати на ризографе",
+          "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/"
+        }
+      ]
+    },
+    {
+      "slug": "notices",
+      "title": "Объявления",
+      "group": "product",
+      "summary": "Объявления и информационные листы на ризографе. В расчёте уже выбран формат А4.",
+      "details": [
+        {
+          "title": "Как подготовить",
+          "text": "Сохраните крупный читаемый текст и поля по краям. Для цветного фона можно выбрать цветную бумагу и печатать чёрной краской."
+        },
+        {
+          "title": "Оборот",
+          "text": "Для односторонней расклейки выберите печать на лице. Если у объявления должны быть отрывные части, отдельно опишите их менеджеру."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "related": [
+        "leaflets",
+        "artwork"
+      ],
+      "calculator": {
+        "format": "A4"
+      }
+    },
+    {
+      "slug": "riso-process",
+      "title": "Как работает ризограф",
+      "group": "guide",
+      "summary": "Ризограф делает мастер-плёнку, закрепляет её на барабане и продавливает через трафарет краску на бумагу.",
+      "details": [
+        {
+          "title": "Один проход — одна краска",
+          "text": "Для следующей краски нужен ещё один проход. В цветном макете учитывайте возможное смещение слоёв и оставляйте запас вокруг элементов, которым нужно совместиться."
+        },
+        {
+          "title": "Макет под трафарет",
+          "text": "Начинайте с чёткого оригинала, оставляйте свободные поля и избегайте плотной заливки у переднего края. Для полутонов типография указывает разрешение не выше 300 dpi."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/",
+      "related": [
+        "risography",
+        "artwork",
+        "paper-samples"
+      ],
+      "aliases": [
+        {
+          "label": "Что такое ризограф",
+          "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/"
+        },
+        {
+          "label": "Что такое ризограф и ризография?",
+          "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/"
+        }
+      ]
+    },
+    {
+      "slug": "paper-samples",
+      "title": "Цветная бумага и краска",
+      "group": "guide",
+      "summary": "На образцах типографии видно, как одна и та же краска меняется на разных оттенках бумаги.",
+      "details": [
+        {
+          "title": "Плотность и формат",
+          "text": "В коллекции есть образцы бумаги 80 и 160 г/м². Распродажная бумага поставляется листами А4, из которых можно нарезать А5 и А6."
+        },
+        {
+          "title": "Проверка оттенка",
+          "text": "Неоновые листы выглядят на экране иначе, чем вживую. Бумажный веер можно посмотреть в офисе. Для ярких неоновых вариантов типография указывает одностороннюю печать."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "related": [
+        "risography",
+        "eco-paper",
+        "offers"
+      ],
+      "aliases": [
+        {
+          "label": "Цветная бумага для ризографии",
+          "source": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/"
+        },
+        {
+          "label": "самый большой выбор цветных красок",
+          "source": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/"
+        }
+      ]
+    },
+    {
+      "slug": "eco-paper",
+      "title": "Бумага SvetoCopy Eco",
+      "group": "guide",
+      "summary": "Офисная бумага оттенка слоновой кости из полубелёной целлюлозы. Подходит для бланков, инструкций и брошюр.",
+      "details": [
+        {
+          "title": "Как выглядит печать",
+          "text": "Естественный оттенок остаётся видимым под чёрной и цветной краской. Типография публикует сканы пустого листа и собственных оттисков."
+        },
+        {
+          "title": "Две стороны",
+          "text": "Непрозрачность листа позволяет печатать на обороте. Посмотреть реальный оттенок бумаги можно по образцам в типографии."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "related": [
+        "paper-samples",
+        "leaflets"
+      ],
+      "aliases": [
+        {
+          "label": "Бумага Светокопи ЭКО без импортных отбеливателей",
+          "source": "https://fastcopy.ru/poligrafiya/svetocopy-eco/"
+        },
+        {
+          "label": "Бумага Светокопи ЭКО",
+          "source": "https://fastcopy.ru/poligrafiya/svetocopy-eco/"
+        }
+      ]
+    },
+    {
+      "slug": "forms",
+      "title": "Фирменные бланки",
+      "group": "product",
+      "summary": "Немелованная бумага 100 или 160 г/м² подходит для ручки и штемпельной краски. Бланк можно отпечатать в цвете с одной или двух сторон.",
+      "details": [
+        {
+          "title": "Какие параметры указать",
+          "text": "Сообщите обрезной размер, тираж и плотность листа. У типографии есть форматы от визитки до А2 и возможность обсудить индивидуальный размер."
+        },
+        {
+          "title": "Обработка",
+          "text": "Можно добавить фальцовку, перфорацию, скругление углов или отверстия. Для простого чёрного бланка сравните стоимость ризографии."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/",
+      "related": [
+        "offset",
+        "leaflets",
+        "artwork"
+      ],
+      "aliases": [
+        {
+          "label": "Бланки",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/"
+        },
+        {
+          "label": "Бланки — офсетка 100 гр/м2 и 160 гр/м2",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "brochures",
+      "title": "Брошюры на ризографе",
+      "group": "product",
+      "summary": "Инструкции, сборники и учебные материалы скрепляют двумя скобами по сгибу. Готовая брошюра раскрывается как тетрадь.",
+      "details": [
+        {
+          "title": "Блок и обложка",
+          "text": "Укажите формат после сгиба, число полос, тираж и бумагу для блока. Можно добавить отдельную обложку и задать печать на её внешней и внутренней сторонах."
+        },
+        {
+          "title": "Небольшой тираж",
+          "text": "Для нескольких десятков брошюр типография предлагает чёрно-белое копирование. Сравните варианты перед заказом."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "related": [
+        "copied-booklets",
+        "stapling",
+        "offset-brochure-gloss"
+      ],
+      "aliases": [
+        {
+          "label": "Брошюры",
+          "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/"
+        }
+      ]
+    },
+    {
+      "slug": "business-cards",
+      "title": "Визитки",
+      "group": "product",
+      "summary": "Визитные карточки печатают на цифровой машине. Доступны стандарт 90 × 50 мм и формат дисконтной карты 85 × 55 мм.",
+      "details": [
+        {
+          "title": "Бумага и цвет",
+          "text": "Для обычной визитки можно выбрать картон 300 г/м². Есть также фактурная бумага и дизайнерские материалы. Укажите цветность каждой стороны."
+        },
+        {
+          "title": "После печати",
+          "text": "Карточки можно заламинировать матовой или глянцевой плёнкой и скруглить от одного до четырёх углов."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/pechat-vizitok/",
+      "related": [
+        "digital",
+        "lamination",
+        "offset-card-gloss"
+      ]
+    },
+    {
+      "slug": "catalogues",
+      "title": "Каталоги на клею",
+      "group": "product",
+      "summary": "Каталоги и толстые брошюры с квадратным корешком. Мелованный блок вклеивают в более плотную обложку.",
+      "details": [
+        {
+          "title": "Объём и формат",
+          "text": "В исходном расчёте представлены 64–200 полос с обложкой. Есть вертикальные А4, А5 и А6, квадрат 210 × 210 мм и узкий формат 100 × 210 мм."
+        },
+        {
+          "title": "Обложка",
+          "text": "Основной вариант сочетает блок 130 г/м² и обложку 300 г/м². Для обложки можно выбрать глянцевую, матовую или бархатистую плёнку soft touch."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/",
+      "related": [
+        "offset",
+        "offset-brochure-gloss",
+        "artwork"
+      ],
+      "aliases": [
+        {
+          "label": "Каталоги",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/"
+        },
+        {
+          "label": "Брошюры — КБС (на клею)",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/"
+        }
+      ]
+    },
+    {
+      "slug": "journals",
+      "title": "Журналы учёта",
+      "group": "product",
+      "summary": "Журнал А4 в твёрдом или мягком переплёте можно заказать от одного экземпляра. Ориентация — книжная или альбомная.",
+      "details": [
+        {
+          "title": "Внутренний блок",
+          "text": "До 200 страниц, то есть 100 листов, на белой или бежевой бумаге 80 г/м². Блок скрепляют металлическими скобами."
+        },
+        {
+          "title": "Обложка",
+          "text": "Для твёрдой обложки используют переплётный картон толщиной 1,5–2 мм с оклейкой. Для мягкой — бумагу 160–200 г/м². Приложите образец разлиновки и текст для обложки."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+      "related": [
+        "binding",
+        "forms"
+      ],
+      "aliases": [
+        {
+          "label": "Журналы учета в твердом переплете",
+          "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/"
+        },
+        {
+          "label": "Изготовление журналов учета в твердом переплете от 1 экземпляра",
+          "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/"
+        }
+      ]
+    },
+    {
+      "slug": "stickers",
+      "title": "Прямоугольные наклейки",
+      "group": "product",
+      "summary": "Полноцветные бумажные стикеры печатают на самоклейке, режут по размеру и передают стопкой.",
+      "details": [
+        {
+          "title": "Форма",
+          "text": "Для офсета подойдут прямоугольник и квадрат. Есть размеры от А8 до А3, а также 90 × 50 мм. По запросу скруглят нужные углы."
+        },
+        {
+          "title": "Как использовать",
+          "text": "У подложки есть насечки, чтобы было легче отделять наклейку. Если важен фигурный контур, выберите плоттерную резку."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/",
+      "related": [
+        "cut-stickers",
+        "round-stickers",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Наклейки прямоугольные",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/"
+        },
+        {
+          "label": "Стикеры",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/"
+        },
+        {
+          "label": "Наклейки",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/"
+        }
+      ]
+    },
+    {
+      "slug": "round-stickers",
+      "title": "Круглые наклейки",
+      "group": "product",
+      "summary": "Для кругов диаметром 44, 70 или 86 мм у типографии есть готовые вырубные формы.",
+      "details": [
+        {
+          "title": "Тираж и материал",
+          "text": "Можно заказать от одного экземпляра. Печать цифровая, на бумажной самоклейке. Насечки с обратной стороны облегчают отделение подложки."
+        },
+        {
+          "title": "Другой диаметр",
+          "text": "Для индивидуального диаметра или сложной формы типография предлагает плоттерную резку. Укажите диаметр и количество в запросе."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-kruglyh-nakleek/",
+      "related": [
+        "cut-stickers",
+        "thanks-stickers",
+        "digital"
+      ],
+      "aliases": [
+        {
+          "label": "Наклейки круглые",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-kruglyh-nakleek/"
+        }
+      ]
+    },
+    {
+      "slug": "cut-stickers",
+      "title": "Фигурные наклейки",
+      "group": "product",
+      "summary": "Сначала изображение печатают, затем плоттер вырезает его по контуру. Так получаются фигурные стикеры и круги нестандартного размера.",
+      "details": [
+        {
+          "title": "Материал",
+          "text": "Типография предлагает полуглянцевую или неоновую бумажную самоклейку, белую матовую и прозрачную глянцевую плёнку."
+        },
+        {
+          "title": "Расчёт",
+          "text": "Укажите габариты в миллиметрах, количество и цветность лицевой стороны. Стоимость складывается из печати и резки. Приложите изображение с контуром."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "related": [
+        "plotter",
+        "round-stickers",
+        "digital"
+      ],
+      "aliases": [
+        {
+          "label": "Наклейки произвольной формы",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/"
+        }
+      ]
+    },
+    {
+      "slug": "thanks-stickers",
+      "title": "Наклейки «Спасибо»",
+      "group": "product",
+      "summary": "Бумажные круги диаметром 44 мм для пакетов, коробок и конвертов. Можно выбрать готовый рисунок или добавить свой логотип.",
+      "details": [
+        {
+          "title": "Готовый рисунок",
+          "text": "При запросе укажите нужный дизайн и количество. Наличие конкретных готовых наклеек подтвердит менеджер."
+        },
+        {
+          "title": "Свой дизайн",
+          "text": "Пришлите изображение или логотип и желаемый срок. Для других диаметров есть отдельная страница круглых наклеек."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/",
+      "related": [
+        "round-stickers",
+        "cut-stickers"
+      ],
+      "aliases": [
+        {
+          "label": "Наклейки \"Спасибо\"",
+          "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/"
+        },
+        {
+          "label": "Наклейки для бизнеса",
+          "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/"
+        },
+        {
+          "label": "Наклейки для бизнеса «Спасибо»",
+          "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/"
+        }
+      ]
+    },
+    {
+      "slug": "magnets",
+      "title": "Гибкие виниловые магниты",
+      "group": "product",
+      "summary": "Тонкий гибкий магнит можно изготовить в виде прямоугольника, квадрата, круга, фоторамки или по индивидуальному контуру.",
+      "details": [
+        {
+          "title": "Форма и размер",
+          "text": "В списке типографии есть, например, квадраты 50 × 50 мм, круги 60 и 75 мм, прямоугольник 54 × 86 мм. Для своего контура приложите эскиз с размерами."
+        },
+        {
+          "title": "Комплектация",
+          "text": "В расчёт можно включить отдельный пакетик. Для фоторамки, блокнота или магнита с термометром укажите нужную конструкцию."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/",
+      "related": [
+        "badges",
+        "cut-stickers"
+      ],
+      "aliases": [
+        {
+          "label": "Магниты мягкие",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/"
+        },
+        {
+          "label": "Мягкие магниты",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/"
+        }
+      ]
+    },
+    {
+      "slug": "badges",
+      "title": "Закатные значки",
+      "group": "product",
+      "summary": "У значка круглая металлическая основа с печатной вставкой. Доступные диаметры — 32, 58 и 75 мм.",
+      "details": [
+        {
+          "title": "Лицевая сторона",
+          "text": "Изображение защищает глянцевая, матовая или голографическая плёнка. Укажите нужное покрытие при запросе."
+        },
+        {
+          "title": "Упаковка",
+          "text": "Значки можно упаковать по одному в пакетики Zip-Lock. Для брелока, зеркала или открывашки выбирайте соответствующий тип основы."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "related": [
+        "keyrings",
+        "mirrors",
+        "openers"
+      ],
+      "aliases": [
+        {
+          "label": "Значки",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/"
+        },
+        {
+          "label": "Значки, зеркальца, открывашки, брелки",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/"
+        }
+      ]
+    },
+    {
+      "slug": "keyrings",
+      "title": "Брелоки",
+      "group": "product",
+      "summary": "Закатный сувенир диаметром 58 мм может быть зеркальцем-брелоком или открывашкой-брелоком.",
+      "details": [
+        {
+          "title": "Конструкция",
+          "text": "Выберите назначение оборотной стороны. Изображение на лицевой стороне защищает плёнка."
+        },
+        {
+          "title": "Для оценки",
+          "text": "Сообщите тип брелока, тираж, покрытие и необходимость упаковки в индивидуальный Zip-Lock."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "related": [
+        "mirrors",
+        "openers",
+        "badges"
+      ],
+      "aliases": [
+        {
+          "label": "Брелки",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/"
+        }
+      ]
+    },
+    {
+      "slug": "mirrors",
+      "title": "Карманные зеркальца",
+      "group": "product",
+      "summary": "Для закатного зеркальца есть основы диаметром 58 и 75 мм. Малый размер также выпускают в виде брелока.",
+      "details": [
+        {
+          "title": "Покрытие рисунка",
+          "text": "Отпечаток с внешней стороны можно защитить матовой, глянцевой или голографической ламинацией."
+        },
+        {
+          "title": "Комплектация",
+          "text": "Укажите диаметр, количество и нужна ли индивидуальная упаковка. Для варианта с кольцом выберите зеркальце-брелок."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "related": [
+        "keyrings",
+        "badges"
+      ],
+      "aliases": [
+        {
+          "label": "Зеркальца",
+          "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/"
+        }
+      ]
+    },
+    {
+      "slug": "openers",
+      "title": "Открывашки",
+      "group": "product",
+      "summary": "Закатную открывашку диаметром 58 мм делают с магнитом или с кольцом для ключей.",
+      "details": [
+        {
+          "title": "Выбор основы",
+          "text": "Для холодильника подойдёт открывалка-магнит. Для связки ключей укажите вариант открывалки-брелока."
+        },
+        {
+          "title": "Для расчёта",
+          "text": "Пришлите изображение, количество, желаемое покрытие и требования к упаковке."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "related": [
+        "keyrings",
+        "magnets",
+        "badges"
+      ]
+    },
+    {
+      "slug": "calendars",
+      "title": "Квартальные календари",
+      "group": "product",
+      "summary": "Настенный календарь с постером, тремя календарными блоками и бегунком. Рекламу можно разместить снизу или под каждым месяцем.",
+      "details": [
+        {
+          "title": "Три ширины",
+          "text": "Блоки МИНИ — 297 мм, МИДИ — 335 мм, МАКСИ — 370 мм. Наличие конкретной сетки на нужный год типография подтверждает отдельно."
+        },
+        {
+          "title": "Отделка и сборка",
+          "text": "Постер и рекламные поля можно заламинировать. Выберите цвет пружин, пикколо и упаковку. Сообщите ширину, тираж и количество рекламных полей."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/",
+      "related": [
+        "calendar-mini",
+        "calendar-midi",
+        "calendar-maxi",
+        "three-in-one"
+      ],
+      "aliases": [
+        {
+          "label": "Календари квартальные",
+          "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/"
+        },
+        {
+          "label": "Календари",
+          "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/"
+        }
+      ]
+    },
+    {
+      "slug": "three-in-one",
+      "title": "Календари «3 в 1»",
+      "group": "product",
+      "summary": "Компактный настенный календарь показывает три месяца на общей сетке. Предусмотрены ширины 297 и 335 мм.",
+      "details": [
+        {
+          "title": "Устройство",
+          "text": "Можно увеличить высоту постера, заказать календарь с нижним рекламным полем или без него и выбрать вариант с бегунком."
+        },
+        {
+          "title": "Материалы",
+          "text": "Сетку печатают на офсетной или мелованной бумаге. Для постера доступны матовая и глянцевая ламинация."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/kalendari-3-v-1/",
+      "related": [
+        "calendars",
+        "calendar-mini",
+        "calendar-midi"
+      ],
+      "aliases": [
+        {
+          "label": "Календари 3 в 1",
+          "source": "https://fastcopy.ru/poligrafiya/kalendari-3-v-1/"
+        }
+      ]
+    },
+    {
+      "slug": "pocket-calendars",
+      "title": "Карманные календари",
+      "group": "product",
+      "summary": "Размер 70 × 100 мм, картон 300 г/м², полноцветная печать с двух сторон. На одной стороне помещают изображение, на другой — календарную сетку.",
+      "details": [
+        {
+          "title": "Стандарт",
+          "text": "Календарик ламинируют с двух сторон глянцевой плёнкой и скругляют четыре угла. Можно запросить ламинацию только с одной стороны."
+        },
+        {
+          "title": "Экономный вариант",
+          "text": "Можно заказать карточки с прямыми углами без плёнки. Укажите нужный год, количество и отделку."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/",
+      "related": [
+        "calendars",
+        "offset-card-gloss",
+        "lamination"
+      ],
+      "aliases": [
+        {
+          "label": "Календари карманные",
+          "source": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/"
+        },
+        {
+          "label": "Карманные календарики",
+          "source": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/"
+        }
+      ]
+    },
+    {
+      "slug": "calendar-mini",
+      "title": "Календарные блоки МИНИ",
+      "group": "product",
+      "summary": "Сменные блоки для настенного квартального календаря шириной 297 мм.",
+      "details": [
+        {
+          "title": "Варианты сетки",
+          "text": "Сетку предлагают на офсетной или мелованной бумаге. Выберите оформление сетки и сообщите год календаря."
+        },
+        {
+          "title": "Резерв",
+          "text": "После заявки типография может зарезервировать выбранную сетку на один день. Актуальное наличие уточняют в офисе."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-mini/",
+      "related": [
+        "calendars",
+        "three-in-one"
+      ],
+      "aliases": [
+        {
+          "label": "Блоки для квартальных календарей МИНИ",
+          "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-mini/"
+        }
+      ]
+    },
+    {
+      "slug": "calendar-midi",
+      "title": "Календарные блоки МИДИ",
+      "group": "product",
+      "summary": "Сменные блоки для настенного квартального календаря шириной 335 мм.",
+      "details": [
+        {
+          "title": "Варианты сетки",
+          "text": "Сетку предлагают на офсетной или мелованной бумаге. Выберите оформление сетки и сообщите год календаря."
+        },
+        {
+          "title": "Резерв",
+          "text": "После заявки типография может зарезервировать выбранную сетку на один день. Актуальное наличие уточняют в офисе."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-midi/",
+      "related": [
+        "calendars",
+        "three-in-one"
+      ],
+      "aliases": [
+        {
+          "label": "Блоки для квартальных календарей МИДИ",
+          "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-midi/"
+        }
+      ]
+    },
+    {
+      "slug": "calendar-maxi",
+      "title": "Календарные блоки МАКСИ",
+      "group": "product",
+      "summary": "Сменные блоки для настенного квартального календаря шириной 370 мм.",
+      "details": [
+        {
+          "title": "Варианты сетки",
+          "text": "Сетка доступна на мелованной бумаге. Выберите оформление сетки и сообщите год календаря."
+        },
+        {
+          "title": "Резерв",
+          "text": "После заявки типография может зарезервировать выбранную сетку на один день. Актуальное наличие уточняют в офисе."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-maxi/",
+      "related": [
+        "calendars",
+        "three-in-one"
+      ],
+      "aliases": [
+        {
+          "label": "Блоки для квартальных календарей МАКСИ",
+          "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-maxi/"
+        }
+      ]
+    },
+    {
+      "slug": "flyers",
+      "title": "Флаеры на глянце",
+      "group": "product",
+      "summary": "Для полноцветных листовок, афиш и буклетов используется глянцевая мелованная бумага 130 г/м².",
+      "details": [
+        {
+          "title": "Бумага и сгиб",
+          "text": "Тонкий мелованный лист подходит для фальцовки. Можно сложить буклет пополам, гармошкой или другим способом из расчёта типографии."
+        },
+        {
+          "title": "Оценка тиража",
+          "text": "Укажите формат, количество, одну или две стороны и обработку. Для бланка под печать или рукописный текст подойдёт немелованная бумага."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/",
+      "related": [
+        "offset",
+        "forms",
+        "leaflets"
+      ],
+      "aliases": [
+        {
+          "label": "Флаера",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/"
+        },
+        {
+          "label": "Листовки 130 гр/м2 глянцевая меловка",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "matte-flyers",
+      "title": "Листовки на матовой бумаге",
+      "group": "product",
+      "summary": "Для полноцветных листовок, афиш и буклетов используется матовая мелованная бумага 150 г/м².",
+      "details": [
+        {
+          "title": "Бумага и сгиб",
+          "text": "Матовая поверхность даёт сдержанный отпечаток. Сообщите размер в готовом виде и способ фальцовки, если у листовки будут сгибы."
+        },
+        {
+          "title": "Оценка тиража",
+          "text": "Укажите формат, количество, одну или две стороны и обработку. Для бланка под печать или рукописный текст подойдёт немелованная бумага."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-150-gramm/",
+      "related": [
+        "offset",
+        "forms",
+        "leaflets"
+      ],
+      "aliases": [
+        {
+          "label": "Листовки 150 гр/м2 матовая меловка",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-150-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "heavy-flyers",
+      "title": "Плотные глянцевые листовки",
+      "group": "product",
+      "summary": "Для полноцветных листовок, афиш и буклетов используется глянцевая мелованная бумага 170 г/м².",
+      "details": [
+        {
+          "title": "Бумага и сгиб",
+          "text": "Для сгиба плотного листа типография рекомендует биговку. Она помогает избежать заломов покрытия."
+        },
+        {
+          "title": "Оценка тиража",
+          "text": "Укажите формат, количество, одну или две стороны и обработку. Для бланка под печать или рукописный текст подойдёт немелованная бумага."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-170-gramm/",
+      "related": [
+        "offset",
+        "forms",
+        "leaflets"
+      ],
+      "aliases": [
+        {
+          "label": "Листовки 170 гр/м2 глянцевая меловка",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-170-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "offset-card-gloss",
+      "title": "Глянцевый картон",
+      "group": "product",
+      "summary": "Глянцевый картон плотностью 300 г/м² для офсетной печати.",
+      "details": [
+        {
+          "title": "Применение",
+          "text": "Подходит для открыток, визиток, карманных календарей и плотных флаеров."
+        },
+        {
+          "title": "Обработка",
+          "text": "Обсудите ламинацию, скругление углов и биговку, если карточка должна складываться. В письме укажите готовый размер и количество."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-300-gramm/",
+      "related": [
+        "business-cards",
+        "pocket-calendars",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Картон глянцевый 300 гр/м2",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-300-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "offset-card-coated",
+      "title": "Двусторонний мелованный картон",
+      "group": "product",
+      "summary": "Двусторонний мелованный картон плотностью 300 г/м² для офсетной печати.",
+      "details": [
+        {
+          "title": "Применение",
+          "text": "Две мелованные стороны подходят для открыток и карточек с изображениями на лице и обороте."
+        },
+        {
+          "title": "Обработка",
+          "text": "Обсудите ламинацию, скругление углов и биговку, если карточка должна складываться. В письме укажите готовый размер и количество."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-350-gramm/",
+      "related": [
+        "business-cards",
+        "pocket-calendars",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Картон мелованный двусторонний 300 гр/м2",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-350-gramm/"
+        }
+      ]
+    },
+    {
+      "slug": "offset-brochure-gloss",
+      "title": "Брошюры на глянцевой бумаге",
+      "group": "product",
+      "summary": "Полноцветная брошюра на двух скобах по сгибу. Глянцевый мелованный блок подходит для насыщенных цветных иллюстраций.",
+      "details": [
+        {
+          "title": "Блок и обложка",
+          "text": "Для обложки можно выбрать ту же бумагу, что и для блока, или более плотную. В запросе укажите оба материала и число полос с учётом обложки."
+        },
+        {
+          "title": "Размер после сгиба",
+          "text": "Пришлите размеры закрытого издания и тираж. Для объёмного блока можно рассмотреть клеевое скрепление с прямым корешком."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-glyancevaya-bumaga/",
+      "related": [
+        "brochures",
+        "catalogues",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Брошюры — глянцевая меловка",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-glyancevaya-bumaga/"
+        }
+      ]
+    },
+    {
+      "slug": "offset-brochure-matte",
+      "title": "Брошюры на матовой бумаге",
+      "group": "product",
+      "summary": "Полноцветная брошюра на двух скобах по сгибу. Матовый мелованный блок даёт спокойную поверхность без яркого глянцевого блика.",
+      "details": [
+        {
+          "title": "Блок и обложка",
+          "text": "Для обложки можно выбрать ту же бумагу, что и для блока, или более плотную. В запросе укажите оба материала и число полос с учётом обложки."
+        },
+        {
+          "title": "Размер после сгиба",
+          "text": "Пришлите размеры закрытого издания и тираж. Для объёмного блока можно рассмотреть клеевое скрепление с прямым корешком."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-matovaya-bumaga/",
+      "related": [
+        "brochures",
+        "catalogues",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Брошюры — матовая меловка",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-matovaya-bumaga/"
+        }
+      ]
+    },
+    {
+      "slug": "offset-brochure-uncoated",
+      "title": "Брошюры на немелованной бумаге",
+      "group": "product",
+      "summary": "Полноцветная брошюра на двух скобах по сгибу. Немелованные листы подходят для инструкций с полями для записей и отметок.",
+      "details": [
+        {
+          "title": "Блок и обложка",
+          "text": "Для обложки можно выбрать ту же бумагу, что и для блока, или более плотную. В запросе укажите оба материала и число полос с учётом обложки."
+        },
+        {
+          "title": "Размер после сгиба",
+          "text": "Пришлите размеры закрытого издания и тираж. Для объёмного блока можно рассмотреть клеевое скрепление с прямым корешком."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-ofsetnaya-bumaga/",
+      "related": [
+        "brochures",
+        "catalogues",
+        "offset"
+      ],
+      "aliases": [
+        {
+          "label": "Брошюры — офсетная бумага",
+          "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-ofsetnaya-bumaga/"
+        }
+      ]
+    },
+    {
+      "slug": "copied-booklets",
+      "title": "Брошюры на ксероксе",
+      "group": "product",
+      "summary": "Чёрно-белые брошюры А5 и А4 для небольших тиражей. Блок и обложку рассчитывают отдельно.",
+      "details": [
+        {
+          "title": "Подготовьте страницы",
+          "text": "Укажите количество брошюр и число полос в каждой. Выберите бумагу для блока, а при необходимости — отдельную бумагу для обложки."
+        },
+        {
+          "title": "Печать обложки",
+          "text": "В запросе отметьте, нужна ли печать на внешней стороне обложки и на внутренних страницах. Типография также рассматривает обложки заказчика."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-kserokse/",
+      "related": [
+        "brochures",
+        "copying",
+        "stapling"
+      ],
+      "aliases": [
+        {
+          "label": "Брошюры на черно-белом ксероксе",
+          "source": "https://fastcopy.ru/poligrafiya/broshyura-na-kserokse/"
+        }
+      ]
+    },
+    {
+      "slug": "copying",
+      "title": "Чёрно-белое копирование",
+      "group": "service",
+      "summary": "Копирование листов А4 и А3 с одной или двух сторон. Для многолистного оригинала можно рассчитать сразу комплект.",
+      "details": [
+        {
+          "title": "Как считать оригиналы",
+          "text": "Укажите отдельно число односторонних и двусторонних листов в одном комплекте, затем количество полных комплектов."
+        },
+        {
+          "title": "Бумага",
+          "text": "Есть белая и цветная бумага, варианты 80, 120 и 160 г/м². Совместимость собственной бумаги уточните у менеджера."
+        }
+      ],
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "related": [
+        "file-print",
+        "copied-booklets",
+        "spring-binding"
+      ],
+      "aliases": [
+        {
+          "label": "Ксерокопирование",
+          "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/"
+        },
+        {
+          "label": "Черно-белый ксерокс",
+          "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/"
+        },
+        {
+          "label": "Ксерокопирование для малого тиража",
+          "source": "https://fastcopy.ru/poligrafiya/cherno-belyj-kseroks/"
+        }
+      ]
+    },
+    {
+      "slug": "file-print",
+      "title": "Распечатка с файла",
+      "group": "service",
+      "summary": "Распечатайте документы на листах А4 или А3. Для оценки важны число страниц и количество комплектов.",
+      "details": [
+        {
+          "title": "Чёрно-белая или цветная",
+          "text": "Для чёрно-белого комплекта разделите односторонние и двусторонние листы. Цветные страницы можно согласовать по условиям цифровой печати."
+        },
+        {
+          "title": "После печати",
+          "text": "Если страницы нужно собрать в определённом порядке, укажите это в запросе. Для переплёта добавьте тип пружины, скоб или обложки."
+        }
+      ],
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "related": [
+        "copying",
+        "digital",
+        "spring-binding"
+      ]
+    },
+    {
+      "slug": "spring-binding",
+      "title": "Переплёт на пружину",
+      "group": "service",
+      "summary": "Листы соединяют пластиковой или металлической пружиной по короткой или длинной стороне. Тираж можно начать с одного комплекта.",
+      "details": [
+        {
+          "title": "Как раскрывается блок",
+          "text": "Пластиковая пружина раскрывается на 180°, металлическая позволяет перекинуть лист на 360°. Сообщите формат, ориентацию и сторону переплёта."
+        },
+        {
+          "title": "Комплектация",
+          "text": "Укажите число односторонних и двусторонних листов, количество комплектов и обложки сверху и снизу. Есть прозрачный пластик, цветные обложки и фактурный картон."
+        }
+      ],
+      "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/",
+      "related": [
+        "copying",
+        "binding",
+        "stapling"
+      ],
+      "aliases": [
+        {
+          "label": "Переплет на пружину",
+          "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/"
+        },
+        {
+          "label": "Печать на ризографе с переплетом",
+          "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/"
+        },
+        {
+          "label": "Переплет на пластиковую или металлическую пружину",
+          "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/"
+        }
+      ]
+    },
+    {
+      "slug": "stapling",
+      "title": "Скрепление брошюр на скобу",
+      "group": "service",
+      "summary": "Для тетрадной брошюры листы складывают и скрепляют двумя скобами по сгибу.",
+      "details": [
+        {
+          "title": "Что указать",
+          "text": "Сообщите размер закрытой брошюры, количество полос и экземпляров. Если есть обложка, укажите отдельно её бумагу и цветность."
+        },
+        {
+          "title": "Скрепка сбоку",
+          "text": "Если нужно скрепить стопку листов за угол или по стороне, выберите листоподборку и боковое скрепление. Для такого комплекта сгиб не нужен."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "related": [
+        "brochures",
+        "copied-booklets",
+        "spring-binding"
+      ],
+      "aliases": [
+        {
+          "label": "Переплет брошюр на скрепки",
+          "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/"
+        },
+        {
+          "label": "Брошюровка на скобу",
+          "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/"
+        }
+      ]
+    },
+    {
+      "slug": "lamination",
+      "title": "Ламинирование",
+      "group": "service",
+      "summary": "Матовая или глянцевая плёнка защищает отпечаток. Толщина плёнки и способ ламинации зависят от формата и назначения изделия.",
+      "details": [
+        {
+          "title": "Пакетная ламинация",
+          "text": "Лист запечатывают в плёнку с полем около 3 мм по краям. Это вариант для отдельных документов. Глянцевая поверхность усиливает блеск, матовая уменьшает блики."
+        },
+        {
+          "title": "Рулонная ламинация",
+          "text": "Для карточек и календарей типография использует тонкую рулонную плёнку. Укажите формат, количество и поверхности, которые нужно защитить."
+        }
+      ],
+      "source": "https://fastcopy.ru/uslugi/laminirovanie/",
+      "related": [
+        "business-cards",
+        "pocket-calendars"
+      ]
+    },
+    {
+      "slug": "plotter",
+      "title": "Резка на плоттере",
+      "group": "service",
+      "summary": "Фигурный контур вырезают после цифровой печати на листе самоклеящейся бумаги или плёнки.",
+      "details": [
+        {
+          "title": "Контур",
+          "text": "Приложите изображение и линию реза, укажите ширину и высоту в миллиметрах. Итог зависит от количества наклеек на печатном листе."
+        },
+        {
+          "title": "Для круглых изделий",
+          "text": "Диаметры 44, 70 и 86 мм типография может вырубить готовым ножом. Для других размеров подходит индивидуальная резка."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "related": [
+        "cut-stickers",
+        "round-stickers",
+        "digital"
+      ]
+    },
+    {
+      "slug": "binding",
+      "title": "Твёрдый переплёт дипломов",
+      "group": "service",
+      "summary": "Диплом, курсовую или выпускную работу можно переплести в твёрдую обложку по технологии «Металлбинд» от одного экземпляра.",
+      "details": [
+        {
+          "title": "Обложка и тиснение",
+          "text": "Есть обложки разных цветов, с золотым тиснением и без него. Сообщите название работы и нужна ли надпись."
+        },
+        {
+          "title": "Что включить",
+          "text": "Укажите число цветных и чёрно-белых страниц, прозрачных файлов и конвертов. Типография также выполняет замену отдельных страниц уже переплетённой работы."
+        }
+      ],
+      "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+      "related": [
+        "file-print",
+        "spring-binding",
+        "order"
+      ],
+      "aliases": [
+        {
+          "label": "Твердый переплет дипломных и курсовых работ",
+          "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/"
+        },
+        {
+          "label": "Переплет на металлбинд - специальные цены для студентов",
+          "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/"
+        },
+        {
+          "label": "Твердый переплет дипломов и курсовых",
+          "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/"
+        }
+      ]
+    },
+    {
+      "slug": "artwork",
+      "title": "Требования к макету",
+      "group": "guide",
+      "summary": "Для ризографии подготовьте макет в конечном размере и проверьте поля, заливки и расстояния между красками.",
+      "details": [
+        {
+          "title": "Поля и край листа",
+          "text": "Оставьте свободное поле не меньше 10 мм. Если краска должна доходить до края, согласуйте с менеджером печать на большем листе и последующую подрезку."
+        },
+        {
+          "title": "Разделение красок",
+          "text": "Подготовьте отдельное изображение для каждой краски и общий вид для сверки. Типография рекомендует разносить элементы разных цветов на 5 мм из-за возможного смещения."
+        },
+        {
+          "title": "Заливки и полутона",
+          "text": "Большие тёмные плашки могут смазываться. Для бумажного оригинала с полутонами типография указывает разрешение до 300 dpi. Оборот бумажного оригинала оставьте чистым."
+        },
+        {
+          "title": "Другие технологии",
+          "text": "Для цифровой и офсетной печати сообщите обрезной размер и обработку. Для календаря уточните требования к постеру и рекламным полям до подготовки файла."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/",
+      "related": [
+        "riso-process",
+        "order",
+        "calendars"
+      ]
+    },
+    {
+      "slug": "order",
+      "title": "Как сделать заказ",
+      "group": "guide",
+      "summary": "Передайте менеджеру макет и описание тиража по почте или привезите их в офис. Готовую спецификацию листовок можно скопировать из калькулятора.",
+      "details": [
+        {
+          "title": "Письмо с макетом",
+          "text": "Напишите на info@fastcopy.ru. В теме укажите, от кого заказ, в письме — формат, количество, бумагу, краску с каждой стороны, обработку, контактное лицо и телефон. Для доставки добавьте адрес."
+        },
+        {
+          "title": "Согласование и оплата",
+          "text": "Для безналичного счёта добавьте реквизиты. Типография начинает работу после оплаты и допускает предоплату от 50%. Размер предоплаты и срок согласуйте до запуска."
+        },
+        {
+          "title": "Получение",
+          "text": "Можно забрать тираж в рабочие часы, заказать доставку или прислать своего водителя. Сообщите, за каким заказом он приедет. При безналичной оплате уточните документы на получение."
+        }
+      ],
+      "source": "https://fastcopy.ru/kak-sdelat-zakaz/",
+      "related": [
+        "artwork",
+        "delivery",
+        "contacts"
+      ]
+    },
+    {
+      "slug": "delivery",
+      "title": "Доставка и оплата",
+      "group": "guide",
+      "summary": "Заберите тираж на Тайнинской или согласуйте доставку. Для оценки менеджеру понадобятся адрес, вес и стоимость заказа.",
+      "details": [
+        {
+          "title": "Самовывоз и свой курьер",
+          "text": "Вход и парковка находятся со стороны улицы. Для получения своим водителем заказ должен быть готов и оплачен. Юрлицу нужно согласовать передачу доверенности."
+        },
+        {
+          "title": "Доставка типографии",
+          "text": "Машина выезжает утром. Ближайшая доставка возможна в рабочий день после изготовления. Заказы свыше 500 кг делят на две поездки. На выставки типография тиражи не возит."
+        },
+        {
+          "title": "Как оплатить",
+          "text": "Юрлица могут запросить счёт после передачи макетов, задания и реквизитов. В кассе офиса принимают наличные рубли. Для заказа от 30 000 ₽ типография указывает бесплатную доставку в пределах МКАД."
+        }
+      ],
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "related": [
+        "order",
+        "contacts",
+        "offers"
+      ],
+      "aliases": [
+        {
+          "label": "Доставка",
+          "source": "https://fastcopy.ru/dostavka-i-oplata/"
+        }
+      ]
+    },
+    {
+      "slug": "offers",
+      "title": "Скидки и акции",
+      "group": "guide",
+      "summary": "У типографии есть специальные условия на отдельную бумагу, доставку и студенческую распечатку. Наличие материалов можно уточнить перед заказом.",
+      "details": [
+        {
+          "title": "Бумага из распродажи",
+          "text": "На сайте указаны светло-серая и ярко-розовая бумага 80 г/м². Лист имеет формат А4, из него можно нарезать А5 и А6. Яркий неоновый вариант подходит только для одной стороны."
+        },
+        {
+          "title": "Доставка и студенческие работы",
+          "text": "Для заказа от 30 000 ₽ действует условие бесплатной доставки внутри МКАД. Для студенческой распечатки и твёрдого переплёта есть отдельное предложение."
+        }
+      ],
+      "source": "https://fastcopy.ru/skidki-i-akcii/",
+      "related": [
+        "paper-samples",
+        "delivery",
+        "binding"
+      ]
+    },
+    {
+      "slug": "pricing",
+      "title": "Как формируются цены",
+      "group": "guide",
+      "summary": "Типография публикует рублёвые цены и указывает, что в офисе действуют те же расценки.",
+      "details": [
+        {
+          "title": "Что меняется",
+          "text": "Стоимость расходных материалов пересматривают при закупке новой партии. Курс валюты сам по себе не меняет цену автоматически."
+        },
+        {
+          "title": "Перед запуском",
+          "text": "При запросе укажите вариант бумаги, отделку и тираж. По этим параметрам менеджер подтвердит сумму для заказа."
+        }
+      ],
+      "source": "https://fastcopy.ru/cenovaya-politika/",
+      "related": [
+        "order",
+        "offers"
+      ],
+      "aliases": [
+        {
+          "label": "Ценовая политика",
+          "source": "https://fastcopy.ru/cenovaya-politika/"
+        },
+        {
+          "label": "Наша ценовая политика",
+          "source": "https://fastcopy.ru/cenovaya-politika/"
+        }
+      ]
+    },
+    {
+      "slug": "kraft-leaflets",
+      "title": "Печать на крафте",
+      "group": "product",
+      "summary": "Небелёная крафт-бумага плотностью 78 г/м² даёт тёплый фон листовкам и объявлениям на ризографе.",
+      "details": [
+        {
+          "title": "Бумага и оттиск",
+          "text": "При запросе укажите формат готового листка, количество и краску. Тон бумаги влияет на то, как будет выглядеть цветной оттиск."
+        },
+        {
+          "title": "Перед запуском",
+          "text": "Для выбора оттенка можно попросить образец в офисе. Сообщите, нужно ли резать тираж на дополнительные части или складывать листы."
+        }
+      ],
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "related": [
+        "leaflets",
+        "paper-samples",
+        "artwork"
+      ],
+      "aliases": [
+        {
+          "label": "Печать на крафте от 100 экземпляров",
+          "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/"
+        }
+      ]
+    }
+  ],
+  "contacts": {
+    "title": "Контакты",
+    "address": "Москва, ул. Тайнинская, д. 12, корп. 2",
+    "postcode": "129345",
+    "email": "info@fastcopy.ru",
+    "phones": [
+      "+7 495 643-48-58",
+      "+7 495 643-48-31",
+      "+7 926 726-63-39"
+    ],
+    "hours": [
+      "Пн–Чт 09:00–20:00",
+      "Пт 09:00–18:00",
+      "Сб–Вс — выходные"
+    ],
+    "coordinates": {
+      "lat": 55.87978,
+      "lon": 37.683234
+    },
+    "mapEmbed": "https://yandex.ru/map-widget/v1/?ol=biz&oid=1053471368&z=16",
+    "mapUrl": "https://yandex.ru/maps/org/fastkopi/1053471368/",
+    "routeUrl": "https://yandex.ru/maps/213/moscow/?rtext=~55.879780%2C37.683234&rtt=pd",
+    "source": "https://fastcopy.ru/adres-tipografii/",
+    "arrival": "Вход и парковка со стороны улицы. Ближайшая остановка — «Магаданская улица»."
+  },
+  "menu": [
+    {
+      "label": "Полиграфия",
+      "source": "https://fastcopy.ru/poligrafiya/",
+      "target": "catalog",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Услуги",
+      "source": "https://fastcopy.ru/uslugi/",
+      "target": "services",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Главная",
+      "source": "https://fastcopy.ru/",
+      "target": "index",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Ризография",
+      "source": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "target": "risography",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Цифровая печать",
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "target": "digital",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Офсетная печать",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "target": "offset",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Бланки",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/",
+      "target": "forms",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Брелки",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "target": "keyrings",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Брошюры",
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "target": "brochures",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Визитки",
+      "source": "https://fastcopy.ru/poligrafiya/pechat-vizitok/",
+      "target": "business-cards",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Журналы учета в твердом переплете",
+      "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+      "target": "journals",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Зеркальца",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "target": "mirrors",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Значки",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "target": "badges",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Календари квартальные",
+      "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/",
+      "target": "calendars",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Календари 3 в 1",
+      "source": "https://fastcopy.ru/poligrafiya/kalendari-3-v-1/",
+      "target": "three-in-one",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Календари карманные",
+      "source": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/",
+      "target": "pocket-calendars",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Каталоги",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/",
+      "target": "catalogues",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Листовки",
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "target": "leaflets",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Магниты мягкие",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/",
+      "target": "magnets",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Наклейки прямоугольные",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/",
+      "target": "stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Наклейки круглые",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-kruglyh-nakleek/",
+      "target": "round-stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Наклейки произвольной формы",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "target": "cut-stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Наклейки \"Спасибо\"",
+      "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/",
+      "target": "thanks-stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Объявления",
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "target": "notices",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Открывашки",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "target": "openers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Стикеры",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/",
+      "target": "stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Флаера",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/",
+      "target": "flyers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "\"Огласите весь список, пожалуйста!\"",
+      "source": "https://fastcopy.ru/poligrafiya/",
+      "target": "catalog",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Доставка",
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "target": "delivery",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Ксерокопирование",
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "target": "copying",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Ламинирование",
+      "source": "https://fastcopy.ru/uslugi/laminirovanie/",
+      "target": "lamination",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Переплет на пружину",
+      "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/",
+      "target": "spring-binding",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Переплет брошюр на скрепки",
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "target": "stapling",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Распечатка с файла",
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "target": "file-print",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Резка на плоттере",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "target": "plotter",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Твердый переплет дипломных и курсовых работ",
+      "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+      "target": "binding",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "\"Огласите весь список, пожалуйста!\"",
+      "source": "https://fastcopy.ru/uslugi/",
+      "target": "services",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Доставка и оплата",
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "target": "delivery",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Карта сайта",
+      "source": "https://fastcopy.ru/karta-sajta/",
+      "target": "sitemap",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Контакты",
+      "source": "https://fastcopy.ru/adres-tipografii/",
+      "target": "contacts",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Изготовление журналов учета в твердом переплете от 1 экземпляра",
+      "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+      "target": "journals",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Печать на крафте от 100 экземпляров",
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "target": "kraft-leaflets",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Бумага Светокопи ЭКО без импортных отбеливателей",
+      "source": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "target": "eco-paper",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Переплет на металлбинд - специальные цены для студентов",
+      "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+      "target": "binding",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Наклейки для бизнеса",
+      "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/",
+      "target": "thanks-stickers",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Типография",
+      "source": "https://fastcopy.ru/",
+      "target": "index",
+      "section": "Мобильное меню"
+    },
+    {
+      "label": "Типография",
+      "source": "https://fastcopy.ru/",
+      "target": "index",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Главная",
+      "source": "https://fastcopy.ru/",
+      "target": "index",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Контакты",
+      "source": "https://fastcopy.ru/adres-tipografii/",
+      "target": "contacts",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Доставка и оплата",
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "target": "delivery",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Как сделать заказ",
+      "source": "https://fastcopy.ru/kak-sdelat-zakaz/",
+      "target": "order",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Ценовая политика",
+      "source": "https://fastcopy.ru/cenovaya-politika/",
+      "target": "pricing",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Скидки и акции",
+      "source": "https://fastcopy.ru/skidki-i-akcii/",
+      "target": "offers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Полиграфия",
+      "source": "https://fastcopy.ru/poligrafiya/",
+      "target": "catalog",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Ризография",
+      "source": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "target": "risography",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Что такое ризограф",
+      "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/",
+      "target": "riso-process",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Стоимость печати на ризографе",
+      "source": "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+      "target": "leaflets",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Бумага Светокопи ЭКО",
+      "source": "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+      "target": "eco-paper",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Цветная бумага для ризографии",
+      "source": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "target": "paper-samples",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры на ризографе",
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "target": "brochures",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Печать на ризографе с переплетом",
+      "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/",
+      "target": "spring-binding",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Офсетная печать",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "target": "offset",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Наклейки",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/",
+      "target": "stickers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Бланки — офсетка 100 гр/м2 и 160 гр/м2",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/",
+      "target": "forms",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Листовки 130 гр/м2 глянцевая меловка",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/",
+      "target": "flyers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Листовки 150 гр/м2 матовая меловка",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-150-gramm/",
+      "target": "matte-flyers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Листовки 170 гр/м2 глянцевая меловка",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-170-gramm/",
+      "target": "heavy-flyers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Картон глянцевый 300 гр/м2",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-300-gramm/",
+      "target": "offset-card-gloss",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Картон мелованный двусторонний 300 гр/м2",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-350-gramm/",
+      "target": "offset-card-coated",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры — глянцевая меловка",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-glyancevaya-bumaga/",
+      "target": "offset-brochure-gloss",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры — матовая меловка",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-matovaya-bumaga/",
+      "target": "offset-brochure-matte",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры — офсетная бумага",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-ofsetnaya-bumaga/",
+      "target": "offset-brochure-uncoated",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры — КБС (на клею)",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/",
+      "target": "catalogues",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Цифровая печать",
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "target": "digital",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Стоимость цифровой печати",
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "target": "digital",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Визитки",
+      "source": "https://fastcopy.ru/poligrafiya/pechat-vizitok/",
+      "target": "business-cards",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Наклейки произвольной формы",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "target": "cut-stickers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Круглые наклейки",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-kruglyh-nakleek/",
+      "target": "round-stickers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Наклейки для бизнеса «Спасибо»",
+      "source": "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/",
+      "target": "thanks-stickers",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Черно-белый ксерокс",
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "target": "copying",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюры на черно-белом ксероксе",
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-kserokse/",
+      "target": "copied-booklets",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Календари",
+      "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/",
+      "target": "calendars",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Квартальные календари",
+      "source": "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/",
+      "target": "calendars",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Календари 3 в 1",
+      "source": "https://fastcopy.ru/poligrafiya/kalendari-3-v-1/",
+      "target": "three-in-one",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Карманные календарики",
+      "source": "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/",
+      "target": "pocket-calendars",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Блоки для квартальных календарей МИНИ",
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-mini/",
+      "target": "calendar-mini",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Блоки для квартальных календарей МИДИ",
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-midi/",
+      "target": "calendar-midi",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Блоки для квартальных календарей МАКСИ",
+      "source": "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-maxi/",
+      "target": "calendar-maxi",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Журналы учета в твердом переплете",
+      "source": "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+      "target": "journals",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Значки, зеркальца, открывашки, брелки",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+      "target": "badges",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Мягкие магниты",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/",
+      "target": "magnets",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Услуги",
+      "source": "https://fastcopy.ru/uslugi/",
+      "target": "services",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Брошюровка на скобу",
+      "source": "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+      "target": "stapling",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Доставка",
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "target": "delivery",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Ксерокопирование",
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "target": "copying",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Ламинирование",
+      "source": "https://fastcopy.ru/uslugi/laminirovanie/",
+      "target": "lamination",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Переплет на пластиковую или металлическую пружину",
+      "source": "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/",
+      "target": "spring-binding",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Распечатка с файла",
+      "source": "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+      "target": "file-print",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Резка на плоттере",
+      "source": "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+      "target": "plotter",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Твердый переплет дипломов и курсовых",
+      "source": "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+      "target": "binding",
+      "section": "Карта сайта"
+    },
+    {
+      "label": "Полиграфия",
+      "source": "https://fastcopy.ru/poligrafiya/",
+      "target": "catalog",
+      "section": "Подвал"
+    },
+    {
+      "label": "Услуги",
+      "source": "https://fastcopy.ru/uslugi/",
+      "target": "services",
+      "section": "Подвал"
+    },
+    {
+      "label": "Доставка и оплата",
+      "source": "https://fastcopy.ru/dostavka-i-oplata/",
+      "target": "delivery",
+      "section": "Подвал"
+    },
+    {
+      "label": "Карта сайта",
+      "source": "https://fastcopy.ru/karta-sajta/",
+      "target": "sitemap",
+      "section": "Подвал"
+    },
+    {
+      "label": "Контакты",
+      "source": "https://fastcopy.ru/adres-tipografii/",
+      "target": "contacts",
+      "section": "Подвал"
+    },
+    {
+      "label": "Ризография",
+      "source": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "target": "risography",
+      "section": "Подвал"
+    },
+    {
+      "label": "Офсетная печать",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "target": "offset",
+      "section": "Подвал"
+    },
+    {
+      "label": "Цифровая печать",
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "target": "digital",
+      "section": "Подвал"
+    },
+    {
+      "label": "Как сделать заказ",
+      "source": "https://fastcopy.ru/kak-sdelat-zakaz/",
+      "target": "order",
+      "section": "Подвал"
+    },
+    {
+      "label": "Скидки и акции",
+      "source": "https://fastcopy.ru/skidki-i-akcii/",
+      "target": "offers",
+      "section": "Подвал"
+    },
+    {
+      "label": "срочное тиражирование на ризографе",
+      "source": "https://fastcopy.ru/poligrafiya/rizografiya/",
+      "target": "risography",
+      "section": "Главная"
+    },
+    {
+      "label": "Что такое ризограф и ризография?",
+      "source": "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/",
+      "target": "riso-process",
+      "section": "Главная"
+    },
+    {
+      "label": "самый большой выбор цветных красок",
+      "source": "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+      "target": "paper-samples",
+      "section": "Главная"
+    },
+    {
+      "label": "цифровая",
+      "source": "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+      "target": "digital",
+      "section": "Главная"
+    },
+    {
+      "label": "офсетная печать",
+      "source": "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+      "target": "offset",
+      "section": "Главная"
+    },
+    {
+      "label": "Наша ценовая политика",
+      "source": "https://fastcopy.ru/cenovaya-politika/",
+      "target": "pricing",
+      "section": "Главная"
+    },
+    {
+      "label": "Ксерокопирование для малого тиража",
+      "source": "https://fastcopy.ru/poligrafiya/cherno-belyj-kseroks/",
+      "target": "copying",
+      "section": "Ризография"
+    }
+  ],
+  "sources": [
+    "https://fastcopy.ru/",
+    "https://fastcopy.ru/adres-tipografii/",
+    "https://fastcopy.ru/cenovaya-politika/",
+    "https://fastcopy.ru/dostavka-i-oplata/",
+    "https://fastcopy.ru/kak-sdelat-zakaz/",
+    "https://fastcopy.ru/karta-sajta/",
+    "https://fastcopy.ru/poligrafiya/",
+    "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-maxi/",
+    "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-midi/",
+    "https://fastcopy.ru/poligrafiya/bloki-dlya-kvartalnyh-kalendarej-mini/",
+    "https://fastcopy.ru/poligrafiya/broshyura-na-kserokse/",
+    "https://fastcopy.ru/poligrafiya/broshyura-na-rizografe/",
+    "https://fastcopy.ru/poligrafiya/chto-takoe-rizograf/",
+    "https://fastcopy.ru/poligrafiya/cifrovaya-pechat/",
+    "https://fastcopy.ru/poligrafiya/cvetnaya-bumaga/",
+    "https://fastcopy.ru/poligrafiya/izgotovlenie-kruglyh-nakleek/",
+    "https://fastcopy.ru/poligrafiya/izgotovlenie-nakleek-proizvolnoj-formy/",
+    "https://fastcopy.ru/poligrafiya/izgotovlenie-vinilovyh-magnitov/",
+    "https://fastcopy.ru/poligrafiya/izgotovlenie-znachkov/",
+    "https://fastcopy.ru/poligrafiya/kalendari-3-v-1/",
+    "https://fastcopy.ru/poligrafiya/karmannye-kalendariki/",
+    "https://fastcopy.ru/poligrafiya/kvartalnye-kalendari/",
+    "https://fastcopy.ru/poligrafiya/naklejki-dlya-biznesa-spasibo/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-300-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-350-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-blankov-100-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-glyancevaya-bumaga/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-kbs/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-matovaya-bumaga/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-broshyury-ofsetnaya-bumaga/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-130-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-150-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-listovki-170-gramm/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat-nakleek/",
+    "https://fastcopy.ru/poligrafiya/ofsetnaya-pechat/",
+    "https://fastcopy.ru/poligrafiya/pechat-vizitok/",
+    "https://fastcopy.ru/poligrafiya/rizografiya/",
+    "https://fastcopy.ru/poligrafiya/stoimost-pechati-na-rizografe/",
+    "https://fastcopy.ru/poligrafiya/svetocopy-eco/",
+    "https://fastcopy.ru/poligrafiya/zhurnaly-tverdyj-pereplet/",
+    "https://fastcopy.ru/skidki-i-akcii/",
+    "https://fastcopy.ru/uslugi/",
+    "https://fastcopy.ru/uslugi/cherno-belyj-kseroks/",
+    "https://fastcopy.ru/uslugi/laminirovanie/",
+    "https://fastcopy.ru/uslugi/pechat-na-rizografe-s-perepletom/",
+    "https://fastcopy.ru/uslugi/tverdyj-pereplet-diplomnyh-rabot/",
+    "https://yandex.ru/maps/org/fastkopi/1053471368/"
+  ],
+  "externals": [
+    {
+      "label": "+7 495 643 48 58",
+      "source": "tel:+74956434858",
+      "target": "contacts"
+    },
+    {
+      "label": "+7 495 643 48 31",
+      "source": "tel:+74956434831",
+      "target": "contacts"
+    },
+    {
+      "label": "+7 926 726 63 39",
+      "source": "tel:+79267266339",
+      "target": "contacts"
+    },
+    {
+      "label": "Москва,ул.Тайнинская, дом 12, корпус 2",
+      "source": "https://yandex.ru/maps/org/fastkopi/1053471368/?ll=37.683186%2C55.879790&z=14.43",
+      "target": "contacts"
+    },
+    {
+      "label": "info@fastcopy.ru",
+      "source": "mailto:info@fastcopy.ru",
+      "target": "contacts"
+    },
+    {
+      "label": "Карточка организации в Яндекс Картах",
+      "source": "https://yandex.ru/maps/org/fastkopi/1053471368/",
+      "target": "contacts"
+    },
+    {
+      "label": "Виджет организации в Яндекс Картах",
+      "source": "https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1053471368",
+      "target": "contacts"
+    },
+    {
+      "label": "Маршрут до типографии",
+      "source": "https://yandex.ru/maps/213/moscow/?rtext=~55.879780%2C37.683234&rtt=pd",
+      "target": "contacts"
+    }
+  ]
+}
