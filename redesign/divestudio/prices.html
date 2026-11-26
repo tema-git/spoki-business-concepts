@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f9f5" />
+    <title>Курсы и цены · Студия дайвинга</title>
+    <meta
+      name="description"
+      content="Прайс на пробное погружение, обучение в бассейне, выезды и детские программы."
+    />
+    <link rel="icon" type="image/png" href="assets/studio-mark.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="mast">
+      <div class="mast-in">
+        <a class="brand" href="index.html" aria-label="Студия дайвинга, главная"
+          ><img src="assets/studio-mark.png" alt="" decoding="async" width="37" height="46" /><span
+            class="brand-word"
+            aria-hidden="true"
+          ></span
+        ></a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="index.html#programs">Программы</a><a href="schedule.html">Расписание</a
+          ><a href="prices.html" aria-current="page">Цены</a><a href="visit.html">Первый визит</a>
+        </nav>
+        <div class="head-actions">
+          <a href="contacts.html#request" class="magnet"
+            ><span
+              >Контакты
+              <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span></a
+          ><button
+            type="button"
+            class="icon-btn burger"
+            data-menu-open
+            aria-label="Открыть меню"
+            aria-haspopup="dialog"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" aria-hidden="true">
+              <path d="M2 7.5h19M2 13.5h19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <dialog class="site-menu" id="menu" aria-labelledby="menu-name">
+      <div class="menu-head">
+        <strong id="menu-name">Меню студии</strong
+        ><button class="icon-btn" type="button" data-menu-close aria-label="Закрыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <nav class="nav-groups" aria-label="Все разделы">
+        <div class="menu-home"><a href="index.html">Главная</a></div>
+        <div>
+          <h3>Погружения</h3>
+          <a href="trial.html">Пробное погружение</a><a href="basic.html">Базовый курс</a
+          ><a href="kids.html">Детские программы</a><a href="mermaid.html">Школа русалок</a
+          ><a href="gift.html">Подарочный сертификат</a>
+        </div>
+        <div>
+          <h3>В бассейн</h3>
+          <a href="schedule.html">Расписание</a><a href="prices.html">Курсы и цены</a
+          ><a href="visit.html">Первый визит</a><a href="visit.html#memo">Памятка</a
+          ><a href="contacts.html">Контакты</a>
+        </div>
+        <div>
+          <h3>Студия</h3>
+          <a href="instructors.html">О нас и инструкторах</a><a href="travel.html">Дайв-туры</a
+          ><a href="news.html">Новости</a><a href="blog.html">Блог</a>
+        </div>
+      </nav>
+    </dialog>
+    <main id="main">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a><span aria-hidden="true">/</span
+          ><span aria-current="page">Курсы и цены</span>
+        </nav>
+        <section class="intro with-photo" data-water>
+          <div class="intro-copy">
+            <div class="kicker">
+              <svg width="37" height="17" viewBox="0 0 37 17" fill="none" aria-hidden="true">
+                <path
+                  d="M1 6c4-5 7-5 12 0s8 5 13 0 7-4 10-2M1 12c4-5 7-5 12 0s8 5 13 0 7-4 10-2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                /></svg
+              ><span>Прайс дайв-центра</span>
+            </div>
+            <h1>Курсы и <em>цены</em></h1>
+            <p>
+              Стоимость для первого погружения, этапов обучения и дальнейших специализаций. У каждой программы
+              свои условия аренды и состав занятий.
+            </p>
+          </div>
+          <div class="intro-photo">
+            <img
+              src="assets/pool-underwater.webp"
+              alt="Дайверы тренируются в бассейне"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </section>
+      </div>
+      <div class="wrap rate-section">
+        <nav class="section-tabs" aria-label="Разделы прайса">
+          <a href="#dsdprice">Пробное занятие</a><a href="#owdprice">Начальный курс</a
+          ><a href="#detiprice">Детские программы</a><a href="#reviewprice">Возвращение к занятиям</a
+          ><a href="#aowdprice">Продвинутый курс</a><a href="#efrprice">Первая помощь</a
+          ><a href="#rescueprice">Rescue Diver</a><a href="#profiprice">Профессиональные курсы</a
+          ><a href="#specprice">Специализации</a><a href="#awareprice">Охрана водоёмов</a
+          ><a href="mermaid.html#pricemermaid">Школа русалок</a>
+        </nav>
+      </div>
+      <section class="wrap rate-section" id="dsdprice">
+        <h2>Пробное занятие</h2>
+        <p class="after-note">
+          В стоимость входят материалы eLearning, брифинг, комплект снаряжения, одно погружение с инструктором
+          и сертификат участника. Для двоих и более в будни при совместной оплате и прохождении действует
+          скидка 10%.
+        </p>
+        <div class="rate-line" id="rate-1">
+          <div><a href="trial.html">Discover Scuba Diving</a><small>за человека</small></div>
+          <b>6 000 ₽</b>
+        </div>
+        <a class="text-link" href="trial.html#price"
+          >Условия пробного погружения<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="owdprice">
+        <h2>Начальный курс</h2>
+        <p class="after-note">
+          Теория и пять занятий в бассейне оплачиваются отдельно от экзамена на открытой воде. В бассейне и на
+          экзамене в Подмосковье аренда включена. На море аренду снаряжения оплачивают отдельно. Выездные
+          расходы и сервисные сборы оплачиваются дополнительно.
+        </p>
+        <div class="rate-line" id="rate-2">
+          <div>
+            <a href="basic.html#pool">Курс OWD PADI — в группе</a
+            ><small>Теория и бассейн · за программу</small>
+          </div>
+          <b>33 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-3">
+          <div>
+            <a href="basic.html#pool">VIP курс OWD PADI — индивидуальный</a
+            ><small>Теория и бассейн · за программу</small>
+          </div>
+          <b>42 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-4">
+          <div>
+            <a href="basic.html#pool">VIP курс OWD PADI — парный по индивидуальному графику</a
+            ><small>Теория и бассейн · за человека при занятиях вдвоём</small>
+          </div>
+          <b>38 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-5">
+          <div>
+            <a href="basic.html#open-water">Open Water Diver — в группе</a
+            ><small>Открытая вода в Подмосковье · за программу</small>
+          </div>
+          <b>25 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-6">
+          <div>
+            <a href="basic.html#open-water">Open Water Diver — индивидуально</a
+            ><small>Открытая вода в Подмосковье · за программу</small>
+          </div>
+          <b>30 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-7">
+          <div>
+            <a href="basic.html#open-water">Open Water Diver — в группе</a
+            ><small>Открытая вода на море · за программу</small>
+          </div>
+          <b>18 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-8">
+          <div>
+            <a href="basic.html#open-water">Open Water Diver — индивидуально</a
+            ><small>Открытая вода на море · за программу</small>
+          </div>
+          <b>23 000 ₽</b>
+        </div>
+        <a class="text-link" href="basic.html#pool"
+          >Бассейн и открытая вода<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="detiprice">
+        <h2>Детские программы</h2>
+        <p class="after-note">
+          Бассейновые программы для детей 8–10 лет. В Seal Team и Master Seal Team аренда включена. Для
+          Bubblemaker уточните условия аренды при записи.
+        </p>
+        <div class="rate-line" id="rate-9">
+          <div><a href="kids.html#bubblemaker">Bubblemaker</a><small>за одно погружение</small></div>
+          <b>6 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-10">
+          <div>
+            <a href="kids.html#seal-team">Seal Team PADI — Школа подготовки морских котиков</a
+            ><small>за курс из 5 аквамиссий</small>
+          </div>
+          <b>30 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-11">
+          <div>
+            <a href="kids.html#master-seal-team"
+              >Master Seal Team PADI — Отряд морских котиков специального назначения</a
+            ><small>за курс из 10 аквамиссий</small>
+          </div>
+          <b>55 000 ₽</b>
+        </div>
+        <a class="text-link" href="kids.html#courses"
+          >Сравнить детские программы<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="reviewprice">
+        <h2>Возвращение к занятиям</h2>
+        <div class="rate-line" id="rate-12">
+          <div>Программа PADI Scuba Review<small>за программу</small></div>
+          <b>6 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-13">
+          <div>Программа PADI ReActivate<small>за программу</small></div>
+          <b>12 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-14">
+          <div>Дополнительное занятие с инструктором<small>за занятие</small></div>
+          <b>5 000 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%92%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BA+%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F%D0%BC#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="aowdprice">
+        <h2>Продвинутый курс</h2>
+        <div class="rate-line" id="rate-15">
+          <div>
+            <a href="education.html#aowd">Advanced Open Water Diver PADI · в группе</a
+            ><small>за программу</small>
+          </div>
+          <b>30 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-16">
+          <div>
+            <a href="education.html#aowd">Advanced Open Water Diver PADI · индивидуально</a
+            ><small>за программу</small>
+          </div>
+          <b>35 000 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B9+%D0%BA%D1%83%D1%80%D1%81#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="efrprice">
+        <h2>Первая помощь</h2>
+        <div class="rate-line" id="rate-17">
+          <div>
+            <a href="education.html#efr">Emergency First Response — CPR / FirstAid (учебник)</a
+            ><small>за программу</small>
+          </div>
+          <b>15 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-18">
+          <div>
+            <a href="education.html#efr">Emergency First Response — CPR / FirstAid (eLearning)</a
+            ><small>за программу</small>
+          </div>
+          <b>18 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-19">
+          <div>Emergency First Response — refresher<small>за программу</small></div>
+          <b>10 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-20">
+          <div>EFR — CPR / FirstAid / Care for Children (eLearning)<small>за программу</small></div>
+          <b>26 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-21">
+          <div>EFR — Care for Children (eLearning)<small>за программу</small></div>
+          <b>15 500 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="rescueprice">
+        <h2>Rescue Diver</h2>
+        <div class="rate-line" id="rate-22">
+          <div>
+            <a href="education.html#rescue">Rescue Diver PADI — (eLearning) в группе</a
+            ><small>за программу</small>
+          </div>
+          <b>38 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-23">
+          <div>Индивидуальный курс<small>доплата к групповому тарифу</small></div>
+          <b>+10 000 ₽</b>
+        </div>
+        <a class="text-link" href="contacts.html?program=other&amp;topic=Rescue+Diver#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="profiprice">
+        <h2>Профессиональные курсы</h2>
+        <div class="rate-line" id="rate-24">
+          <div>
+            <a href="education.html#dm">Divemaster PADI — Первая профессиональная ступень в дайвинге</a
+            ><small>за программу</small>
+          </div>
+          <b>42 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-25">
+          <div>
+            <a href="education.html#dm"
+              >Полный комплект материалов к курсу Divemaster PADI — печатная версия (при наличии)</a
+            ><small>за комплект материалов</small>
+          </div>
+          <b>35 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-26">
+          <div>
+            <a href="education.html#dm">Полный комплект материалов к курсу Divemaster PADI — eLearning</a
+            ><small>за комплект материалов</small>
+          </div>
+          <b>38 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-27">
+          <div>
+            <a href="education.html#dsd_leader">Divemaster PADI — DSD Leader — начни свою карьеру</a
+            ><small>за программу</small>
+          </div>
+          <b>12 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-28">
+          <div>
+            <a href="education.html#assistant">PADI Assistant Instructor — Ассистент инструктора</a
+            ><small>за программу</small>
+          </div>
+          <b>от 50 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-29">
+          <div>Комплект материалов для курса Assistant Instructor<small>за комплект материалов</small></div>
+          <b>87 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-30">
+          <div>
+            <a href="education.html#efri">Emergency First Response Instructor – Инструктор EFR</a
+            ><small>за программу</small>
+          </div>
+          <b>22 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-31">
+          <div>
+            <a href="education.html#efri"
+              >Полный комплект материалов к курсу Emergency First Response Instructor</a
+            ><small>за комплект материалов</small>
+          </div>
+          <b>32 000 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5+%D0%BA%D1%83%D1%80%D1%81%D1%8B#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="specprice">
+        <h2>Специализации</h2>
+        <div class="rate-line" id="rate-32">
+          <div>
+            <a href="education.html#drysuit">Курс Погружения в сухом костюме — Dry Suit Diver PADI</a
+            ><small>за программу</small>
+          </div>
+          <b>26 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-33">
+          <div>Курс глубокие погружения — Deep Diver PADI<small>за программу</small></div>
+          <b>26 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-34">
+          <div>Курс Погружения в условиях течений — Drift diver PADI<small>за программу</small></div>
+          <b>16 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-35">
+          <div>
+            <a href="education.html#eanx"
+              >Курс погружения на обогащенном воздухе (Nitrox) — Enriched Air Diver PADI</a
+            ><small>за программу</small>
+          </div>
+          <b>20 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-36">
+          <div>Курс Специалист по оборудованию — Equipment Specialist PADI<small>за программу</small></div>
+          <b>20 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-37">
+          <div>Курс Ночные погружения — Night Diver PADI<small>за программу</small></div>
+          <b>18 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-38">
+          <div>Курс Подледные погружения — ICE diver PADI<small>за программу</small></div>
+          <b>27 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-39">
+          <div>Курс Поиск и подъём предметов — Search and Recovery PADI<small>за программу</small></div>
+          <b>23 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-40">
+          <div>
+            Курс Погружения с использованием боковой конфигурации — Sidemount Diver PADI<small
+              >за программу</small
+            >
+          </div>
+          <b>По запросу</b>
+        </div>
+        <div class="rate-line" id="rate-41">
+          <div>
+            Курс Мастерское владение плавучестью — Peak Performance Buoyancy PADI<small>за программу</small>
+          </div>
+          <b>23 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-42">
+          <div>
+            Курс Искусство плавания в ластах — The ART OF SWIMMING IN FINS PADI<small>за программу</small>
+          </div>
+          <b>23 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-43">
+          <div>Курс Самодостаточный дайвер — Self-Reliant Diver PADI<small>за программу</small></div>
+          <b>30 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-44">
+          <div>Курс Подводное ориентирование — Underwater Navigator PADI<small>за программу</small></div>
+          <b>26 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-45">
+          <div>Курс Погружения на затонувшие объекты — Wreck diver PADI<small>за программу</small></div>
+          <b>26 000 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-46">
+          <div>
+            Курс Погружения с поверхностным сигнальным буем — PADI Delayed Surface Marker Buoy Diver<small
+              >за программу</small
+            >
+          </div>
+          <b>16 000 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <section class="wrap rate-section" id="awareprice">
+        <h2>Охрана водоёмов</h2>
+        <div class="rate-line" id="rate-47">
+          <div>
+            <a href="education.html#dad">Курс Дайверы против мусора — PADI Dive Against Debris</a
+            ><small>за программу</small>
+          </div>
+          <b>7 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-48">
+          <div>
+            <a href="education.html#shark_conservation"
+              >Курс Специалист по защите акул — AWARE Shark Conservation Diver</a
+            ><small>за программу</small>
+          </div>
+          <b>4 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-49">
+          <div>
+            <a href="education.html#coral_reef"
+              >Курс Сохранение коралловых рифов — AWARE Coral Reef Conservation</a
+            ><small>за программу</small>
+          </div>
+          <b>4 500 ₽</b>
+        </div>
+        <div class="rate-line" id="rate-50">
+          <div>Курс Специалист по защите окружающей среды — PADI AWARE<small>за программу</small></div>
+          <b>4 500 ₽</b>
+        </div>
+        <a
+          class="text-link"
+          href="contacts.html?program=other&amp;topic=%D0%9E%D1%85%D1%80%D0%B0%D0%BD%D0%B0+%D0%B2%D0%BE%D0%B4%D0%BE%D1%91%D0%BC%D0%BE%D0%B2#request"
+          >Спросить об этих занятиях<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </section>
+      <div class="wrap source-note">
+        Прайс студии действует с 5 февраля 2026 года.
+        <a class="text-link" href="https://divestudio.ru/price" target="_blank" rel="noopener noreferrer"
+          >Оригинал прайса<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </div>
+      <div class="wrap return-strip">
+        <a class="text-link" href="index.html#programs"
+          >К выбору программы<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg></a
+        ><a class="text-link" href="visit.html#memo"
+          >Собрать памятку<svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+        ></a>
+      </div>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-address">
+            <a class="brand" href="index.html" aria-label="Студия дайвинга, главная"
+              ><img src="assets/studio-mark.png" alt="" decoding="async" width="37" height="46" /><span
+                class="brand-word"
+                aria-hidden="true"
+              ></span
+            ></a>
+            <p>Москва, ул. Автозаводская, 21<br />ФОК «Торпедо», 2 этаж</p>
+            <a href="tel:+79264944673">+7 926 494-46-73</a>
+          </div>
+          <nav class="nav-groups" aria-label="Навигация в подвале">
+            <div>
+              <h3>Погружения</h3>
+              <a href="trial.html">Пробное погружение</a><a href="basic.html">Базовый курс</a
+              ><a href="kids.html">Детские программы</a><a href="mermaid.html">Школа русалок</a
+              ><a href="gift.html">Подарочный сертификат</a>
+            </div>
+            <div>
+              <h3>В бассейн</h3>
+              <a href="schedule.html">Расписание</a><a href="prices.html">Курсы и цены</a
+              ><a href="visit.html">Первый визит</a><a href="visit.html#memo">Памятка</a
+              ><a href="contacts.html">Контакты</a>
+            </div>
+            <div>
+              <h3>Студия</h3>
+              <a href="instructors.html">О нас и инструкторах</a><a href="travel.html">Дайв-туры</a
+              ><a href="news.html">Новости</a><a href="blog.html">Блог</a>
+            </div>
+          </nav>
+        </div>
+        <div class="colophon">
+          <span>Дайв-центр PADI № S28063</span><a href="https://divestudio.ru/policy">Политика студии</a
+          ><span>Сайт создан Spoki Studio</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

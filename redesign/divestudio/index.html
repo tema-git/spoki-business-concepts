@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f9f5" />
+    <title>Первый вдох под водой · Студия дайвинга</title>
+    <meta
+      name="description"
+      content="Пробное погружение в Москве. Узнайте стоимость, соберите памятку и согласуйте время со студией."
+    />
+    <link rel="icon" type="image/png" href="assets/studio-mark.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="mast">
+      <div class="mast-in">
+        <a class="brand" href="index.html" aria-label="Студия дайвинга, главная"
+          ><img src="assets/studio-mark.png" alt="" decoding="async" width="37" height="46" /><span
+            class="brand-word"
+            aria-hidden="true"
+          ></span
+        ></a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="index.html#programs">Программы</a><a href="schedule.html">Расписание</a
+          ><a href="prices.html">Цены</a><a href="visit.html">Первый визит</a>
+        </nav>
+        <div class="head-actions">
+          <a href="contacts.html#request" class="magnet"
+            ><span
+              >Контакты
+              <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span></a
+          ><button
+            type="button"
+            class="icon-btn burger"
+            data-menu-open
+            aria-label="Открыть меню"
+            aria-haspopup="dialog"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" aria-hidden="true">
+              <path d="M2 7.5h19M2 13.5h19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <dialog class="site-menu" id="menu" aria-labelledby="menu-name">
+      <div class="menu-head">
+        <strong id="menu-name">Меню студии</strong
+        ><button class="icon-btn" type="button" data-menu-close aria-label="Закрыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <nav class="nav-groups" aria-label="Все разделы">
+        <div class="menu-home"><a href="index.html">Главная</a></div>
+        <div>
+          <h3>Погружения</h3>
+          <a href="trial.html">Пробное погружение</a><a href="basic.html">Базовый курс</a
+          ><a href="kids.html">Детские программы</a><a href="mermaid.html">Школа русалок</a
+          ><a href="gift.html">Подарочный сертификат</a>
+        </div>
+        <div>
+          <h3>В бассейн</h3>
+          <a href="schedule.html">Расписание</a><a href="prices.html">Курсы и цены</a
+          ><a href="visit.html">Первый визит</a><a href="visit.html#memo">Памятка</a
+          ><a href="contacts.html">Контакты</a>
+        </div>
+        <div>
+          <h3>Студия</h3>
+          <a href="instructors.html">О нас и инструкторах</a><a href="travel.html">Дайв-туры</a
+          ><a href="news.html">Новости</a><a href="blog.html">Блог</a>
+        </div>
+      </nav>
+    </dialog>
+    <main id="main">
+      <div class="wrap hero-wrap">
+        <section class="hero dark-surface" data-water aria-labelledby="hero-title">
+          <div class="hero-main">
+            <div class="hero-image">
+              <img
+                src="assets/hero-dive.webp"
+                alt="Тренировка по дайвингу в бассейне студии"
+                decoding="async"
+                fetchpriority="high"
+              /><svg
+                class="surface-drawing"
+                viewBox="0 0 700 100"
+                preserveAspectRatio="none"
+                fill="none"
+                aria-hidden="true"
+              >
+                <g stroke="currentColor" stroke-width="1.1">
+                  <path d="M-90 54Q30 32 125 53T327 50T535 44T760 39" />
+                  <path d="M-90 61Q25 38 122 58T328 55T536 48T760 42" />
+                  <path d="M-90 67Q28 44 126 63T331 59T535 52T760 45" />
+                </g>
+              </svg>
+            </div>
+            <div class="hero-copy">
+              <div class="kicker">
+                <svg width="37" height="17" viewBox="0 0 37 17" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 6c4-5 7-5 12 0s8 5 13 0 7-4 10-2M1 12c4-5 7-5 12 0s8 5 13 0 7-4 10-2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  /></svg
+                ><span>PADI · Discover Scuba Diving</span>
+              </div>
+              <h1 id="hero-title">Первый вдох<br /><em>под водой</em></h1>
+              <p class="hero-deck">
+                Пробное погружение с инструктором<br class="desktop-br" />
+                в московском бассейне «Торпедо».
+              </p>
+              <div class="hero-stats">
+                <div><strong>6 000 ₽</strong><span>за человека</span></div>
+                <div><strong>2,5–3 часа</strong><span>вся программа</span></div>
+              </div>
+              <div class="hero-actions">
+                <a class="btn primary" href="contacts.html?program=dsd#request"
+                  >Согласовать время<svg
+                    class="arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M4 12h15m-6-6 6 6-6 6"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg></a
+                ><a class="on-dark" href="trial.html"
+                  >Подробнее<svg
+                    class="arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M4 12h15m-6-6 6 6-6 6"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+            <div class="hero-photo-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+              ФОК «Торпедо»
+            </div>
+          </div>
+          <div class="hero-details">
+            <div>
+              <h2>Что входит</h2>
+              <p>eLearning, инструктаж, снаряжение, погружение в бассейне и сертификат участника.</p>
+            </div>
+            <div>
+              <h2>Вдвоём в будни</h2>
+              <p>Скидка 10% для компании от двух человек при одновременной оплате и прохождении.</p>
+            </div>
+            <div>
+              <h2>Возраст</h2>
+              <p>
+                В программе — с 10 лет, в прайсе — старше 10. Если ребёнку ровно 10, уточните у инструктора.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="wrap section" id="programs">
+        <div class="section-head">
+          <h2>Выберите программу</h2>
+          <a class="text-link" href="prices.html"
+            >Все курсы и цены<svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 12h15m-6-6 6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+          ></a>
+        </div>
+        <div class="course-grid">
+          <a class="course-card" href="trial.html" data-water
+            ><div class="course-img">
+              <img
+                src="assets/pool-underwater.webp"
+                alt="Участники занятия под водой"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="course-meta">
+              <span>Первое знакомство</span
+              ><svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Пробное погружение</h3>
+            <p>Один визит в бассейн вместе с инструктором.</p></a
+          ><a class="course-card" href="basic.html" data-water
+            ><div class="course-img">
+              <img
+                src="assets/course-pool.webp"
+                alt="Практическое занятие по дайвингу"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="course-meta">
+              <span>Обучение PADI</span
+              ><svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Базовый курс</h3>
+            <p>Пять занятий в бассейне и отдельный этап на открытой воде.</p></a
+          ><a class="course-card" href="kids.html" data-water
+            ><div class="course-img">
+              <img src="assets/kids.webp" alt="Детское занятие под водой" decoding="async" loading="lazy" />
+            </div>
+            <div class="course-meta">
+              <span>Для детей 8–10 лет</span
+              ><svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Детский дайвинг</h3>
+            <p>От первого погружения до серии подводных аквамиссий.</p></a
+          >
+        </div>
+      </section>
+      <section class="wrap section pool-story" data-water>
+        <figure class="photo" data-water>
+          <img src="assets/pool-hall.webp" alt="Бассейн ФОК «Торпедо»" decoding="async" loading="lazy" />
+          <figcaption>ФОК «Торпедо» · Москва</figcaption>
+        </figure>
+        <div>
+          <div class="kicker">
+            <svg width="37" height="17" viewBox="0 0 37 17" fill="none" aria-hidden="true">
+              <path
+                d="M1 6c4-5 7-5 12 0s8 5 13 0 7-4 10-2M1 12c4-5 7-5 12 0s8 5 13 0 7-4 10-2"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              /></svg
+            ><span>Бассейн студии</span>
+          </div>
+          <h2>От бортика<br />к глубине</h2>
+          <p>
+            Шесть дорожек длиной 25 метров. Глубина меняется от 1,6 до 5 метров. Первое знакомство со
+            снаряжением проходит на мелкой части, инструктор остаётся рядом.
+          </p>
+          <a class="text-link" href="visit.html#route"
+            >Посмотреть, как добраться<svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 12h15m-6-6 6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+          ></a>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="memo-banner" data-water>
+          <div>
+            <div class="kicker">
+              <svg width="37" height="17" viewBox="0 0 37 17" fill="none" aria-hidden="true">
+                <path
+                  d="M1 6c4-5 7-5 12 0s8 5 13 0 7-4 10-2M1 12c4-5 7-5 12 0s8 5 13 0 7-4 10-2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                /></svg
+              ><span>Первый визит</span>
+            </div>
+            <h2>Памятка<br />для бассейна</h2>
+            <p>
+              Выберите программу и число гостей. Соберите в один список вещи, снаряжение, маршрут и контакт
+              инструктора.
+            </p>
+            <a class="btn dark" href="visit.html#memo"
+              >Собрать памятку первого визита<svg
+                class="arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12h15m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+          <div class="memo-art">
+            <svg class="mask-art" viewBox="0 0 340 235" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="glass" x2=".8" y2="1" gradientUnits="objectBoundingBox">
+                  <stop stop-color="#c3ffec" />
+                  <stop offset="1" stop-color="#4cbeb1" />
+                </linearGradient>
+              </defs>
+              <g class="contours" stroke="#94dcce" stroke-width="1.2">
+                <ellipse cx="178" cy="153" rx="140" ry="49" />
+                <ellipse cx="178" cy="153" rx="159" ry="60" />
+                <ellipse cx="178" cy="153" rx="178" ry="72" />
+              </g>
+              <g class="mask-drawing" stroke="#143f46" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M62 106C40 85 38 51 59 39c25-16 53-14 100-10 35 4 63 7 83 22" stroke-width="13" />
+                <path
+                  d="M62 106C40 85 38 51 59 39c25-16 53-14 100-10 35 4 63 7 83 22"
+                  stroke="#598b89"
+                  stroke-width="5"
+                />
+                <path
+                  d="M51 90c20-15 53-24 89-25 27-1 40 2 51 4 18-6 42-12 72-14 11-1 20 4 22 15l4 28c2 15-3 30-12 37-18 13-41 22-62 27-10 3-16 10-24 16-12 11-32 14-44 5l-18-13c-16 0-41 1-57-4-17-5-27-11-30-27l-3-24c-1-11 3-19 12-25Z"
+                  fill="#183f45"
+                  stroke-width="4"
+                />
+                <path
+                  d="M54 102c22-15 57-23 89-23 12-1 18 4 18 14l-1 34c0 9-5 14-14 18-26 8-56 11-73 6-9-2-16-8-18-18l-4-20c-1-5 0-9 3-11Zm137-18c21-10 43-14 70-17 8 0 12 3 13 10l4 21c1 9-3 17-9 22-17 13-37 22-58 28-9 2-13-1-16-9l-9-33c-3-11-3-18 5-22Z"
+                  fill="url(#glass)"
+                  stroke="#699b97"
+                  stroke-width="3"
+                />
+                <path
+                  d="m166 127 9-13 15 46c3 8-7 13-14 17-8 4-15 4-21 0l-10-7Z"
+                  fill="#467575"
+                  stroke-width="2"
+                />
+                <path
+                  d="m66 123 45-32m-35 45 55-39m77 15 43-32m-33 43 35-25"
+                  stroke="#e1fff4"
+                  stroke-width="3"
+                />
+                <path d="m39 112 12-4 5 25-13 5zm238-36 15-5 5 19-16 8z" fill="#e1a46e" stroke-width="3" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-address">
+            <a class="brand" href="index.html" aria-label="Студия дайвинга, главная"
+              ><img src="assets/studio-mark.png" alt="" decoding="async" width="37" height="46" /><span
+                class="brand-word"
+                aria-hidden="true"
+              ></span
+            ></a>
+            <p>Москва, ул. Автозаводская, 21<br />ФОК «Торпедо», 2 этаж</p>
+            <a href="tel:+79264944673">+7 926 494-46-73</a>
+          </div>
+          <nav class="nav-groups" aria-label="Навигация в подвале">
+            <div>
+              <h3>Погружения</h3>
+              <a href="trial.html">Пробное погружение</a><a href="basic.html">Базовый курс</a
+              ><a href="kids.html">Детские программы</a><a href="mermaid.html">Школа русалок</a
+              ><a href="gift.html">Подарочный сертификат</a>
+            </div>
+            <div>
+              <h3>В бассейн</h3>
+              <a href="schedule.html">Расписание</a><a href="prices.html">Курсы и цены</a
+              ><a href="visit.html">Первый визит</a><a href="visit.html#memo">Памятка</a
+              ><a href="contacts.html">Контакты</a>
+            </div>
+            <div>
+              <h3>Студия</h3>
+              <a href="instructors.html">О нас и инструкторах</a><a href="travel.html">Дайв-туры</a
+              ><a href="news.html">Новости</a><a href="blog.html">Блог</a>
+            </div>
+          </nav>
+        </div>
+        <div class="colophon">
+          <span>Дайв-центр PADI № S28063</span><a href="https://divestudio.ru/policy">Политика студии</a
+          ><span>Сайт создан Spoki Studio</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
