@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f5ef" />
+    <title>Редкие книги и рукописи · В Никитском</title>
+    <meta
+      name="description"
+      content="Дом антикварной книги в Москве. Каталоги лотов, расписание аукционов, результаты и правила участия."
+    />
+    <link rel="icon" href="assets/book-mark.png" />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="mast">
+      <div class="wrap mast-inner">
+        <a class="brand" href="./" aria-label="В Никитском — главная"
+          ><img src="assets/book-mark.png" alt="" width="72" height="39" /><span
+            ><b>В Никитском</b><small>Дом антикварной книги</small></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Основное меню">
+          <a href="catalog.html?a=317">Каталог</a><a href="schedule.html">Расписание</a
+          ><a href="archive.html">Архив</a><a href="guide.html">Как участвовать</a>
+        </nav>
+        <div class="mast-actions">
+          <a class="contact-hit" href="contacts.html"
+            ><span
+              >Контакты
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+          ><button
+            class="menu-toggle icon-btn"
+            aria-label="Открыть меню"
+            aria-haspopup="dialog"
+            aria-controls="site-menu"
+          >
+            <svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7h18M3 12h18M3 17h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <dialog class="menu-dialog" id="site-menu" aria-label="Меню сайта">
+      <div class="drawer-top">
+        <b>Меню</b
+        ><button class="icon-btn close-dialog" aria-label="Закрыть меню">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </div>
+      <nav class="drawer-sections">
+        <div>
+          <strong>Торги</strong><a href="auctions.html">Предстоящие аукционы</a
+          ><a href="catalog.html?a=317">Каталог лотов</a><a href="schedule.html">Расписание</a
+          ><a href="archive.html">Архив и результаты</a>
+        </div>
+        <div>
+          <strong>Участие</strong><a href="guide.html#buy">Как покупать</a
+          ><a href="guide.html#sell">Как продавать</a><a href="rules.html">Правила аукциона</a
+          ><a href="shop.html">Магазин</a>
+        </div>
+        <div>
+          <strong>Аукционный дом</strong><a href="about.html">О доме</a><a href="news.html">Новости</a
+          ><a href="museum.html">Московский Дом Ахматовой</a><a href="study.html">Как читать лот</a
+          ><a href="contacts.html">Контакты</a>
+        </div>
+      </nav>
+    </dialog>
+    <main id="main" tabindex="-1">
+      <div class="wrap">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="kicker"><i></i>Ближайший аукцион · № 317</p>
+            <h1>Редкие книги<br /><em>и рукописи</em></h1>
+            <p class="hero-intro">
+              Декабрьские торги Дома антикварной книги. В каталоге — также автографы и фотографии.
+            </p>
+            <div class="hero-date"><span>17 декабря 2026</span><i></i><span>18:00 мск</span></div>
+            <div class="hero-cta">
+              <a class="btn" href="catalog.html?a=317"
+                >Открыть каталог<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></a
+              ><span class="catalog-count">474 лота</span>
+            </div>
+          </div>
+          <figure class="hero-plate">
+            <a
+              class="plate-link"
+              href="lot.html?a=317&amp;lot=1"
+              aria-label="Лот 1. Коронация Людовика XV, 1722"
+              ><div class="plate-drawing"></div>
+              <div class="plate-border"></div>
+              <img
+                class="hero-book"
+                src="assets/hero-book.webp"
+                alt="Кожаный переплёт с золотым тиснением. Коронация Людовика XV, 1722"
+                fetchpriority="high" /><span class="plate-index">Лот 1</span
+              ><span class="plate-open"
+                ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span
+            ></a>
+            <figcaption><span>Коронация Людовика XV</span><span>1722</span></figcaption>
+          </figure>
+        </section>
+        <form class="find-bar" action="catalog.html" role="search">
+          <input type="hidden" name="a" value="all" /><label class="search-label" for="home-search"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10" cy="10" r="6.4" />
+              <path d="m15 15 6 6" /></svg
+            >Поиск по каталогам</label
+          >
+          <div class="search-line">
+            <input
+              name="q"
+              id="home-search"
+              type="search"
+              placeholder="Автор, название, № лота"
+              aria-label="Автор, название или номер лота"
+            /><button class="text-link">
+              Найти
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <section class="wrap section">
+        <div class="section-head">
+          <div>
+            <p class="kicker"><i></i>Аукцион № 317</p>
+            <h2>Из каталога</h2>
+          </div>
+          <a class="text-link" href="catalog.html?a=317"
+            >Все лоты<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <div class="card-grid">
+          <a class="lot-card" href="lot.html?a=317&amp;lot=1"
+            ><div class="card-image">
+              <img src="assets/317-1-1.webp" loading="lazy" alt="Коронация Людовика XV" />
+            </div>
+            <div class="card-meta"><span>Лот 1</span><span>1722</span></div>
+            <h3>Коронация Людовика XV</h3></a
+          ><a class="lot-card" href="lot.html?a=317&amp;lot=7"
+            ><div class="card-image">
+              <img
+                src="assets/317-7-0.webp"
+                loading="lazy"
+                alt="Путешествие по разным провинциям Российской империи"
+              />
+            </div>
+            <div class="card-meta"><span>Лот 7</span><span>1773–1788</span></div>
+            <h3>Путешествие по разным провинциям Российской империи</h3></a
+          ><a class="lot-card" href="lot.html?a=317&amp;lot=5"
+            ><div class="card-image">
+              <img src="assets/317-5-0.webp" loading="lazy" alt="О воспитании девиц" />
+            </div>
+            <div class="card-meta"><span>Лот 5</span><span>1763</span></div>
+            <h3>О воспитании девиц</h3></a
+          >
+        </div>
+      </section>
+      <section class="study" id="study">
+        <div class="wrap study-grid">
+          <div class="study-lead">
+            <p class="kicker"><i></i>Практикум коллекционера</p>
+            <h2>Как читать <br /><em>лот</em></h2>
+            <p>
+              Рассмотрите три детали «Коронации Людовика XV». Каждая помогает сверить описание с самим
+              экземпляром.
+            </p>
+            <div class="study-count" aria-live="polite">
+              <span id="mark-count">0 из 3 деталей</span><span class="ticks"><i></i><i></i><i></i></span>
+            </div>
+          </div>
+          <div>
+            <div class="specimens">
+              <button
+                class="specimen specimen-0"
+                data-mark="0"
+                aria-pressed="false"
+                aria-controls="annotation"
+              >
+                <span class="specimen-image"
+                  ><img src="assets/317-1-0.webp" loading="lazy" alt="Золочёная крышка переплёта" /><i
+                    class="pin"
+                    >1</i
+                  ></span
+                ><span class="specimen-label">Переплёт</span></button
+              ><button
+                class="specimen specimen-1"
+                data-mark="1"
+                aria-pressed="false"
+                aria-controls="annotation"
+              >
+                <span class="specimen-image"
+                  ><img src="assets/317-1-1.webp" loading="lazy" alt="Гравированный титульный лист" /><i
+                    class="pin"
+                    >2</i
+                  ></span
+                ><span class="specimen-label">Титул</span></button
+              ><button
+                class="specimen specimen-2"
+                data-mark="2"
+                aria-pressed="false"
+                aria-controls="annotation"
+              >
+                <span class="specimen-image"
+                  ><img
+                    src="assets/317-1-3.webp"
+                    loading="lazy"
+                    alt="Верхнее поле разворотной гравюры"
+                  /><i class="pin">3</i></span
+                ><span class="specimen-label">След воды</span>
+              </button>
+            </div>
+            <div class="annotation" id="annotation" aria-live="polite">
+              <strong>С чего начать?</strong>
+              <p>Выберите метку на фотографии.</p>
+            </div>
+            <div class="study-foot">
+              <button class="light-link" id="study-reset" hidden>Рассмотреть ещё раз</button
+              ><a class="light-link" href="lot.html?a=317&amp;lot=1"
+                >Карточка экземпляра<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section split-call">
+        <div>
+          <p class="kicker"><i></i>Архив · 19 ноября 2026</p>
+          <h2>Аукцион № 316</h2>
+          <p>
+            458 лотов. В архиве можно найти издание по автору, названию или номеру и сверить результат с
+            Bidspirit.
+          </p>
+          <a class="btn" href="catalog.html?a=316"
+            >К результатам<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+        <a class="archive-feature" href="lot.html?a=316&amp;lot=62&amp;from=archive"
+          ><img loading="lazy" src="assets/316-62-1.webp" alt="Переплёт пушкинских «Стихотворений»" />
+          <div>
+            <p class="kicker"><i></i>Лот 62</p>
+            <h3>Александр Пушкин</h3>
+            <p>«Стихотворения». Издание А. С. Суворина, 1887</p>
+          </div></a
+        >
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <a class="brand footer-sign" href="./" aria-label="В Никитском — главная"
+              ><img
+                src="assets/signature.png"
+                width="150"
+                height="80"
+                alt="В Никитском. Дом антикварной книги"
+            /></a>
+            <p>Москва, Никитский пер.,<br />д. 4а, стр. 1</p>
+            <a href="tel:+74959264114">+7 (495) 926-41-14</a>
+          </div>
+          <div>
+            <strong>Торги</strong><a href="auctions.html">Предстоящие аукционы</a
+            ><a href="catalog.html?a=317">Каталог лотов</a><a href="schedule.html">Расписание</a
+            ><a href="archive.html">Архив и результаты</a>
+          </div>
+          <div>
+            <strong>Участие</strong><a href="guide.html#buy">Как покупать</a
+            ><a href="guide.html#sell">Как продавать</a><a href="rules.html">Правила аукциона</a
+            ><a href="shop.html">Магазин</a>
+          </div>
+          <div>
+            <strong>Аукционный дом</strong><a href="about.html">О доме</a><a href="news.html">Новости</a
+            ><a href="museum.html">Московский Дом Ахматовой</a><a href="study.html">Как читать лот</a
+            ><a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div class="colophon">
+          <span>Дом антикварной книги «В Никитском»</span><span>Сайт создан Spoki Studio</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

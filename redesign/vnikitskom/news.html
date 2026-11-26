@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f5ef" />
+    <title>Новости · В Никитском</title>
+    <meta
+      name="description"
+      content="Дом антикварной книги в Москве. Каталоги лотов, расписание аукционов, результаты и правила участия."
+    />
+    <link rel="icon" href="assets/book-mark.png" />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script src="house.js" defer></script>
+  </head>
+  <body data-page="news">
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="mast">
+      <div class="wrap mast-inner">
+        <a class="brand" href="./" aria-label="В Никитском — главная"
+          ><img src="assets/book-mark.png" alt="" width="72" height="39" /><span
+            ><b>В Никитском</b><small>Дом антикварной книги</small></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Основное меню">
+          <a href="catalog.html?a=317">Каталог</a><a href="schedule.html">Расписание</a
+          ><a href="archive.html">Архив</a><a href="guide.html">Как участвовать</a>
+        </nav>
+        <div class="mast-actions">
+          <a class="contact-hit" href="contacts.html"
+            ><span
+              >Контакты
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg></span></a
+          ><button
+            class="menu-toggle icon-btn"
+            aria-label="Открыть меню"
+            aria-haspopup="dialog"
+            aria-controls="site-menu"
+          >
+            <svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7h18M3 12h18M3 17h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <dialog class="menu-dialog" id="site-menu" aria-label="Меню сайта">
+      <div class="drawer-top">
+        <b>Меню</b
+        ><button class="icon-btn close-dialog" aria-label="Закрыть меню">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </div>
+      <nav class="drawer-sections">
+        <div>
+          <strong>Торги</strong><a href="auctions.html">Предстоящие аукционы</a
+          ><a href="catalog.html?a=317">Каталог лотов</a><a href="schedule.html">Расписание</a
+          ><a href="archive.html">Архив и результаты</a>
+        </div>
+        <div>
+          <strong>Участие</strong><a href="guide.html#buy">Как покупать</a
+          ><a href="guide.html#sell">Как продавать</a><a href="rules.html">Правила аукциона</a
+          ><a href="shop.html">Магазин</a>
+        </div>
+        <div>
+          <strong>Аукционный дом</strong><a href="about.html">О доме</a><a href="news.html">Новости</a
+          ><a href="museum.html">Московский Дом Ахматовой</a><a href="study.html">Как читать лот</a
+          ><a href="contacts.html">Контакты</a>
+        </div>
+      </nav>
+    </dialog>
+    <main id="main" tabindex="-1">
+      <div class="wrap inner">
+        <nav class="crumb" aria-label="Путь по сайту"><a href="./">Главная</a><span>/</span>Новости</nav>
+        <div class="page-head">
+          <p class="kicker"><i></i>Хроника дома</p>
+          <h1>Новости</h1>
+          <p>Анонсы, обзоры каталогов и итоги торгов.</p>
+        </div>
+        <div id="news-list"></div>
+        <noscript
+          ><p>
+            Для поиска и просмотра карточек включите JavaScript или откройте
+            <a href="https://vnikitskom.ru/">сайт аукционного дома</a>.
+          </p></noscript
+        >
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <a class="brand footer-sign" href="./" aria-label="В Никитском — главная"
+              ><img
+                src="assets/signature.png"
+                width="150"
+                height="80"
+                alt="В Никитском. Дом антикварной книги"
+            /></a>
+            <p>Москва, Никитский пер.,<br />д. 4а, стр. 1</p>
+            <a href="tel:+74959264114">+7 (495) 926-41-14</a>
+          </div>
+          <div>
+            <strong>Торги</strong><a href="auctions.html">Предстоящие аукционы</a
+            ><a href="catalog.html?a=317">Каталог лотов</a><a href="schedule.html">Расписание</a
+            ><a href="archive.html">Архив и результаты</a>
+          </div>
+          <div>
+            <strong>Участие</strong><a href="guide.html#buy">Как покупать</a
+            ><a href="guide.html#sell">Как продавать</a><a href="rules.html">Правила аукциона</a
+            ><a href="shop.html">Магазин</a>
+          </div>
+          <div>
+            <strong>Аукционный дом</strong><a href="about.html">О доме</a><a href="news.html">Новости</a
+            ><a href="museum.html">Московский Дом Ахматовой</a><a href="study.html">Как читать лот</a
+            ><a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div class="colophon">
+          <span>Дом антикварной книги «В Никитском»</span><span>Сайт создан Spoki Studio</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
