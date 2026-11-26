@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1c1d1c" />
+    <meta
+      name="description"
+      content="Подберите карт для взрослого или ребёнка, узнайте цену разового заезда и позвоните в прокат DiXXodrom."
+    />
+    <title>Картинг в Измайлове · DiXXodrom</title>
+    <link rel="icon" type="image/png" href="assets/dixxodrom.png" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script defer src="assets/site.js"></script>
+  </head>
+  <body data-page="index">
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="head">
+      <div class="wrap head-in">
+        <a class="brand" href="index.html" aria-label="DiXXodrom, на главную"
+          ><img src="assets/dixxodrom.png" alt="DiXXodrom — картинг-клуб" width="300" height="96"
+        /></a>
+        <nav class="desktop-nav" aria-label="Основные разделы">
+          <a href="rides.html">Заезды и цены</a><a href="school.html">Школа</a
+          ><a href="racing.html">Соревнования</a><a href="events.html">Аренда трассы</a>
+        </nav>
+        <a class="magnet" href="contacts.html#rental"
+          ><span
+            >Контакты
+            <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg></span
+        ></a>
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" /></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильное меню" hidden>
+        <a href="rides.html">Заезды и цены</a><a href="school.html">Школа</a
+        ><a href="racing.html">Соревнования</a><a href="events.html">Аренда трассы</a
+        ><a href="rules.html">Правила посещения</a><a href="contacts.html#entrance">Как добраться</a
+        ><a href="index.html#picker">Подобрать заезд</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >Москва · стадион «Ракета»
+            </div>
+            <h1>Картинг<br /><em>в Измайлове</em></h1>
+            <p>Открытая трасса для взрослых и детей. Подберите карт по росту и узнайте цену заезда.</p>
+            <div class="actions">
+              <a class="btn primary" href="#picker"
+                >Подобрать заезд<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg></a
+              ><a class="text-link pale" href="rides.html#prices"
+                >Все цены<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg
+              ></a>
+            </div>
+          </div>
+          <figure class="hero-art motion-scene">
+            <img
+              class=""
+              src="assets/on-track.webp"
+              alt="Два пилота DiXXodrom проходят поворот у сине-жёлтых отбойников"
+              decoding="async"
+              fetchpriority="high"
+            />
+            <figcaption><span class="aperture" aria-hidden="true"></span> На трассе DiXXodrom</figcaption>
+          </figure>
+        </div>
+        <div class="stat-band">
+          <div class="wrap stats">
+            <div>
+              <b>570 <small>м</small></b
+              ><span>длина трассы</span>
+            </div>
+            <div>
+              <b>10 <small>мин</small></b
+              ><span>один заезд</span>
+            </div>
+            <div>
+              <b>5,5 <i>/</i> 9 <small>л. с.</small></b
+              ><span>мощность картов</span>
+            </div>
+            <span class="finish-check" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+      <section class="picker-section wrap section" id="picker">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >Разовый прокат
+            </div>
+            <h2>Подобрать заезд</h2>
+          </div>
+          <p>Узнайте, какой карт подойдёт и сколько стоит 10 минут на трассе.</p>
+        </div>
+        <div class="picker-layout">
+          <form class="pickform" id="ride-form" action="rides.html#prices">
+            <fieldset>
+              <legend>Кто едет?</legend>
+              <div class="segments">
+                <label><input type="radio" name="who" value="child" checked /><span>Ребёнок</span></label
+                ><label><input type="radio" name="who" value="adult" /><span>Взрослый</span></label
+                ><label><input type="radio" name="who" value="student" /><span>Студент</span></label
+                ><label><input type="radio" name="who" value="pair" /><span>Вдвоём</span></label>
+              </div>
+            </fieldset>
+            <p class="child-help" id="child-help">Ребёнок может попробовать самостоятельный заезд с 5 лет.</p>
+            <div class="field" id="height-field">
+              <label for="height">Рост пилота</label>
+              <div class="unit-input">
+                <input
+                  type="number"
+                  id="height"
+                  name="height"
+                  inputmode="decimal"
+                  min="1"
+                  max="300"
+                  step="any"
+                  placeholder="Например, 130"
+                  required
+                /><span>см</span>
+              </div>
+            </div>
+            <div class="pair-fields" id="pair-fields" hidden>
+              <p>
+                Взрослый ведёт карт, ребёнок младше 7 лет едет пассажиром. Клуб указывает для этого тарифа
+                возраст пассажира.
+              </p>
+              <label for="age">Возраст ребёнка, полных лет</label
+              ><input
+                id="age"
+                name="age"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                max="17"
+                step="1"
+                placeholder="Например, 5"
+                disabled
+              />
+            </div>
+            <fieldset>
+              <legend>День посещения</legend>
+              <div class="segments">
+                <label
+                  ><input type="radio" name="day" value="weekday" checked /><span>Будний день</span></label
+                ><label><input type="radio" name="day" value="weekend" /><span>Выходной</span></label>
+              </div>
+            </fieldset>
+            <details id="promo" class="promo" open>
+              <summary><span>Счастливый час</span><span class="promo-price">1 000 ₽</span></summary>
+              <p>
+                По будням с 11:00 до 14:00 заезд стоит 1 000 ₽ для детей на карте 5,5 л. с. в нечётные числа и
+                для студентов на карте 9 л. с. в чётные. По понедельникам прокат открывается в 12:00. Для
+                двухместного карта действует обычный тариф.
+              </p>
+              <label class="check-promo"
+                ><input type="checkbox" id="offer" name="offer" /> Проверить мой заезд по акции</label
+              >
+              <div id="promo-fields" class="promo-fields" hidden>
+                <div>
+                  <label for="visit-date">Дата</label
+                  ><input type="date" name="date" id="visit-date" disabled />
+                </div>
+                <div>
+                  <label for="visit-time">Начало заезда</label
+                  ><input type="time" name="time" id="visit-time" disabled />
+                </div>
+              </div>
+            </details>
+            <p class="form-note">
+              Подбор рассчитывает цену. Для записи и выбора свободного времени позвоните в прокат.
+            </p>
+            <button type="submit" class="btn dark" id="calculate">
+              Рассчитать заезд
+              <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" />
+              </svg></button
+            ><noscript><p>Посмотрите цены для всех картов и позвоните в прокат.</p></noscript>
+          </form>
+          <div class="ticket" aria-live="polite" aria-atomic="true">
+            <div class="ticket-head">
+              <span
+                ><svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                  <path
+                    fill="currentColor"
+                    d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                  />
+                </svg>
+                Ваш заезд</span
+              ><span>10 мин</span>
+            </div>
+            <div class="ticket-body" id="ride-result" tabindex="-1">
+              <div class="ticket-placeholder">
+                <svg class="wheel-icon" aria-hidden="true" viewBox="0 0 64 64" fill="none">
+                  <circle cx="32" cy="32" r="26" />
+                  <circle cx="32" cy="32" r="6" />
+                  <path d="M7 26q25-9 50 0M12 44l14-11m26 11L38 33m-6 6v18" />
+                </svg>
+                <h3>Какой карт<br />вам подойдёт?</h3>
+                <p>Выберите пилота, укажите рост или возраст пассажира и день посещения.</p>
+              </div>
+            </div>
+            <div class="ticket-foot" aria-hidden="true"><span class="barcode"></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="track-block section">
+        <div class="wrap track-grid">
+          <div>
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >Стадион «Ракета»
+            </div>
+            <h2>Трасса<br />DiXXodrom</h2>
+            <p>
+              570 метров асфальта под открытым небом. Стартовая прямая проходит у трибуны, а время каждого
+              круга фиксирует Kartchrono.
+            </p>
+            <a class="text-link" href="circuit.html"
+              >Посмотреть трассу<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg
+            ></a>
+          </div>
+          <a href="circuit.html" class="track-figure motion-scene" aria-label="Открыть полную схему трассы"
+            ><svg
+              class="circuit-svg"
+              role="img"
+              aria-label="Конфигурация DiXXodrom по схеме клуба. Старт на нижней прямой, финиш перед пит-лейном."
+              viewBox="150 205 2560 1710"
+            >
+              <defs>
+                <pattern id="mesh" width="115" height="115" patternUnits="userSpaceOnUse">
+                  <path d="M115 0H0v115" fill="none" stroke="#f7a095" opacity=".37" stroke-width="3" />
+                </pattern>
+                <path
+                  id="lap"
+                  d="M1010 1704 C867 1725 700 1740 580 1732 C452 1727 428 1634 444 1485 L468 1190
+C474 1104 480 1082 567 1071 C664 1068 720 1090 728 1194 L752 1350
+C760 1492 778 1531 860 1534 C983 1538 1036 1469 1022 1326 L1009 1200
+C998 1028 946 944 860 882 C771 819 610 821 500 788 C379 754 350 682 379 576
+C402 457 554 469 700 482 C966 506 1155 641 1286 771 C1409 904 1470 958 1644 995
+C1848 1036 2035 967 2028 860 C2021 758 1906 712 1770 658 C1629 603 1564 580 1579 498
+C1606 386 1807 416 1982 403 C2210 386 2404 428 2456 552 C2522 720 2489 895 2389 1009
+C2237 1200 2012 1223 1768 1222 L1446 1245 C1332 1251 1278 1263 1293 1364
+C1300 1462 1377 1472 1475 1472 L1995 1450 C2160 1445 2233 1363 2321 1366
+C2436 1366 2480 1450 2482 1550 C2489 1650 2436 1712 2357 1703 C2249 1689 2196 1647 2095 1640
+C1780 1615 1422 1656 1010 1704Z"
+                  pathLength="100"
+                />
+              </defs>
+              <rect x="150" y="205" width="2560" height="1710" fill="#b72922" />
+              <rect x="150" y="205" width="2560" height="1710" fill="url(#mesh)" />
+              <use
+                href="#lap"
+                fill="none"
+                stroke="#76211b"
+                stroke-width="67"
+                transform="translate(0 17)"
+                stroke-linejoin="round"
+              />
+              <use href="#lap" fill="none" stroke="#fff3da" stroke-width="47" stroke-linejoin="round" />
+              <use
+                class="lap-signal"
+                href="#lap"
+                fill="none"
+                stroke="#363932"
+                stroke-width="13"
+                stroke-linecap="round"
+                stroke-dasharray="3 97"
+              />
+              <g transform="translate(1010 1704)">
+                <circle r="75" fill="#1e221e" stroke="#fff3da" stroke-width="13" />
+                <path d="M25-31L-28 0l53 31z" fill="#fff3da" />
+              </g>
+              <g transform="translate(1888 1456)">
+                <rect
+                  x="-65"
+                  y="-65"
+                  width="130"
+                  height="130"
+                  fill="#1e221e"
+                  stroke="#fff3da"
+                  stroke-width="13"
+                />
+                <path
+                  d="M-42-42h28v28h-28zm56 0h28v28H14zM-14-14h28v28h-28zm-28 28h28v28h-28zm56 0h28v28H14z"
+                  fill="#fff3da"
+                />
+              </g></svg
+            ><span class="track-key"
+              ><b><i class="start-key"></i> Старт</b><b><i class="end-key"></i> Финиш</b
+              ><i class="map-link"
+                ><svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg></i></span
+          ></a>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >DiXXodrom
+            </div>
+            <h2>В клубе</h2>
+          </div>
+        </div>
+        <div class="cards">
+          <a href="school.html" class="feature"
+            ><div class="card-img motion-scene">
+              <img
+                class=""
+                src="assets/junior.webp"
+                alt="Юный пилот в шлеме"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="feature-title">
+              <h3>Школа картинга</h3>
+              <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" />
+              </svg>
+            </div>
+            <p>Теория и практика для детей от 5 до 17 лет.</p></a
+          ><a href="racing.html" class="feature"
+            ><div class="card-img motion-scene">
+              <img
+                class=""
+                src="assets/grid.webp"
+                alt="Пилоты на трассе клуба"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="feature-title">
+              <h3>Соревнования</h3>
+              <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" />
+              </svg>
+            </div>
+            <p>Календарь, результаты и новости гонок.</p></a
+          ><a href="events.html" class="feature"
+            ><div class="card-img motion-scene">
+              <img
+                class=""
+                src="assets/pack.webp"
+                alt="Несколько картов на клубной трассе"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="feature-title">
+              <h3>Аренда трассы</h3>
+              <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" />
+              </svg>
+            </div>
+            <p>Трасса и павильон для своей команды.</p></a
+          >
+        </div>
+      </section>
+      <section class="game-section" id="start-lights">
+        <div class="wrap game-grid">
+          <div>
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >Проверка реакции
+            </div>
+            <h2>Стартовые<br /><em>огни</em></h2>
+            <p>Дождитесь команды «Старт!» и нажмите на газ. Табло покажет ваше время реакции.</p>
+          </div>
+          <div class="game-board motion-scene" id="game" data-state="idle">
+            <div class="board-title">
+              <span
+                ><svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                  <path
+                    fill="currentColor"
+                    d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                  />
+                </svg>
+                Стартовое табло</span
+              ><span>мс</span>
+            </div>
+            <div class="lamps" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="game-read" id="game-read" role="status">Готовы к старту?</div>
+            <button class="btn game-btn" type="button" id="game-button">
+              Начать заезд
+              <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="arrival">
+        <div class="wrap arrival-in">
+          <div>
+            <div class="eyebrow">
+              <svg class="flag" aria-hidden="true" viewBox="0 0 28 18">
+                <path
+                  fill="currentColor"
+                  d="M0 0h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4zM6 6h6v6H6zm12 0h6v6h-6zM0 12h6v6H0zm12 0h6v6h-6zm12 0h4v6h-4z"
+                /></svg
+              >Как добраться
+            </div>
+            <h2>Вход на стадион</h2>
+            <p>
+              Измайловское шоссе, 73, стр. 4. От метро «Партизанская» идите вдоль шоссе до указателя
+              «Картинг».
+            </p>
+          </div>
+          <a class="btn paper" href="contacts.html#entrance"
+            >Вход на карте<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap foot-main">
+        <div>
+          <a href="index.html" class="brand"
+            ><img src="assets/dixxodrom.png" alt="DiXXodrom — картинг-клуб" width="300" height="96"
+          /></a>
+          <p>Стадион «Ракета»<br />Москва, Измайловское шоссе, 73, стр. 4</p>
+        </div>
+        <div>
+          <h2>Заезды</h2>
+          <a class="" href="index.html#picker">Подобрать заезд</a
+          ><a class="" href="rides.html#prices">Цены на прокат</a
+          ><a class="" href="rules.html">Правила посещения</a
+          ><a class="" href="contacts.html#entrance">Как добраться</a>
+        </div>
+        <div>
+          <h2>Клуб</h2>
+          <a class="" href="school.html">Школа картинга</a><a class="" href="racing.html">Соревнования</a
+          ><a class="" href="news.html">Новости гонок</a><a class="" href="events.html">Мероприятия</a
+          ><a class="" href="forum.html">Форум</a>
+        </div>
+        <div>
+          <h2>Прокат</h2>
+          <a class="foot-tel" href="tel:+74997859546">+7 (499) 785-95-46</a
+          ><a class="" href="contacts.html">Все контакты</a
+          ><a class="" href="https://t.me/dixxxodrom">Telegram клуба</a>
+        </div>
+      </div>
+      <div class="wrap credit"><span>DiXXodrom</span><span>Сайт создан Spoki Studio</span></div>
+    </footer>
+  </body>
+</html>
