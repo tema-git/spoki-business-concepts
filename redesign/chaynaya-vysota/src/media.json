@@ -1,0 +1,275 @@
+[
+  {
+    "file": "tea-white-leaf.webp",
+    "name": "Тоу Бянь Таймушань Байхао Иньчжэнь",
+    "category": "Белый · мягкий, миндальный",
+    "description": "Пушистые почки первого мартовского сбора. В чашке — лёгкая пряность и мягкая молочно-миндальная сладость.",
+    "size": [
+      800,
+      1000
+    ],
+    "source_size": [
+      1440,
+      1800
+    ],
+    "page": "https://cha108.ru/тоу-бянь-таймушань-байхао-иньчжэнь/",
+    "image": "https://cha108.ru/wp-content/uploads/2022/06/284793031_7864883243552255_4055917251770084905_n.jpg"
+  },
+  {
+    "file": "tea-white-infusion.webp",
+    "name": "Тоу Бянь Таймушань Байхао Иньчжэнь",
+    "category": "Почки в настое",
+    "description": "Светлые почки погружены в прозрачный настой.",
+    "size": [
+      800,
+      1000
+    ],
+    "source_size": [
+      1440,
+      1800
+    ],
+    "page": "https://cha108.ru/тоу-бянь-таймушань-байхао-иньчжэнь/",
+    "image": "https://cha108.ru/wp-content/uploads/2022/06/285455381_7864883256885587_2860826136622107431_n.jpg"
+  },
+  {
+    "file": "tea-green-leaf.webp",
+    "name": "Тайпин Хоукуй",
+    "category": "Зелёный · свежий, травяной",
+    "description": "Длинный плоский лист зелёного чая из провинции Аньхуй. Этот образец чайная получила с ручного апрельского сбора.",
+    "size": [
+      800,
+      1000
+    ],
+    "source_size": [
+      1440,
+      1800
+    ],
+    "page": "https://cha108.ru/9154/",
+    "image": "https://cha108.ru/wp-content/uploads/2022/04/279512263_7656333321073916_7973851700444765298_n.jpg"
+  },
+  {
+    "file": "tea-green-infusion.webp",
+    "name": "Тайпин Хоукуй",
+    "category": "Заваривание",
+    "description": "Длинные листья раскрываются в стеклянном чайнике во время заваривания.",
+    "size": [
+      800,
+      1000
+    ],
+    "source_size": [
+      1440,
+      1800
+    ],
+    "page": "https://cha108.ru/9154/",
+    "image": "https://cha108.ru/wp-content/uploads/2022/04/279012279_7656333341073914_5769529017905192369_n.jpg"
+  },
+  {
+    "file": "tea-jinxuan-leaf.webp",
+    "name": "Алишань Цзинь Сюань",
+    "category": "Улун · сливочный",
+    "description": "Лёгкая сливочная нота присуща самому тайваньскому улуну. Чайная описывает сорт как кремовый от природы.",
+    "size": [
+      768,
+      960
+    ],
+    "source_size": [
+      768,
+      960
+    ],
+    "page": "https://cha108.ru/не-молочный-улун/",
+    "image": "https://cha108.ru/wp-content/uploads/2020/08/8Pk1n9ajvCU.jpg"
+  },
+  {
+    "file": "tea-jinxuan-infusion.webp",
+    "name": "Алишань Цзинь Сюань",
+    "category": "Настой в стеклянном чайнике",
+    "description": "Светлый настой и раскрытые листья видны сквозь стенки стеклянного чайника.",
+    "size": [
+      768,
+      960
+    ],
+    "source_size": [
+      768,
+      960
+    ],
+    "page": "https://cha108.ru/не-молочный-улун/",
+    "image": "https://cha108.ru/wp-content/uploads/2020/08/GtGfP2gmovc.jpg"
+  },
+  {
+    "file": "ice-pancake.webp",
+    "name": "Блин наизнанку",
+    "category": "№141 · сверхпломбир",
+    "description": "Сметанно-творожная основа с маслом нуазет. Внутри — хрустящие кусочки лавандовых блинов, фламбированных в кальвадосе.",
+    "size": [
+      768,
+      1024
+    ],
+    "source_size": [
+      960,
+      1280
+    ],
+    "page": "https://cha108.ru/блин-наизнанку/",
+    "image": "https://cha108.ru/wp-content/uploads/2025/02/photo_2025-02-17_12-12-07_блин_наизнанку.jpg"
+  },
+  {
+    "file": "ice-emerald.webp",
+    "name": "Изумрудная сладость пустыни",
+    "category": "№162 · маття и фисташка",
+    "description": "Японский маття, фисташки и миндаль сочетаются с бергамотом, тёмными шоколадными крошками и хрустящим катаифи.",
+    "size": [
+      1100,
+      825
+    ],
+    "source_size": [
+      1280,
+      960
+    ],
+    "page": "https://cha108.ru/новое-чайное-мороженое-изумрудная-с/",
+    "image": "https://cha108.ru/wp-content/uploads/2024/12/26photo_2024-12-05_17-16-53.jpg"
+  },
+  {
+    "file": "ice-tasting.webp",
+    "name": "Дегустация Кунгфу Айскрим",
+    "category": "Архив · Вкусовой арбитраж",
+    "description": "Фирменное чайное мороженое в металлических креманках; снимок анонса дегустации к 20-летию коллекции.",
+    "size": [
+      1400,
+      934
+    ],
+    "source_size": [
+      2048,
+      1366
+    ],
+    "page": "https://cha108.ru/дегустация-чайного-мороженого-кунгф/",
+    "image": "https://cha108.ru/wp-content/uploads/2026/04/spxOp7qZ3dKfph84vxKNOA-2048x1366.jpg"
+  },
+  {
+    "file": "hero-glass.webp",
+    "name": "Весенние дегустации",
+    "category": "Стеклянная чаша с настоем",
+    "description": "Фотография из апрельской программы Высоты. Через расписную стеклянную чашу просвечивает тёмно-янтарный настой.",
+    "size": [
+      1280,
+      960
+    ],
+    "source_size": [
+      1280,
+      960
+    ],
+    "page": "https://cha108.ru/программа-дегустаций-2-го-сезона-отра-3/",
+    "image": "https://cha108.ru/wp-content/uploads/2026/04/photo_2026-04-07_20-04-51.jpg"
+  },
+  {
+    "file": "flowerpot.webp",
+    "name": "Чайная клумба. Укоренение цветов",
+    "category": "Церемония",
+    "description": "Цветочная композиция заваривается в прозрачном чайнике. Снимок из собственного анонса программы.",
+    "size": [
+      1200,
+      1200
+    ],
+    "source_size": [
+      2048,
+      2048
+    ],
+    "page": "https://cha108.ru/новый-сценарий-чаепития/",
+    "image": "https://cha108.ru/wp-content/uploads/2026/05/photo_2026-05-28_08-24-16-2048x2048.jpg"
+  },
+  {
+    "file": "venue-tverskaya.webp",
+    "name": "Чайная высота на Тверской",
+    "category": "Вход",
+    "description": "Вечерний фасад с вывеской «Чайная высота / Винная глубина», сфотографированный командой чайной.",
+    "size": [
+      1120,
+      840
+    ],
+    "source_size": [
+      1280,
+      960
+    ],
+    "page": "https://cha108.ru/итоги-апреля-чайная-высота/",
+    "image": "https://cha108.ru/wp-content/uploads/2024/05/photo_2024-04-30_22-36-06-2.jpg"
+  },
+  {
+    "file": "brand-mark.webp",
+    "name": "Знак «Чайной высоты»",
+    "category": "Эмблема сайта",
+    "description": "Монограмма чайной с официальной витрины Teatix. Контур сохранён в маске. Зелёный цвет совпадает с подвалом, в подвале цвета эмблемы меняются местами.",
+    "mask": "brand-mask.png",
+    "size": [
+      256,
+      256
+    ],
+    "source_size": [
+      512,
+      512
+    ],
+    "page": "https://teatix.com/",
+    "image": "https://teatix.com/wp-content/uploads/2022/11/cropped-ChaNew_logo_icon.jpg"
+  },
+  {
+    "file": "chef-enin.webp",
+    "name": "Виктор Енин",
+    "category": "Команда",
+    "description": "Шеф и основатель «Чайной высоты». Портрет из опубликованного чайной интервью журнала «Кофе и Чай в России», №3 за 2020 год.",
+    "size": [
+      1440,
+      897
+    ],
+    "source_size": [
+      2048,
+      1276
+    ],
+    "page": "https://cha108.ru/метод-конкретных-ситуаций/",
+    "image": "https://cha108.ru/wp-content/uploads/2020/08/metod_cover-2048x1276.jpg"
+  },
+  {
+    "file": "venue-pokrovka.webp",
+    "name": "Дом чая и мороженого на Покровке",
+    "category": "Зал чайной горы",
+    "description": "Гости в Зале чайной горы за дегустационным столом у витражных окон. Снимок встречи с шефами парижского ресторана Dersou из архива чайной. Внешняя тёмная кайма оригинала обрезана.",
+    "size": [
+      892,
+      669
+    ],
+    "source_size": [
+      960,
+      720
+    ],
+    "page": "https://cha108.ru/5668/",
+    "image": "https://cha108.ru/wp-content/uploads/2016/04/Омнивор2.jpg"
+  },
+  {
+    "file": "ice-forest.webp",
+    "name": "Deep forest chocolate",
+    "category": "Пуэр · грибы · фундук",
+    "description": "Тёмный шарик на переднем плане. Пуэр, сливки, фундук и белые грибы из Коми дают вкус, напоминающий горький шоколад.",
+    "size": [
+      1100,
+      829
+    ],
+    "source_size": [
+      1440,
+      1085
+    ],
+    "page": "https://cha108.ru/deep-forest-chocolate/",
+    "image": "https://cha108.ru/wp-content/uploads/2019/12/79925892_3547913755249247_6963979120422158336_o.jpg"
+  },
+  {
+    "file": "meeting-67.webp",
+    "name": "Три стиля Тегуаньинь и три Я Бао",
+    "category": "Встреча №67",
+    "description": "Крупный план чайного листа из альбома к анонсу встречи 26 ноября. Снимки внутри альбома не подписаны по отдельным сортам.",
+    "size": [
+      600,
+      800
+    ],
+    "source_size": [
+      600,
+      800
+    ],
+    "page": "https://t.me/cha108/4370",
+    "image": "https://cdn4.telesco.pe/file/VIkmw2n8cJbdEq5QWfDQYXBya_G2h3QctIjpIW15FO8W5BD4rS9RVYQsIqMpvo32U0XHqpohP67Py73CtRd5v4VnF3Ns9TF-2RljzyJWKd_lwpEpt-jalmSyD-JI5hQwKFKVmlLnaEzpVvoudP5at8rb_RWWh71-bvFs3NOHQuy_oRpNs1Sbq3gQw05jGRtVaXd4Xu6JELg-Uc6liVLGPCw5oR_WsqDVrD6hCdUaCMh1xGnIw1cLhFyTpdlChV4qfHczpXxB77l5TJNb08U3NrdAN0JqBMzCzSk6NMtJ7tKwtP9It-sQ59_pX-WEWoxMkYf_ey3hCvG8LNbRpwY9Hg.jpg"
+  }
+]

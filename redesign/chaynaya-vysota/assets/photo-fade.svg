@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" preserveAspectRatio="none">
+  <defs>
+    <filter id="wash" filterUnits="userSpaceOnUse" x="0" y="0" width="600" height="420" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="23 19"/>
+    </filter>
+  </defs>
+  <path filter="url(#wash)" fill="white" d="M31 219c-1-53 8-110 53-139 45-31 102-31 161-40 66-11 108-2 168-4 57-2 107 16 136 60 25 40 16 80 17 122 2 42 9 82-27 115-36 34-84 38-142 46-58 9-115 3-174 0-62-3-98 0-137-29-40-30-54-77-55-131Z"/>
+</svg>

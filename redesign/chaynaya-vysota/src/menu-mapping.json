@@ -1,0 +1,625 @@
+[
+  {
+    "group": "Pages",
+    "label": "Home",
+    "original": "https://cha108.ru/",
+    "status": 200,
+    "target": "./"
+  },
+  {
+    "group": "Pages",
+    "label": "Адреса и режим работы",
+    "original": "https://cha108.ru/contact_page/",
+    "status": 200,
+    "target": "venues/"
+  },
+  {
+    "group": "Pages",
+    "label": "Дорога к клубу «Чайная высота» на Покровке 27",
+    "original": "https://cha108.ru/%d0%b4%d0%be%d1%80%d0%be%d0%b3%d0%b0-%d0%ba-%d0%ba%d0%bb%d1%83%d0%b1%d1%83-%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%b2%d1%8b%d1%81%d0%be%d1%82%d0%b0-%d0%bd%d0%b0-%d0%bf%d0%be%d0%ba%d1%80%d0%be/",
+    "status": 200,
+    "target": "venues/pokrovka/#route"
+  },
+  {
+    "group": "Pages",
+    "label": "О клубе",
+    "original": "https://cha108.ru/%d0%be-%d0%ba%d0%bb%d1%83%d0%b1%d0%b5/",
+    "status": 200,
+    "target": "club/"
+  },
+  {
+    "group": "Pages",
+    "label": "Подписка на новости",
+    "original": "https://cha108.ru/%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d0%ba%d0%b0-%d0%bd%d0%b0-%d0%bd%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8/",
+    "status": 200,
+    "target": "club/news/"
+  },
+  {
+    "group": "Pages",
+    "label": "Интеллектуальный клуб «Наука. Вкусно»",
+    "original": "https://cha108.ru/%d0%b8%d0%bd%d1%82%d0%b5%d0%bb%d0%bb%d0%b5%d0%ba%d1%82%d1%83%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%bb%d1%83%d0%b1-%d0%bd%d0%b0%d1%83%d0%ba%d0%b0-%d0%b2%d0%ba%d1%83%d1%81%d0%bd%d0%be/",
+    "status": 200,
+    "target": "club/science/"
+  },
+  {
+    "group": "Pages",
+    "label": "Вакансии",
+    "original": "https://cha108.ru/job/",
+    "status": 200,
+    "target": "club/jobs/"
+  },
+  {
+    "group": "Categories",
+    "label": "26 тайваньских комиссаров",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/26-%d1%82%d0%b0%d0%b9%d0%b2%d0%b0%d0%bd%d1%8c%d1%81%d0%ba%d0%b8%d1%85-%d0%ba%d0%be%d0%bc%d0%b8%d1%81%d1%81%d0%b0%d1%80%d0%be%d0%b2/",
+    "status": 200,
+    "target": "journal/#topic-158"
+  },
+  {
+    "group": "Categories",
+    "label": "Uncategorized",
+    "original": "https://cha108.ru/category/uncategorized/",
+    "status": 200,
+    "target": "journal/#topic-1"
+  },
+  {
+    "group": "Categories",
+    "label": "Акции",
+    "original": "https://cha108.ru/category/%d0%b0%d0%ba%d1%86%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-74"
+  },
+  {
+    "group": "Categories",
+    "label": "Блинные формулы",
+    "original": "https://cha108.ru/category/%d0%b1%d0%bb%d0%b8%d0%bd%d0%bd%d1%8b%d0%b5-%d1%84%d0%be%d1%80%d0%bc%d1%83%d0%bb%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-147"
+  },
+  {
+    "group": "Categories",
+    "label": "Вакансии",
+    "original": "https://cha108.ru/category/%d0%b2%d0%b0%d0%ba%d0%b0%d0%bd%d1%81%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-120"
+  },
+  {
+    "group": "Categories",
+    "label": "ВДНХ",
+    "original": "https://cha108.ru/category/%d0%b2%d0%b4%d0%bd%d1%85/",
+    "status": 200,
+    "target": "journal/#topic-146"
+  },
+  {
+    "group": "Categories",
+    "label": "Весна 2020",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/%d0%b2%d0%b5%d1%81%d0%bd%d0%b0-2020/",
+    "status": 200,
+    "target": "journal/#topic-157"
+  },
+  {
+    "group": "Categories",
+    "label": "Весна 2021",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/%d0%b2%d0%b5%d1%81%d0%bd%d0%b0-2021/",
+    "status": 200,
+    "target": "journal/#topic-160"
+  },
+  {
+    "group": "Categories",
+    "label": "Весна 2022",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/%d0%b2%d0%b5%d1%81%d0%bd%d0%b0-2022/",
+    "status": 200,
+    "target": "journal/#topic-164"
+  },
+  {
+    "group": "Categories",
+    "label": "Го",
+    "original": "https://cha108.ru/category/%d0%b8%d0%b3%d1%80%d1%8b/%d0%b3%d0%be/",
+    "status": 200,
+    "target": "journal/#topic-40"
+  },
+  {
+    "group": "Categories",
+    "label": "Дегустации",
+    "original": "https://cha108.ru/category/%d0%b4%d0%b5%d0%b3%d1%83%d1%81%d1%82%d0%b0%d1%86%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-76"
+  },
+  {
+    "group": "Categories",
+    "label": "Десерты",
+    "original": "https://cha108.ru/category/%d0%b4%d0%b5%d1%81%d0%b5%d1%80%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-66"
+  },
+  {
+    "group": "Categories",
+    "label": "Игры",
+    "original": "https://cha108.ru/category/%d0%b8%d0%b3%d1%80%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-29"
+  },
+  {
+    "group": "Categories",
+    "label": "Камера смотрит в чай",
+    "original": "https://cha108.ru/category/%d0%ba%d0%b0%d0%bc%d0%b5%d1%80%d0%b0-%d1%81%d0%bc%d0%be%d1%82%d1%80%d0%b8%d1%82-%d0%b2-%d1%87%d0%b0%d0%b9/",
+    "status": 200,
+    "target": "journal/#topic-134"
+  },
+  {
+    "group": "Categories",
+    "label": "Керамика",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/%d0%ba%d0%b5%d1%80%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-69"
+  },
+  {
+    "group": "Categories",
+    "label": "Книги",
+    "original": "https://cha108.ru/category/%d0%ba%d0%bd%d0%b8%d0%b3%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-65"
+  },
+  {
+    "group": "Categories",
+    "label": "Концерты",
+    "original": "https://cha108.ru/category/%d0%ba%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-6"
+  },
+  {
+    "group": "Categories",
+    "label": "Культура над Горького",
+    "original": "https://cha108.ru/category/%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d0%b8/%d0%ba%d1%83%d0%bb%d1%8c%d1%82%d1%83%d1%80%d0%b0-%d0%bd%d0%b0%d0%b4-%d0%b3%d0%be%d1%80%d1%8c%d0%ba%d0%be%d0%b3%d0%be/",
+    "status": 200,
+    "target": "journal/#topic-155"
+  },
+  {
+    "group": "Categories",
+    "label": "Лекции",
+    "original": "https://cha108.ru/category/%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-80"
+  },
+  {
+    "group": "Categories",
+    "label": "Лепка",
+    "original": "https://cha108.ru/category/%d0%bb%d0%b5%d0%bf%d0%ba%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-36"
+  },
+  {
+    "group": "Categories",
+    "label": "Лесная Чайная высота",
+    "original": "https://cha108.ru/category/skolkovo/",
+    "status": 200,
+    "target": "journal/#topic-152"
+  },
+  {
+    "group": "Categories",
+    "label": "Лето 2021",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/%d0%bb%d0%b5%d1%82%d0%be-2021/",
+    "status": 200,
+    "target": "journal/#topic-161"
+  },
+  {
+    "group": "Categories",
+    "label": "Мастер-классы",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80-%d0%ba%d0%bb%d0%b0%d1%81%d1%81%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-14"
+  },
+  {
+    "group": "Categories",
+    "label": "Мастерские",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/",
+    "status": 200,
+    "target": "journal/#topic-7"
+  },
+  {
+    "group": "Categories",
+    "label": "Минутные сладости",
+    "original": "https://cha108.ru/category/%d0%b4%d0%b5%d1%81%d0%b5%d1%80%d1%82%d1%8b/%d0%bc%d0%b8%d0%bd%d1%83%d1%82%d0%bd%d1%8b%d0%b5-%d1%81%d0%bb%d0%b0%d0%b4%d0%be%d1%81%d1%82%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-135"
+  },
+  {
+    "group": "Categories",
+    "label": "Мультфильмы",
+    "original": "https://cha108.ru/category/%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d1%84%d0%b8%d0%bb%d1%8c%d0%bc%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-28"
+  },
+  {
+    "group": "Categories",
+    "label": "Мы к вам приехали на чай",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%b2%d1%8b%d1%81%d0%be%d1%82%d0%b0-%d0%bd%d0%b0-%d0%b2%d1%8b%d0%b5%d0%b7%d0%b4%d0%b5/",
+    "status": 200,
+    "target": "journal/#topic-108"
+  },
+  {
+    "group": "Categories",
+    "label": "Наука. Вкусно",
+    "original": "https://cha108.ru/category/%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d0%b8/%d0%bd%d0%b0%d1%83%d0%ba%d0%b0-%d0%b2%d0%ba%d1%83%d1%81%d0%bd%d0%be/",
+    "status": 200,
+    "target": "journal/#topic-116"
+  },
+  {
+    "group": "Categories",
+    "label": "Оригами",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/%d0%be%d1%80%d0%b8%d0%b3%d0%b0%d0%bc%d0%b8-%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/",
+    "status": 200,
+    "target": "journal/#topic-70"
+  },
+  {
+    "group": "Categories",
+    "label": "От администрации",
+    "original": "https://cha108.ru/category/%d0%be%d1%82-%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%86%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-4"
+  },
+  {
+    "group": "Categories",
+    "label": "Отчеты",
+    "original": "https://cha108.ru/category/%d0%be%d1%82%d1%87%d0%b5%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-13"
+  },
+  {
+    "group": "Categories",
+    "label": "Парк Горького",
+    "original": "https://cha108.ru/category/%d0%bf%d0%b0%d1%80%d0%ba-%d0%b3%d0%be%d1%80%d1%8c%d0%ba%d0%be%d0%b3%d0%be/",
+    "status": 200,
+    "target": "journal/#topic-131"
+  },
+  {
+    "group": "Categories",
+    "label": "Писанка",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/%d0%bf%d0%b8%d1%81%d0%b0%d0%bd%d0%ba%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-77"
+  },
+  {
+    "group": "Categories",
+    "label": "Пластилин",
+    "original": "https://cha108.ru/category/%d0%bc%d0%b0%d1%81%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5/%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%bb%d0%b8%d0%bd/",
+    "status": 200,
+    "target": "journal/#topic-73"
+  },
+  {
+    "group": "Categories",
+    "label": "Подарки",
+    "original": "https://cha108.ru/category/%d0%bf%d0%be%d0%b4%d0%b0%d1%80%d0%ba%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-149"
+  },
+  {
+    "group": "Categories",
+    "label": "Пресса о Высоте",
+    "original": "https://cha108.ru/category/pressa/",
+    "status": 200,
+    "target": "journal/#topic-123"
+  },
+  {
+    "group": "Categories",
+    "label": "Публикации",
+    "original": "https://cha108.ru/category/%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-132"
+  },
+  {
+    "group": "Categories",
+    "label": "Пуэропорт",
+    "original": "https://cha108.ru/category/%d0%bf%d1%83%d1%8d%d1%80%d0%be%d0%bf%d0%be%d1%80%d1%82/",
+    "status": 200,
+    "target": "journal/#topic-119"
+  },
+  {
+    "group": "Categories",
+    "label": "Самовар-бар",
+    "original": "https://cha108.ru/category/%d1%81%d0%b0%d0%bc%d0%be%d0%b2%d0%b0%d1%80-%d0%b1%d0%b0%d1%80/",
+    "status": 200,
+    "target": "journal/#topic-117"
+  },
+  {
+    "group": "Categories",
+    "label": "Самовары",
+    "original": "https://cha108.ru/category/%d1%81%d0%b0%d0%bc%d0%be%d0%b2%d0%b0%d1%80%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-122"
+  },
+  {
+    "group": "Categories",
+    "label": "События",
+    "original": "https://cha108.ru/category/%d1%81%d0%be%d0%b1%d1%8b%d1%82%d0%b8%d1%8f/",
+    "status": 200,
+    "target": "journal/#topic-3"
+  },
+  {
+    "group": "Categories",
+    "label": "Сокольники",
+    "original": "https://cha108.ru/category/%d1%81%d0%be%d0%ba%d0%be%d0%bb%d1%8c%d0%bd%d0%b8%d0%ba%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-130"
+  },
+  {
+    "group": "Categories",
+    "label": "Тайваньская дюжина",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/%d1%82%d0%b0%d0%b9%d0%b2%d0%b0%d0%bd%d1%8c%d1%81%d0%ba%d0%b0%d1%8f-%d0%b4%d1%8e%d0%b6%d0%b8%d0%bd%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-156"
+  },
+  {
+    "group": "Categories",
+    "label": "Тверская 6",
+    "original": "https://cha108.ru/category/%d0%bf%d1%83%d1%8d%d1%80%d0%be%d0%bf%d0%be%d1%80%d1%82-%d1%82%d0%b2%d0%b5%d1%80%d1%81%d0%ba%d0%b0%d1%8f-6/",
+    "status": 200,
+    "target": "journal/#topic-148"
+  },
+  {
+    "group": "Categories",
+    "label": "Точные чайные смеси",
+    "original": "https://cha108.ru/category/%d1%82%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d1%81%d0%bc%d0%b5%d1%81%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-159"
+  },
+  {
+    "group": "Categories",
+    "label": "Флейты",
+    "original": "https://cha108.ru/category/%d0%ba%d0%be%d0%bd%d1%86%d0%b5%d1%80%d1%82%d1%8b/%d1%84%d0%bb%d0%b5%d0%b9%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-30"
+  },
+  {
+    "group": "Categories",
+    "label": "Чаепродукты",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b5%d0%bf%d1%80%d0%be%d0%b4%d1%83%d0%ba%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-124"
+  },
+  {
+    "group": "Categories",
+    "label": "Чаи без правил",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b8-%d0%b1%d0%b5%d0%b7-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb/",
+    "status": 200,
+    "target": "journal/#topic-125"
+  },
+  {
+    "group": "Categories",
+    "label": "Чай",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9/",
+    "status": 200,
+    "target": "journal/#topic-26"
+  },
+  {
+    "group": "Categories",
+    "label": "Чай на улицах города",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9-%d0%bd%d0%b0-%d1%83%d0%bb%d0%b8%d1%86%d0%b0%d1%85-%d0%b3%d0%be%d1%80%d0%be%d0%b4%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-150"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайная гостиная",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%b3%d0%be%d1%81%d1%82%d0%b8%d0%bd%d0%b0%d1%8f/",
+    "status": 200,
+    "target": "journal/#topic-118"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайная коллекция",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f/",
+    "status": 200,
+    "target": "journal/#topic-126"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайная охота",
+    "original": "https://cha108.ru/category/%d0%bf%d1%83%d1%82%d0%b5%d1%88%d0%b5%d1%81%d1%82%d0%b2%d0%b8%d1%8f/",
+    "status": 200,
+    "target": "journal/#topic-75"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайная охота 2024",
+    "original": "https://cha108.ru/category/%d0%bf%d1%83%d1%82%d0%b5%d1%88%d0%b5%d1%81%d1%82%d0%b2%d0%b8%d1%8f/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%be%d1%85%d0%be%d1%82%d0%b0-2024/",
+    "status": 200,
+    "target": "journal/#topic-173"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайная посуда",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b0%d1%8f-%d0%bf%d0%be%d1%81%d1%83%d0%b4%d0%b0/",
+    "status": 200,
+    "target": "journal/#topic-162"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайники",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d0%b8%d0%ba%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-121"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайное варенье",
+    "original": "https://cha108.ru/category/%d0%b4%d0%b5%d1%81%d0%b5%d1%80%d1%82%d1%8b/%d1%87%d0%b0%d0%b9%d0%bd%d0%be%d0%b5-%d0%b2%d0%b0%d1%80%d0%b5%d0%bd%d1%8c%d0%b5/",
+    "status": 200,
+    "target": "journal/#topic-128"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайное мороженое",
+    "original": "https://cha108.ru/category/%d0%b4%d0%b5%d1%81%d0%b5%d1%80%d1%82%d1%8b/ice-cream/",
+    "status": 200,
+    "target": "journal/#topic-78"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные карточки заваривания",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9/quaquacha/",
+    "status": 200,
+    "target": "journal/#topic-151"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные коктейли",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%ba%d1%82%d0%b5%d0%b9%d0%bb%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-99"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные купажи",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d0%ba%d1%83%d0%bf%d0%b0%d0%b6%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-154"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные лимонады",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d0%bb%d0%b8%d0%bc%d0%be%d0%bd%d0%b0%d0%b4%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-153"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные маршруты",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d1%8b/",
+    "status": 200,
+    "target": "journal/#topic-136"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные подарки",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d0%bf%d0%be%d0%b4%d0%b0%d1%80%d0%ba%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-129"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайные церемонии",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b5-%d1%86%d0%b5%d1%80%d0%b5%d0%bc%d0%be%d0%bd%d0%b8%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-174"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайный бар",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b9-%d0%b1%d0%b0%d1%80/",
+    "status": 200,
+    "target": "journal/#topic-67"
+  },
+  {
+    "group": "Categories",
+    "label": "Чайный чемпионат",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b9-%d1%87%d0%b5%d0%bc%d0%bf%d0%b8%d0%be%d0%bd%d0%b0%d1%82/",
+    "status": 200,
+    "target": "journal/#topic-133"
+  },
+  {
+    "group": "Categories",
+    "label": "Чашки",
+    "original": "https://cha108.ru/category/%d1%87%d0%b0%d1%88%d0%ba%d0%b8/",
+    "status": 200,
+    "target": "journal/#topic-127"
+  },
+  {
+    "group": "Services",
+    "label": "tripadvisor_srtf",
+    "original": "https://www.tripadvisor.ru/Restaurant_Review-g298484-d1939446-Reviews-Chainaya_Vysota_Dom_Chaya_I_Morozhenogo-Moscow_Central_Russia.html",
+    "status": 403,
+    "target": "venues/pokrovka/"
+  },
+  {
+    "group": "Services",
+    "label": "Мы в Telegram",
+    "original": "https://t.me/cha108",
+    "status": 200,
+    "target": "club/news/"
+  },
+  {
+    "group": "Services",
+    "label": "Мы ВКонтакте",
+    "original": "https://vk.com/cha108",
+    "status": 200,
+    "target": "club/news/"
+  },
+  {
+    "group": "Official shop",
+    "label": "Магазине билетов, событий и порций «Чайной высоты» teatix.com",
+    "original": "https://teatix.com/shop",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "порции чая для заваривания идеальной чашки",
+    "original": "https://teatix.com/product-category/coupage",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "упажи в «чайных карточках заваривания» из серии #СтолицаЧаепития, подготовленной для выставки «Праздник Весны. Новый год в старом Пекине»",
+    "original": "https://teatix.com/product-category/coupage/coupageteacards/серия-столицачаепития",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "билеты на чайные церемонии",
+    "original": "https://teatix.com/product-category/certificate/ceremonies",
+    "status": 200,
+    "target": "venues/tverskaya/"
+  },
+  {
+    "group": "Official shop",
+    "label": "билеты на дегустационный цикл «72 чайных отражения Сунь Укуна»",
+    "original": "https://teatix.com/wukong72",
+    "status": 200,
+    "target": "cycle/"
+  },
+  {
+    "group": "Official shop",
+    "label": "Имбирный эль Лавров",
+    "original": "https://teatix.com/product-category/ginger-ale/",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "премиксы для приготовления холодных и горячих чайных лимонадов",
+    "original": "https://teatix.com/product-category/premixes/",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "ПЬЮЧЕРСЫ – чайные фьючерсы",
+    "original": "https://teatix.com/product/futurestea/",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "Official shop",
+    "label": "билет «Чайная коллекция»",
+    "original": "https://teatix.com/product/private_tea_collection_ticket/",
+    "status": 200,
+    "target": "journal/#teatix"
+  },
+  {
+    "group": "News archive",
+    "label": "« Previous Entries",
+    "original": "https://cha108.ru/page/2/",
+    "status": 200,
+    "target": "journal/"
+  },
+  {
+    "group": "Services",
+    "label": "RSS",
+    "original": "https://cha108.ru/feed/",
+    "status": 200,
+    "target": "club/news/"
+  }
+]
